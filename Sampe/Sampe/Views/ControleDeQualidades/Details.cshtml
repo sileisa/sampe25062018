@@ -1,0 +1,90 @@
+﻿@model Sampe.Models.ControleDeQualidade
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ControleDeQualidade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdemProducaoPeca.MateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdemProducaoPeca.MateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciclo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciclo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoDaPeca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoDaPeca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dimensao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dimensao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assinatura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assinatura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Liberado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Liberado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ControleDeQualidadeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

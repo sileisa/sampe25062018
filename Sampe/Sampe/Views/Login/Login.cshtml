@@ -1,0 +1,62 @@
+﻿@model Sampe.Login
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!--logo na guia -->
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Login </title>
+    <!-- <link rel="stylesheet" type="text/css" href="~/Content/Login.css">-->
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="fundo">
+    @using (Html.BeginForm("Login", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="container center-block text-center">
+            <div class="row">
+                <div class="col-sm-4 col-md-4"></div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail table-responsive">
+                        <br />
+                        <img class="img-responsive" src="~/img/marca.png">
+                        <hr />
+                        <div class="caption container">
+                            <div class="row">
+                                <div class="input-group col-sm-12 col-md-12">
+                                    
+                                    <input value="Marcello" class="input-validation-error form-control text-box single-line " data-val="true" data-val-required="Preencha este campo" htmlattributes="{ class = form-control text-box single-line }" id="User" name="User" type="text" placeholder="Login">
+                                    @Html.ValidationMessageFor(model => model.User, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="input-group col-sm-12 col-md-12">
+                                    
+                                    <input value="123456" class="input-validation-error form-control text-box single-line senhaLogin" data-val="true" data-val-required="Preencha este campo" htmlattributes="{ class = form-control text-box single-line }" id="Senha" name="Senha" type="password" placeholder="Senha">
+                                    @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <label class="text-danger" id="Error" name="Error"></label>
+                            <input type="submit" value="Entrar" class="btn btn-block btn-default" id="entrar" />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

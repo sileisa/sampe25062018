@@ -1,0 +1,82 @@
+﻿@model Sampe.Models.Expectativa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Expectativa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CavidadeMolde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CavidadeMolde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoPecaAproximado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoPecaAproximado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoPecaCompleta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoPecaCompleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciclo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciclo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducaoEsperada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducaoEsperada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdFim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ExpectativaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

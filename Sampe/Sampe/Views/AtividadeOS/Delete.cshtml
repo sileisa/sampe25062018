@@ -1,0 +1,35 @@
+﻿@model Sampe.AtividadeOS
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<div>
+    <ol class="breadcrumb">
+        <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+        <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+        <li><a href="http://localhost:49630/AtividadeOS/Index">Atividades Ordem de Serviço</a></li>
+        <li class="active">Deletar</li>
+    </ol>
+    <h2>Deletar Atividade</h2>
+    <h6>Tem certeza que deseja excluir?</h6>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Atividade
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NomeAtvOs)
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-default" />
+        <a class="btn btn-default " href="/AtividadeOS/Index">Voltar</a>
+    </div>
+    }
+</div>

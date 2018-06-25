@@ -1,0 +1,231 @@
+﻿@model Sampe.FormularioOrdemServico
+@{
+	ViewBag.Title = "Edit";
+}
+<script>
+	/*$(document).ready(function () {
+		$("#Intervalo").change(function () {
+			var desabilitar = $("#Intervalo").val();
+			if (desabilitar == "true") {
+				$("#IntervaloInicio").prop("readonly", false)
+				$("#IntervaloFim").prop("readonly", false)
+				$("#ObsIntervalo").prop("readonly", false)
+			}
+			else {
+				$("#IntervaloInicio").prop("readonly", true)
+				$("#IntervaloFim").prop("readonly", true)
+				$("#ObsIntervalo").prop("readonly", true)
+			}
+		})
+	});*/
+</script>
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+
+	<div class="form-horizontal container">
+		<ol class="breadcrumb">
+			<li><a href="http://localhost:49630/Home/Index">Home</a></li>
+			<li><a href="http://localhost:49630/FormularioOrdemServicoes/Index">Formulários Ordem de Serviço</a></li>
+			<li class="active">Preencher</li>
+		</ol>
+		<h2>Preencher Formulário de Ordem de Serviço</h2>
+		<hr />
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		@Html.HiddenFor(model => model.FormularioOrdemServicoId)
+		<div class="row">
+			<div class="col-lg-6">
+				@Html.LabelFor(model => model.TipoManutencao, "Tipo de Manutenção", htmlAttributes: new { @class = " col-md-5" })
+				@Html.EditorFor(model => model.TipoManutencao, new { htmlAttributes = new { @class = "form-control", disabled = "disabled" } })
+				@Html.HiddenFor(model => model.TipoManutencao)
+				@Html.ValidationMessageFor(model => model.TipoManutencao, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-6">
+				@Html.LabelFor(model => model.MaquinaId, "Máquina", htmlAttributes: new { @class = "control-label col-md-2" })
+				@Html.DropDownList("MaquinaId", null, htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+				@Html.HiddenFor(model => model.MaquinaId)
+				@Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<div class="col-lg-4">
+				@Html.LabelFor(model => model.Dt, "Data", htmlAttributes: new { @class = "control-label" })
+				<p>@Model.Dt.ToString("dd/MM/yyyy")</p>
+				@Html.HiddenFor(model => model.Dt)
+				@Html.ValidationMessageFor(model => model.Dt, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				@Html.LabelFor(model => model.HoraInicio, "Hora Início", htmlAttributes: new { @class = " col-md-6" })
+				@Html.EditorFor(model => model.HoraInicio, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.HoraInicio, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				@Html.LabelFor(model => model.HoraFinal, "Hora Fim", htmlAttributes: new { @class = " col-md-4" })
+				@Html.EditorFor(model => model.HoraFinal, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.HoraFinal, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<div class=" col-lg-6">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Materiais Usados</th>
+							<th>Quantidade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@Html.EditorFor(model => model.MaterialUsado, new { htmlAttributes = new { @class = "form-control" } })</td>
+							<td>@Html.EditorFor(model => model.QuantUsado, new { htmlAttributes = new { @class = "form-control" } })</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class=" col-lg-6">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Materiais Sobrantes</th>
+							<th>Quantidade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@Html.EditorFor(model => model.MaterialSobrante, new { htmlAttributes = new { @class = "form-control" } })</td>
+							<td>@Html.EditorFor(model => model.QuantSobrante, new { htmlAttributes = new { @class = "form-control" } })</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				@Html.LabelFor(model => model.Supervisor, "Supervisor", htmlAttributes: new { @class = "control-label col-md-2" })
+				@Html.EditorFor(model => model.Supervisor, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+				@Html.ValidationMessageFor(model => model.Supervisor, "", new { @class = "text-danger" })
+			</div>
+			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
+			{
+				<div class="col-lg-4">
+					<label>Executor</label><br />
+					
+					<select name="UsuarioId" class="form-control">
+						@foreach (var item in @ViewBag.UsuarioId)
+						{
+							<option value="@item.UsuarioId" @(Model.UsuarioId == item.UsuarioId ? "selected" : "")>@item.NomeUsuario</option>
+						}
+					</select>
+					@Html.ValidationMessageFor(model => model.UsuarioId, "", new { @class = "text-danger" })
+					<input type="hidden" id="Executor" name="Executor" value="@Session["UsuarioId"].ToString()" />
+				</div>
+			}
+			else if (@Session["Hierarquia"].ToString() == "Acesso Produção")
+			{
+				<div class="col-lg-4">
+					<label>Executor</label><br />
+					@Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), @Session["NomeUsuario"].ToString(), htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+					@Html.ValidationMessageFor(model => model.UsuarioId, "", new { @class = "text-danger" })
+					<input type="hidden" id="Executor" name="Executor" value="@Session["UsuarioId"].ToString()" />
+				</div>
+			}
+			else
+			{
+				<div class="col-lg-4">
+					<label>Executor</label><br />
+					@Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), Model.Usuario.NomeUsuario, htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+					<span class="field-validation-valid text-danger" data-valmsg-for="Executor" data-valmsg-replace="true"></span>
+					<input type="hidden" id="Executor" name="Executor" value="@Model.UsuarioId" />
+				</div>
+			}
+		</div>
+		<br />  <br />
+		<div class="row">
+			<div class="col-lg-2 ">
+				@Html.LabelFor(model => model.Intervalo, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="checkbox">
+					<div class="col-lg-6">
+						<br />
+						@Html.EditorFor(model => model.Intervalo, new { htmlAttributes = new { @class = "checkbox" } })
+						@Html.ValidationMessageFor(model => model.Intervalo, "", new { @class = "text-danger" })
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				@Html.LabelFor(model => model.IntervaloInicio, "Hora Início", htmlAttributes: new { @class = "col-md-10" })
+				@Html.EditorFor(model => model.IntervaloInicio, new { htmlAttributes = new { type = "time", @class = "form-control", @readonly="true" } })
+				@Html.ValidationMessageFor(model => model.IntervaloInicio, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-3">
+				@Html.LabelFor(model => model.IntervaloFim, "Hora Fim", htmlAttributes: new { @class = " col-md-8" })
+				@Html.EditorFor(model => model.IntervaloFim, new { htmlAttributes = new { type = "time", @class = "form-control", @readonly = "true" } })
+				@Html.ValidationMessageFor(model => model.IntervaloFim, "", new { @class = "text-danger" })
+			</div>
+			<div class="row col-lg-3">
+				@Html.LabelFor(model => model.ObsIntervalo, "Observação", htmlAttributes: new { @class = "control-label col-md-2" })
+				<!--<textarea class="form-control" rows="3" id="ObsIntervalo" name="ObsIntervalo"></textarea>-->
+				@Html.EditorFor(model => model.ObsIntervalo, new { htmlAttributes = new { type = "textarea", @class = "form-control", @readonly = "true" } })
+				@Html.ValidationMessageFor(model => model.ObsIntervalo, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<div class="container" id="capaefectos">
+			<div class="col-lg-12 col-sm-12">
+				@foreach (var a in Model.FormularioOSAtividades)
+				{
+					<div class="checkbox" id="check">
+						@if (a.StatusOS == true)
+						{
+							<input type="checkbox" value="@a.FormularioOSAtividadeId" name="id" checked disabled>
+							<label>@a.AtividadeOS.NomeAtvOs</label>
+						}
+						else
+						{
+							<input type="checkbox" value="@a.FormularioOSAtividadeId" name="id">
+							<label>@a.AtividadeOS.NomeAtvOs</label>
+						}
+					</div>
+				}
+				<br />
+			</div>
+		</div>
+		<br /><br />
+		<div class="row col-lg-12 col-sm-12">
+			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
+			{
+				<div class="checkbox" id="check">
+					@if (Model.Status == false)
+					{
+						@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+						<p>Validação do Supervisor</p>
+
+					}
+					else
+					{
+						@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", @readonly = true } })
+						<p>Validação do Supervisor</p>
+					}
+				</div>
+				@Html.HiddenFor(model => model.Status)
+			}
+			else
+			{
+				<label>Validação do Supervisor</label>
+				@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+
+			}
+		</div>
+		<br /><br />
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<input type="submit" value="Salvar" class="btn btn-default" />
+				<a class="btn btn-default" href="/FormularioOrdemServicoes/Index">Voltar</a>
+			</div>
+		</div>
+	</div>
+}
+@section Scripts {
+	@Scripts.Render("~/bundles/jqueryval")
+}

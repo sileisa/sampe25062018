@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoPeca>
+@{
+    ViewBag.Title = "Relatório";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+<div class="container">
+    <table>
+        <tr>
+            <th>
+                <div class="col-md-4 ">
+                    <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4 text-center">
+                    <h2>Ordens de Produção </h2>
+                    <h4>Peça</h4>
+                    <h4>@ViewBag.dt1.ToString("dd/MM/yyyy") a @ViewBag.dt2.ToString("dd/MM/yyyy")</h4>
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4">
+                    <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                Código
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                Cor
+            </th>
+            <th>
+                Unidades Produzidas
+            </th>
+            <th>
+                Matéria Prima
+            </th>
+            <th>
+                Máquina
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+
+
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoIdentificador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Produto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdutoCor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Maquina)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnidadesProduzidas)
+                </td>
+
+
+
+
+
+            </tr>
+        }
+    </table>
+</div>

@@ -1,0 +1,42 @@
+﻿@model Sampe.FormularioOSAtividade
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FormularioOSAtividade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AtividadeOS.NomeAtvOs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AtividadeOS.NomeAtvOs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FormularioOrdemServico.TipoManutencao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FormularioOrdemServico.TipoManutencao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusOS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FormularioOSAtividadeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

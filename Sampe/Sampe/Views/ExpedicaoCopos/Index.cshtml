@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Sampe.Models.ExpedicaoCopo>
+
+@{
+    ViewBag.Title = "Expedições";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Expedições</h2>
+<h4>COPO</h4>
+
+<div class="container col-md-12">
+	<div class="form-group text-center">
+		<div class=" col-md-10">
+			<a class="btn btn-default" href="/ExpedicaoCopos/Create">Nova Expedição</a>
+		</div>
+	</div>
+</div>
+<br />
+<table class="table table-bordered table-responsive" >
+    <tr>
+        <th>
+            Cliente
+        </th>
+        <th>
+            Empresa
+        </th>
+        <th>
+            Valor Total
+        </th>
+        <th>
+           Vencimento
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.NomeCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marcanti.NomeEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorTotal)
+        </td>
+        <td>
+            @item.Vencimento.ToString("dd/MM/yyyy")
+        </td>
+		<td>
+			<a href="/ExpedicaoCopos/Delete/@item.ExpedicaoId" class="btn btn-info btn-sm"><span class="	glyphicon glyphicon-trash"></span></a>
+			<a target="_blank" href="/Relatorio/ExibeExped?gerarPdf=true&id=@item.ExpedicaoId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-print"></span></a>
+		</td>
+    </tr>
+}
+
+</table>

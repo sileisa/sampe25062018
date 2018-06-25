@@ -1,0 +1,140 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoCopo>
+
+@{
+    ViewBag.Title = "Relatório";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+
+<div class="container">
+    <table>
+        <tr>
+            <th>
+                <div class="col-md-4 ">
+                    <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4 text-center">
+                    <h2>Ordens de Produção </h2>
+                    <h4>KIT</h4>
+                    <h4>@ViewBag.dt1.ToString("dd/MM/yyyy") a @ViewBag.dt2.ToString("dd/MM/yyyy")</h4>
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4">
+                    <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Expectativa.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Maquina.NomeMaquina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OPnoMes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MateriaPrima)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MPLote)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MPConsumo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdIncio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdFim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TempAgua)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NivelOleo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RefugoKg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalProduzidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContadorInicial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContadorFinal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Expectativa.Produto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Maquina.NomeMaquina)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OPnoMes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MateriaPrima)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MPLote)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MPConsumo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdIncio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdFim)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TempAgua)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NivelOleo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RefugoKg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalProduzidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContadorInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContadorFinal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+</div>

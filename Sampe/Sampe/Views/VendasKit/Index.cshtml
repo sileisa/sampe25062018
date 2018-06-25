@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Sampe.Models.VendaKit>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Especificacao.TipoKit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpedicaoKit.ExpedicaoKitId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorUnitario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subtotal)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Especificacao.TipoKit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpedicaoKit.ExpedicaoKitId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorUnitario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subtotal)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VendaKitId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VendaKitId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VendaKitId })
+        </td>
+    </tr>
+}
+
+</table>

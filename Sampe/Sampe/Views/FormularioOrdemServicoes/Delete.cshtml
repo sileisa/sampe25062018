@@ -1,0 +1,58 @@
+﻿@model Sampe.FormularioOrdemServico
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+        <li><a href="http://localhost:49630/FormularioOrdemServicoes/Index">Formulários Ordem de Serviço</a></li>
+        <li class="active">Deletar</li>
+    </ol>
+    <h2>Deletar Formulário</h2>
+    <h4>Tem certeza que deseja deletar?</h4>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Máquina
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Maquina.NomeMaquina)
+        </dd>
+        <dt>
+            Data
+        </dt>
+        <dd>
+            @Model.Dt.ToString("dd/MM/yyyy")
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoManutencao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoManutencao)
+        </dd>
+        <dt>
+            Executante
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NomeUsuario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Supervisor)
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Deletar" class="btn btn-default" />
+        <a class="btn btn-default" href="/FormularioOrdemServicoes/Index">Voltar</a>
+    </div>
+    }
+</div>

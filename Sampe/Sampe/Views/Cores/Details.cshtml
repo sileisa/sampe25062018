@@ -1,0 +1,26 @@
+﻿@model Sampe.Models.Cor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

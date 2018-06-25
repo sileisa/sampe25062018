@@ -1,0 +1,120 @@
+﻿@model Sampe.FormularioOSAtividade
+@{
+    ViewBag.Title = "Create";
+}
+<script>
+    $(document).ready(function () {
+        $("#AtividadeOSId").click(function () {
+            //Váriavel para checar se já existe na lista
+            var chkRptTag = false;
+
+            $('#lstTag li').each(function () {
+                haveSomeLi = true;
+                var current = $(this).text();
+                if (current == $("#AtividadeOSId option:selected").text()) {
+                    chkRptTag = true;
+                }
+            });
+
+            if (!chkRptTag) {
+                $("#lstTag").append("<li class='list-group-item'>" + $("#AtividadeOSId option:selected").text() + "<input type='checkbox' name='chkTags' id='chkTags' class='chkTags' checked='checked' value='" + $("#AtividadeOSId option:selected").val() + "'></li>");
+            } else {
+                alert("Atividade Já inserida");
+            }
+        });
+
+
+        $('#lstTag').on('click', "li", function () {
+            $(this).remove();
+            //alert();
+            return false;
+        });
+
+    });
+</script>
+<style>
+
+    .chkTags {
+        display: none;
+    }
+
+    #lstTag li {
+        cursor: pointer;
+    }
+</style>
+<div class="container">
+    <div class="col-lg-12 col-sm-12 col-md-8">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h2>Formulário de Ordem de Serviço</h2>
+            <hr />
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.LabelFor(model => model.FormularioOrdemServico.TipoManutencao,"Tipo de Manutenção", htmlAttributes: new { @class = "control-label" })
+                    <select class="form-control" id="TipoManutencao" name="TipoManutencao">
+                        <option value="Preventiva">Preventiva</option>
+                        <option value="Corretiva">Corretiva</option>
+                        <option value="Preditivar">Preditivar</option>
+                    </select>
+                    @Html.ValidationMessageFor(model => model.FormularioOrdemServico.TipoManutencao, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-4">
+                    @Html.LabelFor(model => model.FormularioOrdemServico.MaquinaId, "Máquina", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.DropDownList("MaquinaId", new SelectList(ViewBag.MaquinaId, "MaquinaId", "NomeMaquina"), "Selecione a Maquina", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.FormularioOrdemServico.MaquinaId, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="col-sm-12 col-lg-4">
+
+                    @Html.LabelFor(model => model.FormularioOrdemServico.Dt,"Data", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.FormularioOrdemServico.Dt,"Data", new { htmlAttributes = new { type = "date", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FormularioOrdemServico.Dt, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Supervisor</label><br />
+                    @Html.DropDownList("Supervisor", new SelectList(ViewBag.Supervisor, "NomeUsuario", "NomeUsuario"), "Selecione o supervisor", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.FormularioOrdemServico.UsuarioId, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-6">
+                    <label>Executor</label><br />
+                    @Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), "Selecione o executor", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.FormularioOrdemServico.UsuarioId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <label>Atividade Cadastradas</label>
+                    <div class="form-group">
+                        @Html.DropDownList("AtividadeOSId", (MultiSelectList)ViewBag.AtividadeOSId, new { multiple = "multiple", @class = "form-control", @style = "height: 200px;" })
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <label>Atividades que Serão Realizadas</label>
+                    <div class="ms-lista">
+                        <ul id="lstTag" class="list-group list-group-flush listaAtv"></ul>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                @Html.ActionLink("Nova Atividade", "Index", "AtividadeOS")
+            </div>
+            <br />
+            <div class="row">
+                <input type="submit" value="Cadastrar" class="btn btn-default" />
+            </div>
+
+        </div>
+        }
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

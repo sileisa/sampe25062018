@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4ECBEC9-4EF2-4E17-84B0-305679F87A5E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sampe</RootNamespace>
+    <AssemblyName>Sampe</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.5\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.5\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.7.3\lib\net461\Rotativa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AtividadeOSController.cs" />
+    <Compile Include="Controllers\AtividadeTMsController.cs" />
+    <Compile Include="Controllers\CargosController.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\ControleDeQualidadeCoposController.cs" />
+    <Compile Include="Controllers\ControleDeQualidadesController.cs" />
+    <Compile Include="Controllers\CoresController.cs" />
+    <Compile Include="Controllers\CorPecasController.cs" />
+    <Compile Include="Controllers\EspecificacoesController.cs" />
+    <Compile Include="Controllers\EspecificacoesCopoController.cs" />
+    <Compile Include="Controllers\EspecificacoesRefugoController.cs" />
+    <Compile Include="Controllers\ExpectativasController.cs" />
+    <Compile Include="Controllers\ExpedicaoCoposController.cs" />
+    <Compile Include="Controllers\ExpedicaoKitsController.cs" />
+    <Compile Include="Controllers\FormularioOrdemServicoesController.cs" />
+    <Compile Include="Controllers\FormularioOSAtividadesController.cs" />
+    <Compile Include="Controllers\FormularioTrocaMoldesController.cs" />
+    <Compile Include="Controllers\FormularioTMAtividadesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KitPecasController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MaquinasController.cs" />
+    <Compile Include="Controllers\MarcantiController.cs" />
+    <Compile Include="Controllers\MoldesController.cs" />
+    <Compile Include="Controllers\OrdemProducaoCoposController.cs" />
+    <Compile Include="Controllers\OrdemProducaoKitsController.cs" />
+    <Compile Include="Controllers\OrdemProducaoPecasController.cs" />
+    <Compile Include="Controllers\OrdemProducaoRefugosController.cs" />
+    <Compile Include="Controllers\ParadaKitsController.cs" />
+    <Compile Include="Controllers\ParadaRefugosController.cs" />
+    <Compile Include="Controllers\ParadasController.cs" />
+    <Compile Include="Controllers\ParadasCopoController.cs" />
+    <Compile Include="Controllers\RelatorioController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Controllers\VendasController.cs" />
+    <Compile Include="Controllers\VendasKitController.cs" />
+    <Compile Include="CustomDateModelBinder.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806221711438_Sampe220620181410.cs" />
+    <Compile Include="Migrations\201806221711438_Sampe220620181410.Designer.cs">
+      <DependentUpon>201806221711438_Sampe220620181410.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806221726149_Sampe2206201814101.cs" />
+    <Compile Include="Migrations\201806221726149_Sampe2206201814101.Designer.cs">
+      <DependentUpon>201806221726149_Sampe2206201814101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806232105113_sampe230620181802.cs" />
+    <Compile Include="Migrations\201806232105113_sampe230620181802.Designer.cs">
+      <DependentUpon>201806232105113_sampe230620181802.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806232152226_sampe2306201818021.cs" />
+    <Compile Include="Migrations\201806232152226_sampe2306201818021.Designer.cs">
+      <DependentUpon>201806232152226_sampe2306201818021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AtividadeOS.cs" />
+    <Compile Include="Models\AtividadeTM.cs" />
+    <Compile Include="Models\Cargo.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\ControleDeQualidade.cs" />
+    <Compile Include="Models\ControleDeQualidadeCopo.cs" />
+    <Compile Include="Models\Cor.cs" />
+    <Compile Include="Models\CorPeca.cs" />
+    <Compile Include="Models\Especificacao.cs" />
+    <Compile Include="Models\EspecificacaoCopo.cs" />
+    <Compile Include="Models\EspecificacaoRefugo.cs" />
+    <Compile Include="Models\Expectativa.cs" />
+    <Compile Include="Models\ExpedicaoCopo.cs" />
+    <Compile Include="Models\ExpedicaoKit.cs" />
+    <Compile Include="Models\FormularioMolde.cs" />
+    <Compile Include="Models\FormularioOrdemServico.cs" />
+    <Compile Include="Models\FormularioOSAtividade.cs" />
+    <Compile Include="Models\FormularioTrocaMolde.cs" />
+    <Compile Include="Models\FormularioTMAtividade.cs" />
+    <Compile Include="Models\KitPeca.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Maquina.cs" />
+    <Compile Include="Models\Marcanti.cs" />
+    <Compile Include="Models\Molde.cs" />
+    <Compile Include="Models\OrdemProducaoCopo.cs" />
+    <Compile Include="Models\OrdemProducaoKit.cs" />
+    <Compile Include="Models\OrdemProducaoPeca.cs" />
+    <Compile Include="Models\OrdemProducaoRefugo.cs" />
+    <Compile Include="Models\Parada.cs" />
+    <Compile Include="Models\ParadaCopo.cs" />
+    <Compile Include="Models\ParadaKit.cs" />
+    <Compile Include="Models\ParadaRefugo.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\SampeContext.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Venda.cs" />
+    <Compile Include="Models\VendaKit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="img\cadastro.png" />
+    <Content Include="img\consultar.png" />
+    <Content Include="img\expedicao.png" />
+    <Content Include="img\ic_account_circle_black_24dp\android\drawable-hdpi\ic_account_circle_black_24dp.png" />
+    <Content Include="img\ic_account_circle_black_24dp\android\drawable-mdpi\ic_account_circle_black_24dp.png" />
+    <Content Include="img\ic_account_circle_black_24dp\android\drawable-xhdpi\ic_account_circle_black_24dp.png" />
+    <Content Include="img\ic_account_circle_black_24dp\android\drawable-xxhdpi\ic_account_circle_black_24dp.png" />
+    <Content Include="img\ic_account_circle_black_24dp\android\drawable-xxxhdpi\ic_account_circle_black_24dp.png" />
+    <Content Include="img\ic_account_circle_black_24dp\ios\ic_account_circle.imageset\ic_account_circle.png" />
+    <Content Include="img\ic_account_circle_black_24dp\ios\ic_account_circle.imageset\ic_account_circle_2x.png" />
+    <Content Include="img\ic_account_circle_black_24dp\ios\ic_account_circle.imageset\ic_account_circle_3x.png" />
+    <Content Include="img\ic_account_circle_black_24dp\web\ic_account_circle_black_24dp_1x.png" />
+    <Content Include="img\ic_account_circle_black_24dp\web\ic_account_circle_black_24dp_2x.png" />
+    <Content Include="img\ic_add_black_24dp\android\drawable-hdpi\ic_add_black_24dp.png" />
+    <Content Include="img\ic_add_black_24dp\android\drawable-mdpi\ic_add_black_24dp.png" />
+    <Content Include="img\ic_add_black_24dp\android\drawable-xhdpi\ic_add_black_24dp.png" />
+    <Content Include="img\ic_add_black_24dp\android\drawable-xxhdpi\ic_add_black_24dp.png" />
+    <Content Include="img\ic_add_black_24dp\android\drawable-xxxhdpi\ic_add_black_24dp.png" />
+    <Content Include="img\ic_add_black_24dp\ios\ic_add.imageset\ic_add.png" />
+    <Content Include="img\ic_add_black_24dp\ios\ic_add.imageset\ic_add_2x.png" />
+    <Content Include="img\ic_add_black_24dp\ios\ic_add.imageset\ic_add_3x.png" />
+    <Content Include="img\ic_add_black_24dp\web\ic_add_black_24dp_1x.png" />
+    <Content Include="img\ic_add_black_24dp\web\ic_add_black_24dp_2x.png" />
+    <Content Include="img\ic_build_black_24dp\android\drawable-hdpi\ic_build_black_24dp.png" />
+    <Content Include="img\ic_build_black_24dp\android\drawable-mdpi\ic_build_black_24dp.png" />
+    <Content Include="img\ic_build_black_24dp\android\drawable-xhdpi\ic_build_black_24dp.png" />
+    <Content Include="img\ic_build_black_24dp\android\drawable-xxhdpi\ic_build_black_24dp.png" />
+    <Content Include="img\ic_build_black_24dp\android\drawable-xxxhdpi\ic_build_black_24dp.png" />
+    <Content Include="img\ic_build_black_24dp\ios\ic_build.imageset\ic_build.png" />
+    <Content Include="img\ic_build_black_24dp\ios\ic_build.imageset\ic_build_2x.png" />
+    <Content Include="img\ic_build_black_24dp\ios\ic_build.imageset\ic_build_3x.png" />
+    <Content Include="img\ic_build_black_24dp\web\ic_build_black_24dp_1x.png" />
+    <Content Include="img\ic_build_black_24dp\web\ic_build_black_24dp_2x.png" />
+    <Content Include="img\ic_check_box_black_24dp\android\drawable-hdpi\ic_check_box_black_24dp.png" />
+    <Content Include="img\ic_check_box_black_24dp\android\drawable-mdpi\ic_check_box_black_24dp.png" />
+    <Content Include="img\ic_check_box_black_24dp\android\drawable-xhdpi\ic_check_box_black_24dp.png" />
+    <Content Include="img\ic_check_box_black_24dp\android\drawable-xxhdpi\ic_check_box_black_24dp.png" />
+    <Content Include="img\ic_check_box_black_24dp\android\drawable-xxxhdpi\ic_check_box_black_24dp.png" />
+    <Content Include="img\ic_check_box_black_24dp\ios\ic_check_box.imageset\ic_check_box.png" />
+    <Content Include="img\ic_check_box_black_24dp\ios\ic_check_box.imageset\ic_check_box_2x.png" />
+    <Content Include="img\ic_check_box_black_24dp\ios\ic_check_box.imageset\ic_check_box_3x.png" />
+    <Content Include="img\ic_check_box_black_24dp\web\ic_check_box_black_24dp_1x.png" />
+    <Content Include="img\ic_check_box_black_24dp\web\ic_check_box_black_24dp_2x.png" />
+    <Content Include="img\ic_search_black_24dp\android\drawable-hdpi\ic_search_black_24dp.png" />
+    <Content Include="img\ic_search_black_24dp\android\drawable-mdpi\ic_search_black_24dp.png" />
+    <Content Include="img\ic_search_black_24dp\android\drawable-xhdpi\ic_search_black_24dp.png" />
+    <Content Include="img\ic_search_black_24dp\android\drawable-xxhdpi\ic_search_black_24dp.png" />
+    <Content Include="img\ic_search_black_24dp\android\drawable-xxxhdpi\ic_search_black_24dp.png" />
+    <Content Include="img\ic_search_black_24dp\ios\ic_search.imageset\ic_search.png" />
+    <Content Include="img\ic_search_black_24dp\ios\ic_search.imageset\ic_search_2x.png" />
+    <Content Include="img\ic_search_black_24dp\ios\ic_search.imageset\ic_search_3x.png" />
+    <Content Include="img\ic_search_black_24dp\web\ic_search_black_24dp_1x.png" />
+    <Content Include="img\ic_search_black_24dp\web\ic_search_black_24dp_2x.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\android\drawable-hdpi\ic_supervisor_account_black_24dp.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\android\drawable-mdpi\ic_supervisor_account_black_24dp.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\android\drawable-xhdpi\ic_supervisor_account_black_24dp.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\android\drawable-xxhdpi\ic_supervisor_account_black_24dp.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\android\drawable-xxxhdpi\ic_supervisor_account_black_24dp.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\ios\ic_supervisor_account.imageset\ic_supervisor_account.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\ios\ic_supervisor_account.imageset\ic_supervisor_account_2x.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\ios\ic_supervisor_account.imageset\ic_supervisor_account_3x.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\web\ic_supervisor_account_black_24dp_1x.png" />
+    <Content Include="img\ic_supervisor_account_black_24dp\web\ic_supervisor_account_black_24dp_2x.png" />
+    <Content Include="img\ic_timelapse_black_24dp\android\drawable-hdpi\ic_timelapse_black_24dp.png" />
+    <Content Include="img\ic_timelapse_black_24dp\android\drawable-mdpi\ic_timelapse_black_24dp.png" />
+    <Content Include="img\ic_timelapse_black_24dp\android\drawable-xhdpi\ic_timelapse_black_24dp.png" />
+    <Content Include="img\ic_timelapse_black_24dp\android\drawable-xxhdpi\ic_timelapse_black_24dp.png" />
+    <Content Include="img\ic_timelapse_black_24dp\android\drawable-xxxhdpi\ic_timelapse_black_24dp.png" />
+    <Content Include="img\ic_timelapse_black_24dp\ios\ic_timelapse.imageset\ic_timelapse.png" />
+    <Content Include="img\ic_timelapse_black_24dp\ios\ic_timelapse.imageset\ic_timelapse_2x.png" />
+    <Content Include="img\ic_timelapse_black_24dp\ios\ic_timelapse.imageset\ic_timelapse_3x.png" />
+    <Content Include="img\ic_timelapse_black_24dp\web\ic_timelapse_black_24dp_1x.png" />
+    <Content Include="img\ic_timelapse_black_24dp\web\ic_timelapse_black_24dp_2x.png" />
+    <Content Include="img\ic_timeline_black_24dp\android\drawable-hdpi\ic_timeline_black_24dp.png" />
+    <Content Include="img\ic_timeline_black_24dp\android\drawable-mdpi\ic_timeline_black_24dp.png" />
+    <Content Include="img\ic_timeline_black_24dp\android\drawable-xhdpi\ic_timeline_black_24dp.png" />
+    <Content Include="img\ic_timeline_black_24dp\android\drawable-xxhdpi\ic_timeline_black_24dp.png" />
+    <Content Include="img\ic_timeline_black_24dp\android\drawable-xxxhdpi\ic_timeline_black_24dp.png" />
+    <Content Include="img\ic_timeline_black_24dp\ios\ic_timeline.imageset\ic_timeline.png" />
+    <Content Include="img\ic_timeline_black_24dp\ios\ic_timeline.imageset\ic_timeline_2x.png" />
+    <Content Include="img\ic_timeline_black_24dp\ios\ic_timeline.imageset\ic_timeline_3x.png" />
+    <Content Include="img\ic_timeline_black_24dp\web\ic_timeline_black_24dp_1x.png" />
+    <Content Include="img\ic_timeline_black_24dp\web\ic_timeline_black_24dp_2x.png" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\manutencao.png" />
+    <Content Include="img\marcanti.gif" />
+    <Content Include="img\perfis.png" />
+    <Content Include="img\pessoa.png" />
+    <Content Include="img\producao.png" />
+    <Content Include="img\relatorios.png" />
+    <Content Include="Rotativa\help-wkhtmltoimage.txt" />
+    <Content Include="Rotativa\help-wkhtmltopdf.txt" />
+    <Content Include="Rotativa\wkhtmltoimage.exe" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\ic_account_circle_black_24dp.zip" />
+    <Content Include="img\ic_account_circle_black_24dp\ios\ic_account_circle.imageset\Contents.json" />
+    <Content Include="img\ic_add_black_24dp\ios\ic_add.imageset\Contents.json" />
+    <Content Include="img\ic_build_black_24dp\ios\ic_build.imageset\Contents.json" />
+    <Content Include="img\ic_check_box_black_24dp\ios\ic_check_box.imageset\Contents.json" />
+    <Content Include="img\ic_search_black_24dp\ios\ic_search.imageset\Contents.json" />
+    <Content Include="img\ic_supervisor_account_black_24dp\ios\ic_supervisor_account.imageset\Contents.json" />
+    <Content Include="img\ic_timelapse_black_24dp\ios\ic_timelapse.imageset\Contents.json" />
+    <Content Include="img\ic_timeline_black_24dp\ios\ic_timeline.imageset\Contents.json" />
+    <Content Include="App_Browsers\qt.browser" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\cldr.js" />
+    <Content Include="Scripts\cldr\event.js" />
+    <Content Include="Scripts\cldr\supplemental.js" />
+    <Content Include="Scripts\cldr\unresolved.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\globalize\currency.js" />
+    <Content Include="Scripts\globalize\date.js" />
+    <Content Include="Scripts\globalize\message.js" />
+    <Content Include="Scripts\globalize\number.js" />
+    <Content Include="Scripts\globalize\plural.js" />
+    <Content Include="Scripts\globalize\relative-time.js" />
+    <Content Include="Scripts\globalize\unit.js" />
+    <Content Include="Scripts\helper.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.globalize.js" />
+    <Content Include="Scripts\jquery.validate.globalize.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\methods-pt.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\pt-BR.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Sampe.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\FormularioOrdemServicoes\Create.cshtml" />
+    <Content Include="Views\FormularioOrdemServicoes\Delete.cshtml" />
+    <Content Include="Views\FormularioOrdemServicoes\Details.cshtml" />
+    <Content Include="Views\FormularioOrdemServicoes\Edit.cshtml" />
+    <Content Include="Views\FormularioOrdemServicoes\Index.cshtml" />
+    <Content Include="Views\FormularioTrocaMoldes\Create.cshtml" />
+    <Content Include="Views\FormularioTrocaMoldes\Delete.cshtml" />
+    <Content Include="Views\FormularioTrocaMoldes\Details.cshtml" />
+    <Content Include="Views\FormularioTrocaMoldes\Edit.cshtml" />
+    <Content Include="Views\FormularioTrocaMoldes\Index.cshtml" />
+    <Content Include="Views\AtividadeOS\Create.cshtml" />
+    <Content Include="Views\AtividadeOS\Delete.cshtml" />
+    <Content Include="Views\AtividadeOS\Details.cshtml" />
+    <Content Include="Views\AtividadeOS\Edit.cshtml" />
+    <Content Include="Views\AtividadeOS\Index.cshtml" />
+    <Content Include="Views\AtividadeTMs\Create.cshtml" />
+    <Content Include="Views\AtividadeTMs\Delete.cshtml" />
+    <Content Include="Views\AtividadeTMs\Details.cshtml" />
+    <Content Include="Views\AtividadeTMs\Edit.cshtml" />
+    <Content Include="Views\AtividadeTMs\Index.cshtml" />
+    <Content Include="Views\Cargos\Create.cshtml" />
+    <Content Include="Views\Cargos\Delete.cshtml" />
+    <Content Include="Views\Cargos\Details.cshtml" />
+    <Content Include="Views\Cargos\Edit.cshtml" />
+    <Content Include="Views\Cargos\Index.cshtml" />
+    <Content Include="Views\FormularioOSAtividades\Create.cshtml" />
+    <Content Include="Views\FormularioOSAtividades\Delete.cshtml" />
+    <Content Include="Views\FormularioOSAtividades\Details.cshtml" />
+    <Content Include="Views\FormularioOSAtividades\Edit.cshtml" />
+    <Content Include="Views\FormularioOSAtividades\Index.cshtml" />
+    <Content Include="Views\FormularioTMAtividades\Create.cshtml" />
+    <Content Include="Views\FormularioTMAtividades\Delete.cshtml" />
+    <Content Include="Views\FormularioTMAtividades\Details.cshtml" />
+    <Content Include="Views\FormularioTMAtividades\Edit.cshtml" />
+    <Content Include="Views\FormularioTMAtividades\Index.cshtml" />
+    <Content Include="Views\Maquinas\Create.cshtml" />
+    <Content Include="Views\Maquinas\Delete.cshtml" />
+    <Content Include="Views\Maquinas\Details.cshtml" />
+    <Content Include="Views\Maquinas\Edit.cshtml" />
+    <Content Include="Views\Maquinas\Index.cshtml" />
+    <Content Include="Views\Moldes\Create.cshtml" />
+    <Content Include="Views\Moldes\Delete.cshtml" />
+    <Content Include="Views\Moldes\Details.cshtml" />
+    <Content Include="Views\Moldes\Edit.cshtml" />
+    <Content Include="Views\Moldes\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Usuarios\AlterarSenha.cshtml" />
+    <Content Include="Views\Clientes\Create.cshtml" />
+    <Content Include="Views\Clientes\Delete.cshtml" />
+    <Content Include="Views\Clientes\Details.cshtml" />
+    <Content Include="Views\Clientes\Edit.cshtml" />
+    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\ControleDeQualidades\Create.cshtml" />
+    <Content Include="Views\ControleDeQualidades\Delete.cshtml" />
+    <Content Include="Views\ControleDeQualidades\Details.cshtml" />
+    <Content Include="Views\ControleDeQualidades\Edit.cshtml" />
+    <Content Include="Views\ControleDeQualidades\Index.cshtml" />
+    <Content Include="Views\Especificacoes\Create.cshtml" />
+    <Content Include="Views\Especificacoes\Delete.cshtml" />
+    <Content Include="Views\Especificacoes\Details.cshtml" />
+    <Content Include="Views\Especificacoes\Edit.cshtml" />
+    <Content Include="Views\Especificacoes\Index.cshtml" />
+    <Content Include="Views\Expectativas\Create.cshtml" />
+    <Content Include="Views\Expectativas\Delete.cshtml" />
+    <Content Include="Views\Expectativas\Details.cshtml" />
+    <Content Include="Views\Expectativas\Edit.cshtml" />
+    <Content Include="Views\Expectativas\Index.cshtml" />
+    <Content Include="Views\KitPecas\Create.cshtml" />
+    <Content Include="Views\KitPecas\Delete.cshtml" />
+    <Content Include="Views\KitPecas\Details.cshtml" />
+    <Content Include="Views\KitPecas\Edit.cshtml" />
+    <Content Include="Views\KitPecas\Index.cshtml" />
+    <Content Include="Views\OrdemProducaoKits\Create.cshtml" />
+    <Content Include="Views\OrdemProducaoKits\Delete.cshtml" />
+    <Content Include="Views\OrdemProducaoKits\Details.cshtml" />
+    <Content Include="Views\OrdemProducaoKits\Edit.cshtml" />
+    <Content Include="Views\OrdemProducaoKits\Index.cshtml" />
+    <Content Include="Views\OrdemProducaoPecas\Create.cshtml" />
+    <Content Include="Views\OrdemProducaoPecas\Delete.cshtml" />
+    <Content Include="Views\OrdemProducaoPecas\Details.cshtml" />
+    <Content Include="Views\OrdemProducaoPecas\Index.cshtml" />
+    <Content Include="Views\ParadaKits\Create.cshtml" />
+    <Content Include="Views\ParadaKits\Delete.cshtml" />
+    <Content Include="Views\ParadaKits\Details.cshtml" />
+    <Content Include="Views\ParadaKits\Edit.cshtml" />
+    <Content Include="Views\ParadaKits\Index.cshtml" />
+    <Content Include="Views\Paradas\Create.cshtml" />
+    <Content Include="Views\Paradas\Delete.cshtml" />
+    <Content Include="Views\Paradas\Details.cshtml" />
+    <Content Include="Views\Paradas\Edit.cshtml" />
+    <Content Include="Views\Paradas\Index.cshtml" />
+    <Content Include="Views\Relatorio\BuscaOpKit.cshtml" />
+    <Content Include="Views\Relatorio\BuscaOpPeca.cshtml" />
+    <Content Include="Views\Relatorio\BuscaOS.cshtml" />
+    <Content Include="Views\Relatorio\BuscaTM.cshtml" />
+    <Content Include="Views\Relatorio\LayoutRelatorio.cshtml" />
+    <Content Include="Views\Relatorio\OpKitData.cshtml" />
+    <Content Include="Views\Relatorio\OpPecaData.cshtml" />
+    <Content Include="Views\Relatorio\OsData.cshtml" />
+    <Content Include="Views\Relatorio\TmData.cshtml" />
+    <Content Include="Views\EspecificacoesRefugo\Create.cshtml" />
+    <Content Include="Views\EspecificacoesRefugo\Delete.cshtml" />
+    <Content Include="Views\EspecificacoesRefugo\Details.cshtml" />
+    <Content Include="Views\EspecificacoesRefugo\Edit.cshtml" />
+    <Content Include="Views\EspecificacoesRefugo\Index.cshtml" />
+    <Content Include="Views\ParadaRefugos\Create.cshtml" />
+    <Content Include="Views\ParadaRefugos\Delete.cshtml" />
+    <Content Include="Views\ParadaRefugos\Details.cshtml" />
+    <Content Include="Views\ParadaRefugos\Edit.cshtml" />
+    <Content Include="Views\ParadaRefugos\Index.cshtml" />
+    <Content Include="Views\OrdemProducaoRefugos\Create.cshtml" />
+    <Content Include="Views\OrdemProducaoRefugos\Delete.cshtml" />
+    <Content Include="Views\OrdemProducaoRefugos\Details.cshtml" />
+    <Content Include="Views\OrdemProducaoRefugos\Index.cshtml" />
+    <Content Include="Views\Home\Cadastros.cshtml" />
+    <Content Include="Views\OrdemProducaoPecas\Edit.cshtml" />
+    <Content Include="Views\OrdemProducaoRefugos\Edit.cshtml" />
+    <Content Include="Views\ControleDeQualidadeCopos\Create.cshtml" />
+    <Content Include="Views\ControleDeQualidadeCopos\Delete.cshtml" />
+    <Content Include="Views\ControleDeQualidadeCopos\Details.cshtml" />
+    <Content Include="Views\ControleDeQualidadeCopos\Edit.cshtml" />
+    <Content Include="Views\ControleDeQualidadeCopos\Index.cshtml" />
+    <Content Include="Views\Cores\Create.cshtml" />
+    <Content Include="Views\Cores\Delete.cshtml" />
+    <Content Include="Views\Cores\Details.cshtml" />
+    <Content Include="Views\Cores\Edit.cshtml" />
+    <Content Include="Views\Cores\Index.cshtml" />
+    <Content Include="Views\EspecificacoesCopo\Create.cshtml" />
+    <Content Include="Views\EspecificacoesCopo\Delete.cshtml" />
+    <Content Include="Views\EspecificacoesCopo\Details.cshtml" />
+    <Content Include="Views\EspecificacoesCopo\Edit.cshtml" />
+    <Content Include="Views\EspecificacoesCopo\Index.cshtml" />
+    <Content Include="Views\OrdemProducaoCopos\Create.cshtml" />
+    <Content Include="Views\OrdemProducaoCopos\Delete.cshtml" />
+    <Content Include="Views\OrdemProducaoCopos\Details.cshtml" />
+    <Content Include="Views\OrdemProducaoCopos\Edit.cshtml" />
+    <Content Include="Views\OrdemProducaoCopos\Index.cshtml" />
+    <Content Include="Views\ParadasCopo\Create.cshtml" />
+    <Content Include="Views\ParadasCopo\Delete.cshtml" />
+    <Content Include="Views\ParadasCopo\Details.cshtml" />
+    <Content Include="Views\ParadasCopo\Edit.cshtml" />
+    <Content Include="Views\ParadasCopo\Index.cshtml" />
+    <Content Include="Views\Shared\LayoutFormulario.cshtml" />
+    <Content Include="Views\Shared\LayoutExpedicao.cshtml" />
+    <Content Include="Views\Relatorio\BuscaOpRefugo.cshtml" />
+    <Content Include="Views\Relatorio\BuscaOpCopo.cshtml" />
+    <Content Include="Views\Marcanti\Create.cshtml" />
+    <Content Include="Views\Marcanti\Delete.cshtml" />
+    <Content Include="Views\Marcanti\Details.cshtml" />
+    <Content Include="Views\Marcanti\Edit.cshtml" />
+    <Content Include="Views\Marcanti\Index.cshtml" />
+    <Content Include="Views\Relatorio\OpCopoData.cshtml" />
+    <Content Include="Views\Relatorio\OpRefugoData.cshtml" />
+    <Content Include="Views\Relatorio\BuscaTMporMaquina.cshtml" />
+    <Content Include="Views\Relatorio\TmMaquina.cshtml" />
+    <Content Include="Views\Relatorio\ExibeOs.cshtml" />
+    <Content Include="Views\Relatorio\ExibeTm.cshtml" />
+    <Content Include="Views\ExpedicaoCopos\Create.cshtml" />
+    <Content Include="Views\ExpedicaoCopos\Delete.cshtml" />
+    <Content Include="Views\ExpedicaoCopos\Details.cshtml" />
+    <Content Include="Views\ExpedicaoCopos\Edit.cshtml" />
+    <Content Include="Views\ExpedicaoCopos\Index.cshtml" />
+    <Content Include="Views\Vendas\Create.cshtml" />
+    <Content Include="Views\Vendas\Delete.cshtml" />
+    <Content Include="Views\Vendas\Details.cshtml" />
+    <Content Include="Views\Vendas\Edit.cshtml" />
+    <Content Include="Views\Vendas\Index.cshtml" />
+    <Content Include="Views\Relatorio\ExibeExped.cshtml" />
+    <Content Include="Views\Relatorio\BuscaOSporMaquina.cshtml" />
+    <Content Include="Views\Relatorio\OsMaquina.cshtml" />
+    <Content Include="Views\Relatorio\ExibeKit.cshtml" />
+    <Content Include="Views\Relatorio\BuscaCliente.cshtml" />
+    <Content Include="Views\VendasKit\Create.cshtml" />
+    <Content Include="Views\VendasKit\Delete.cshtml" />
+    <Content Include="Views\VendasKit\Details.cshtml" />
+    <Content Include="Views\VendasKit\Edit.cshtml" />
+    <Content Include="Views\VendasKit\Index.cshtml" />
+    <Content Include="Views\ExpedicaoKits\Create.cshtml" />
+    <Content Include="Views\ExpedicaoKits\Delete.cshtml" />
+    <Content Include="Views\ExpedicaoKits\Details.cshtml" />
+    <Content Include="Views\ExpedicaoKits\Edit.cshtml" />
+    <Content Include="Views\ExpedicaoKits\Index.cshtml" />
+    <Content Include="Views\CorPecas\Create.cshtml" />
+    <Content Include="Views\CorPecas\Delete.cshtml" />
+    <Content Include="Views\CorPecas\Details.cshtml" />
+    <Content Include="Views\CorPecas\Edit.cshtml" />
+    <Content Include="Views\CorPecas\Index.cshtml" />
+    <Content Include="Views\Relatorio\ExibeExpedKit.cshtml" />
+    <Content Include="Views\Relatorio\ExibeOpCopo.cshtml" />
+    <Content Include="Views\Relatorio\ExibeOpKit.cshtml" />
+    <Content Include="Views\Relatorio\ExibeOpPeca.cshtml" />
+    <Content Include="Views\Relatorio\ExibeOpRefugo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806221711438_Sampe220620181410.resx">
+      <DependentUpon>201806221711438_Sampe220620181410.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806221726149_Sampe2206201814101.resx">
+      <DependentUpon>201806221726149_Sampe2206201814101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806232105113_sampe230620181802.resx">
+      <DependentUpon>201806232105113_sampe230620181802.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806232152226_sampe2306201818021.resx">
+      <DependentUpon>201806232152226_sampe2306201818021.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49630</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49630/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

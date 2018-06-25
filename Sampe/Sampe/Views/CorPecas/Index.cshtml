@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Sampe.CorPeca>
+@{
+    ViewBag.Title = "Cores de Peças";
+}
+<ol class="breadcrumb">
+    <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+    <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+    <li class="active">Cores de Peças</li>
+</ol>
+<h2>Cores</h2>
+<div class="container ">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <th>
+                    Cor
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NomeCorPeca)
+                    </td>
+                    <td>
+                        <a href="/CorPecas/Edit/@item.CorPecaId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="/CorPecas/Delete/@item.CorPecaId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        CorPeca corPeca = new CorPeca();
+        <div class="container ">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <h4>Cor</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(CorPeca => corPeca.NomeCorPeca, "Cor", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(CorPeca => corPeca.NomeCorPeca, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(CorPeca => corPeca.NomeCorPeca, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Nova Cor" class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</div>
+
+

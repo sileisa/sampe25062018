@@ -1,0 +1,64 @@
+﻿@model Sampe.Models.OrdemProducaoKit
+@{
+	ViewBag.Title = "Delete";
+}
+<ol class="breadcrumb">
+	<li><a href="http://localhost:49630/Home/Index">Home</a></li>
+	<li><a href="http://localhost:49630/OrdemProducaoKits/Index">Ordens de Produção de Kits</a></li>
+	<li class="active">Deletar</li>
+</ol>
+<h2>Deletar Ordem de Serviço  @Model.CodigoIdentificadorKit</h2>
+<h4>Tem certeza que deseja deletar?</h4>
+<hr />
+<div>
+
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.Data)
+		</dt>
+		<dd>
+			@Model.Data.ToString("dd/MM/yyyy")
+		</dd>
+		<dt>
+			Operador
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Usuario.NomeUsuario)
+		</dd>
+		<dt>
+			Produção Início
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.ProdIncio)
+		</dd>
+		<dt>
+			Produção Fim
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.ProdFim)
+		</dd>
+		<dt>
+			Total Produzido
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.TotalProduzido)
+		</dd>
+		<dt>
+			Nivelamento da Balança
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.NivelamentoBalanca)
+		</dd>
+	</dl>
+	<br />
+	@Html.DisplayFor(model => model.Status) Validação do Supervisor
+	<br />
+	@using (Html.BeginForm())
+	{
+		@Html.AntiForgeryToken()
+		<div class="form-actions no-color">
+			<input type="submit" value="Deletar" class="btn btn-default" />
+			<a class="btn btn-default" href="/OrdemProducaoKits/Index">Voltar</a>
+		</div>
+	}
+</div>

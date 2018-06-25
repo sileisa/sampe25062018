@@ -1,0 +1,256 @@
+﻿@model Sampe.Models.OrdemProducaoCopo
+
+@{
+	ViewBag.Title = "Edit";
+	var cores = ViewBag.Cores;
+}
+<script>
+	$(document).ready(function () {
+		$("#add").click(function () {
+			$("#esp").append('<tr id="novo"><td><select class="form-control" id="Cor" name="Cor">@foreach (var x in cores){<option value="@x.CorId">@x.NomeCor</option>}</select></td><td>@Html.EditorFor(model => model.EspecificacaoCopo.UniProd, new { htmlAttributes = new { @class = "form-control" } })</td><td>@Html.EditorFor(model => model.EspecificacaoCopo.LoteMaster, new { htmlAttributes = new { @class = "form-control" } })</td><td><a class="btn btn-default btn-sm" id="remove"><span class="glyphicon glyphicon-remove"></span></a></td></tr>')
+		});
+
+		$("#esp").on('click ', '#remove', function () {
+			$("#novo").remove();
+		});
+
+		$("#adc").click(function () {
+			$("#pausa").append('<tr id="linhaPausa"><td>@Html.EditorFor(model => model.ParadaCopo.HoraParada, new { htmlAttributes = new { type = "time", @class = "form-control" } })</td><td>@Html.EditorFor(model => model.ParadaCopo.HoraRetorno, new { htmlAttributes = new { type = "time", @class = "form-control" } })</td><td><select class="form-control" id="Motivo" name="Motivo"><option value="Motivo">Selecione o Motivo</option><option value="Manutenção">Manutenção</option><option value="Troca de Molde">Troca de Molde</option><option value="Descanso">Descanso</option><option value="Outros (Obs)">Outros (Obs)</option></select>@Html.ValidationMessageFor(model => model.ParadaCopo.Motivo, "", new { @class = "text-danger" })</td><td>@Html.EditorFor(model => model.ParadaCopo.Observacoes, new { htmlAttributes = new { @class = "form-control" } })</td><td><a class="btn btn-default btn-sm" id="remover"><span class="glyphicon glyphicon-remove"></span></a></td></tr>')
+		});
+		$("#pausa").on('click ', '#remover', function () {
+			$("#linhaPausa").remove();
+		});
+
+		
+	});
+</script>
+<ol class="breadcrumb">
+	<li><a href="http://localhost:49630/Home/Index">Home</a></li>
+	<li><a href="http://localhost:49630/OrdemProducaoCopos/Index">Ordens de Produção de Copos</a></li>
+	<li class="active">Editar</li>
+</ol>
+<div class="container">
+
+	<div class="col-lg-12 col-sm-12 col-md-8">
+		<h2>Ordem de Produção @Model.CodigoIdentificador</h2>
+		<h4>COPO</h4>
+		<hr />
+		@using (Html.BeginForm())
+	{
+		@Html.AntiForgeryToken()
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		@Html.HiddenFor(model => model.CodigoIdentificador)
+		@Html.HiddenFor(model => model.OPnoMes)
+		@Html.HiddenFor(model => model.TotalProduzidos)
+
+		<div class="row">
+			<div class="col-lg-4">
+				<label>Matéria-Prima</label>
+				<input type="text" value="@Model.MateriaPrima" name="MateriaPrima" class="form-control" readonly />
+			</div>
+			<div class="col-lg-4">
+				<label>Poduto</label>
+				@Html.DropDownList("ExpectativaId", null, "Selecione o Produto", htmlAttributes: new { disabled = "disabled", @class = "form-control" })
+				@Html.HiddenFor(model => model.ExpectativaId)
+				@Html.ValidationMessageFor(model => model.ExpectativaId, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				@Html.LabelFor(model => model.Data, htmlAttributes: new { @class = "control-label col-md-2" })
+				<p>@Model.Data.ToString("dd/MM/yyyy")</p>
+				@Html.HiddenFor(model => model.Data)
+				@Html.ValidationMessageFor(model => model.Data, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<div class="col-md-6">
+				<label>Produção Início</label>
+				@Html.EditorFor(model => model.ProdIncio, new { htmlAttributes = new { Type = "Time", @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.ProdIncio, "", new { Type = "Time", @class = "text-danger" })
+			</div>
+			<div class="col-md-6">
+				<label>Produção Fim</label>
+				@Html.EditorFor(model => model.ProdFim, new { htmlAttributes = new { Type = "Time", @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.ProdFim, "", new { Type = "Time", @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+
+		<div class="row">
+			<div class="col-lg-4">
+				<label>Máquina</label>
+				<select name="MaquinaId" class="form-control">
+					@foreach (var item in @ViewBag.MaquinaId)
+				{
+					<option value="@item.MaquinaId" @(Model.MaquinaId == item.MaquinaId ? "selected" : "")>@item.NomeMaquina</option>
+			}
+				</select>
+				@Html.HiddenFor(model => model.MaquinaId)
+				@Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				<label>Matéria-Prima (Lote)</label>
+				@Html.EditorFor(model => model.MPLote, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.MPLote, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				<label>Consumo Matéria-Prima</label>
+				@Html.EditorFor(model => model.MPConsumo, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.MPConsumo, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<div class="col-lg-4">
+				<label>Temperatura Água</label>
+				@Html.EditorFor(model => model.TempAgua, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.TempAgua, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				<label>Nível Óleo</label>
+				@Html.EditorFor(model => model.NivelOleo, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.NivelOleo, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-4">
+				<label>Galho (g)</label>
+				@Html.EditorFor(model => model.RefugoKg, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.RefugoKg, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+
+		<div class="row">
+			<div class="col-lg-6">
+				<label>Contador Inical</label>
+				@Html.EditorFor(model => model.ContadorInicial, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.ContadorInicial, "", new { @class = "text-danger" })
+			</div>
+			<div class="col-lg-6">
+				<label>Contador Final</label>
+				@Html.EditorFor(model => model.ContadorFinal, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(model => model.ContadorFinal, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<br />
+		<div class="row">
+			<h4>Cores</h4>
+			<hr />
+			<table class="table table-bordered table-responsive">
+				<thead>
+					<tr>
+						<th>Cor</th>
+						<th>Unidades Produzidas</th>
+						<th>Lote Master</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="esp">
+					@foreach (var item in Model.EspecificacoesCopo)
+				{
+					<tr id="linha">
+						<td>@item.Cor.NomeCor</td>
+						<td>@item.UniProd</td>
+						<td>@item.LoteMaster</td>
+						<td></td>
+					</tr>
+			}
+				</tbody>
+			</table>
+			<a class="btn btn-default btn-sm" id="add"><span class="glyphicon glyphicon-plus"></span></a>
+		</div>
+		<br />
+		<br />
+		<div class="row">
+			<h4>Pausa</h4>
+			<hr />
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Hora Inicio</th>
+						<th>Hora Retorno</th>
+						<th>Motivo</th>
+						<th>Observações</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="pausa">
+					@foreach (var item in Model.ParadasCopo)
+				{
+					<tr id="linha2">
+						<td>@item.HoraParada</td>
+						<td>@item.HoraRetorno</td>
+						<td>@item.Motivo</td>
+						<td>@item.Observacoes</td>
+						<td></td>
+					</tr>
+			}
+				</tbody>
+			</table>
+			<a class="btn btn-default btn-sm" id="adc"><span class="glyphicon glyphicon-plus"></span></a>
+		</div>
+		<br /><br />
+		<div class="row">
+			<h4>Controle de Qualidade</h4>
+			<hr />
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Hora</th>
+						<th>Ciclo</th>
+						<th>Peso da Peça</th>
+						<th>Inspeção</th>
+						<th>Assinatura</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model.ControleDeQualidadeCopos)
+				{
+					<tr>
+						<td>@item.Hora</td>
+						<td>@item.Ciclo</td>
+						<td>@item.PesoDaPeca | @item.PesoDaPeca2</td>
+						<td>@Html.DisplayFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.DisplayFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.DisplayFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+						<td>@item.Usuario.NomeUsuario</td>
+						<td></td>
+					</tr>
+			}
+				</tbody>
+			</table>
+		</div>
+		<br /><br />
+		<div class="row col-lg-12 col-sm-12">
+			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
+		{
+			<div class="checkbox" id="check">
+				@if (Model.Status == false)
+			{
+				@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+				<p>Validação do Supervisor</p>
+
+		}
+		else
+		{
+			@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", @readonly = true } })
+			<p>Validação do Supervisor</p>
+	}
+			</div>
+			@Html.HiddenFor(model => model.Status)
+	}
+	else
+	{
+		<label>Validação do Supervisor</label>
+		@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+
+}
+		</div>
+		<br /><br />
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<input type="submit" value="Salvar" class="btn btn-default" />
+				<a class="btn btn-default" href="/OrdemProducaoCopos/Index">Voltar</a>
+			</div>
+		</div>
+}
+	</div>
+</div>

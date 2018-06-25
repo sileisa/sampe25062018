@@ -1,0 +1,138 @@
+﻿@model Sampe.Models.OrdemProducaoCopo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ordem de Produção Copo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Expectativa.Produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Expectativa.Produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPnoMes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPnoMes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MPLote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MPLote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MPConsumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MPConsumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdIncio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdIncio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempAgua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempAgua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelOleo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelOleo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RefugoKg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RefugoKg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalProduzidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalProduzidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContadorInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContadorInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContadorFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContadorFinal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoIdentificador }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

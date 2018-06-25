@@ -1,0 +1,47 @@
+﻿@model Sampe.Models.ExpedicaoCopo
+@{
+    ViewBag.Title = "Deletar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+        <li><a href="http://localhost:49630/ExpedicaoCopos/Index">Expedição de Copos</a></li>
+        <li class="active">Deletar</li>
+    </ol>
+    <h2>Deletar Expedição</h2>
+    <h4>Tem certeza que deseja deletar?</h4>
+    <hr />
+    <div>      
+        <dl class="dl-horizontal">
+            <dt>
+                Cliente
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Cliente.NomeCliente)
+            </dd>
+          
+            <dt>
+                Valor Total
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ValorTotal)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Vencimento)
+            </dt>
+            <dd>
+               @Model.Vencimento.ToString("dd/MM/yyyy")
+            </dd>
+        </dl>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-default" />
+            <a class="btn btn-default" href="/ExpedicaoCopos/Index">Voltar</a>
+        </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,138 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoRefugo>
+
+@{
+	ViewBag.Title = "ExibeOpRefugo";
+	Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+@foreach (var item in Model)
+{
+	<div class="container">
+		<table class="table table-bordered">
+			<tr>
+				<th>
+					<div class="col-md-4 ">
+						<img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+					</div>
+				</th>
+				<th>
+					<div class="col-md-4 text-center">
+						<h4>Ordem de Produção </h4>
+						<h4>REFUGO</h4>
+						<h4>@item.OrdemProducaoRefugoId</h4>
+					</div>
+				</th>
+				<th>
+					<div class="col-md-4">
+						<img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+					</div>
+				</th>
+			</tr>
+		</table>
+		<br />
+		<div>
+			<dl class="dl-horizontal">
+				<dt>
+					@Html.DisplayNameFor(model => model.Usuario.NomeUsuario)
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => item.Usuario.NomeUsuario)
+				</dd>
+
+				<dt>
+					@Html.DisplayNameFor(model => model.Produto)
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => item.Produto)
+				</dd>
+
+				<dt>
+					@Html.DisplayNameFor(model => model.Data)
+				</dt>
+
+				<dd>
+					@item.Data.ToString("dd/MM/yyyy")
+				</dd>
+
+				<dt>
+					Inicio
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => item.ProdIncio)
+				</dd>
+
+				<dt>
+					Fim
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => item.ProdFim)
+				</dd>
+
+				<dt>
+					@Html.DisplayNameFor(model => model.Obs)
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => item.Obs)
+				</dd>
+
+			</dl>
+			<br />
+			<div class="row">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Material</th>
+							<th>Cor</th>
+							<th>Peso (Kg)</th>
+							<th>Limpeza</th>
+						</tr>
+					</thead>
+					<tbody id="esp">
+						@foreach (var x in item.EspecificacoesRefugo)
+						{
+							<tr>
+								<td>@x.Material</td>
+								<td>@x.CorPeca.NomeCorPeca</td>
+								<td>@x.Peso</td>
+								<td>@Html.DisplayFor(model => x.Limpeza)</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+			<br />
+			<div class="row">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Hora Inicio</th>
+							<th>Hora Retorno</th>
+							<th>Motivo</th>
+							<th>Observações</th>
+						</tr>
+					</thead>
+					<tbody id="pausa">
+						@foreach (var x in item.ParadasRefugo)
+						{
+							<tr>
+								<td>@x.HoraParada</td>
+								<td>@x.HoraRetorno</td>
+								<td>@x.Motivo</td>
+								<td>@x.Observacoes</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+		<div class="row">
+			@Html.DisplayFor(model => item.Status) Validação do Supervisor
+		</div>
+	</div>
+}

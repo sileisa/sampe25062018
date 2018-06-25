@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Sampe.Models.Marcanti>
+
+@{
+    ViewBag.Title = "Marcanti";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<ol class="breadcrumb">
+    <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+    <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+    <li class="active">Dados da Marcanti</li>
+</ol>
+<h2>Dados da Marcanti</h2>
+<div class="container ">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    E-mail
+                </th>
+                <th>
+                    Telefone
+                </th>
+                <th>
+                    CNPJ
+                </th>
+                <th>
+                    Endereço
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NomeEmpresa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cnpj)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rua) - @Html.DisplayFor(modelItem => item.Numero) - @Html.DisplayFor(modelItem => item.Bairro) -@Html.DisplayFor(modelItem => item.Cidade) - @Html.DisplayFor(modelItem => item.Uf) - @Html.DisplayFor(modelItem => item.Cep)
+                    </td>
+
+                    <td>
+                        <a href="/Marcanti/Edit/@item.MarcantiId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+
+</div>

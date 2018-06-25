@@ -1,0 +1,194 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoPeca>
+
+@{
+	/**/
+
+	ViewBag.Title = "ExibeOpPeca";
+	Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+@foreach (var item in Model)
+{
+	<div class="container">
+		<table class="table table-bordered" >
+			<tr>
+				<th>
+					<div class="col-md-4 ">
+						<img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+					</div>
+				</th>
+				<th>
+					<div class="col-md-4 text-center">
+						<h4>Ordens de Produção </h4>
+						<h4>PECA</h4>
+						<h4>@item.CodigoIdentificador</h4>
+					</div>
+				</th>
+				<th>
+					<div class="col-md-4">
+						<img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+					</div>
+				</th>
+			</tr>
+		</table>
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.Expectativa.Produto)
+					@Html.DisplayFor(model => item.Expectativa.Produto)
+				</div>
+				<div class="col-lg-4">
+					<label>Produção Inicio</label>
+					@Html.DisplayFor(model => item.ProdIncio)
+				</div>
+				<div class="col-lg-4">
+					<label>Produção Fim</label>
+					@Html.DisplayFor(model => item.ProdFim)
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<label>Cor</label>
+					@Html.DisplayFor(model => item.CorPeca.NomeCorPeca)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.Maquina.NomeMaquina)
+					@Html.DisplayFor(model => item.Maquina.NomeMaquina)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.MateriaPrima)
+					@Html.DisplayFor(model => item.MateriaPrima)
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.MasterLote)
+					@Html.DisplayFor(model => item.MasterLote)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.MPLote)
+					@Html.DisplayFor(model => item.MPLote)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.MPConsumo)
+					@Html.DisplayFor(model => item.MPConsumo)
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.Fornecedor)
+
+					@Html.DisplayFor(model => item.Fornecedor)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.TempAgua)
+
+					@Html.DisplayFor(model => item.TempAgua)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.NivelOleo)
+
+					@Html.DisplayFor(model => item.NivelOleo)
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.Galho)
+					@Html.DisplayFor(model => item.Galho)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.OffSpec)
+					@Html.DisplayFor(model => item.OffSpec)
+				</div>
+				<div class="col-lg-4">
+					@Html.DisplayNameFor(model => model.RefugoKg)
+					@Html.DisplayFor(model => item.RefugoKg)
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6">
+					@Html.DisplayNameFor(model => model.ContadorInicial)
+
+					@Html.DisplayFor(model => item.ContadorInicial)
+				</div>
+				<div class="col-lg-6">
+					@Html.DisplayNameFor(model => model.ContadorFinal)
+
+					@Html.DisplayFor(model => item.ContadorFinal)
+				</div>
+			</div>
+
+			
+
+			
+
+
+			@Html.DisplayNameFor(model => model.UnidadesProduzidas)
+
+			@Html.DisplayFor(model => item.UnidadesProduzidas)
+
+
+			
+
+			<div class="row">
+				<h4>Pausa</h4>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Hora Inicio</th>
+							<th>Hora Retorno</th>
+							<th>Motivo</th>
+							<th>Observações</th>
+						</tr>
+					</thead>
+					<tbody id="pausa">
+						@foreach (var x in item.Paradas)
+						{
+							<tr>
+								<td>@x.HoraParada</td>
+								<td>@x.HoraRetorno</td>
+								<td>@x.Motivo</td>
+								<td>@x.Observacoes</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+			<br />
+			<div class="row">
+				<h4>Controle de Qualidade</h4>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Hora</th>
+							<th>Ciclo</th>
+							<th>Peso da Peça</th>
+							<th>Inspeção</th>
+							<th>Assinatura</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var x in item.ControlesDeQualidade)
+						{
+							<tr>
+								<td>@x.Hora</td>
+								<td>@x.Ciclo</td>
+								<td>@x.PesoDaPeca</td>
+								<td>@Html.DisplayFor(model => x.Peso) Peso @Html.DisplayFor(model => x.Cor) Cor @Html.DisplayFor(model => x.Dimensao) Dimensão</td>
+								<td>@x.Usuario.NomeUsuario</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+			<div class="row">
+				@Html.DisplayFor(model => item.Status) Validação do Supervisor
+			</div>
+		</div>
+	</div>
+}

@@ -1,0 +1,72 @@
+﻿@model Sampe.Models.ExpedicaoKit
+
+@{
+	ViewBag.Title = "Create";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    $(document).ready(function () {
+        $("#add").click(function () {
+            $("#novo").append("<tr id='novaLinha'>" + $("#selectKit").html() + "</tr>")
+		});
+		$("#novo").on('click ', '#remove', function () {
+			$("#novaLinha").remove();
+		});
+    });
+</script>
+<h2>Nova Expedição</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>KITS</h4>
+		<hr />
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })	
+
+		<div class="row">
+			<div class="col-lg-6">
+				<label>Vencimento</label>
+				<input type="date" name="Vencimento" class="form-control"/>
+				
+			</div>
+			<div class="col-lg-6">
+				@Html.LabelFor(model => model.ClienteId, "ClienteId", htmlAttributes: new { @class = "control-label col-md-2" })
+				@Html.DropDownList("ClienteId", null, htmlAttributes: new { @class = "form-control" })
+				@Html.ValidationMessageFor(model => model.ClienteId, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<table class="table table-bordered table-responsive">
+				<thead>
+					<tr>
+						<th>Kit</th>
+						<th>Quantidade</th>
+						<th>Valor Unitário</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="novo">
+					<tr id="selectKit">
+						<td>@Html.DropDownList("Kits", null, htmlAttributes: new { @class = "form-control" })</td>
+						<td>@Html.EditorFor(modl => Model.VendaKit.Quantidade, new { htmlAttributes = new { @class = "form-control" } })</td>
+						<td>@Html.EditorFor(modl => Model.VendaKit.ValorUnitario, new { htmlAttributes = new { @class = "form-control" } })</td>
+						<td><a class="btn btn-default btn-sm" id="remove"><span class="glyphicon glyphicon-remove"></span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="btn btn-default btn-sm" id="add"><span class="glyphicon glyphicon-plus"></span></a>
+		</div>
+
+		<div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Cadastrar" class="btn btn-default" />
+                <a class="btn btn-default" href="/ExpedicaoKits/Index">Voltar</a>
+            </div>
+		</div>
+	</div>
+}
+
+

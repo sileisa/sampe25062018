@@ -1,0 +1,147 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoKit>
+
+@{
+	ViewBag.Title = "ExibeOpKit";
+	Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+@foreach (var item in Model)
+{
+	<div class="container">
+		<table class="table table-bordered">
+			<tr>
+				<th>
+					<div class="col-md-4 ">
+						<img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+					</div>
+				</th>
+				<th>
+					<div class="col-md-4 text-center">
+						<h4>Ordens de Produção </h4>
+						<h4>KIT</h4>
+						<h4>@item.CodigoIdentificadorKit</h4>
+					</div>
+				</th>
+				<th>
+					<div class="col-md-4">
+						<img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+					</div>
+				</th>
+			</tr>
+		</table>
+		<br />
+		<div class="container">
+			<div>
+
+				<dl class="dl-horizontal">
+					<dt>
+						Operador
+					</dt>
+
+					<dd>
+						@Html.DisplayFor(model => item.Usuario.NomeUsuario)
+					</dd>
+
+					<dt>
+						@Html.DisplayNameFor(model => model.Data)
+					</dt>
+
+					<dd>
+						@item.Data.ToString("dd/MM/yyyy")
+					</dd>
+
+					<dt>
+						Inicio
+					</dt>
+
+					<dd>
+						@Html.DisplayFor(model => item.ProdIncio)
+					</dd>
+
+					<dt>
+						Fim
+					</dt>
+
+					<dd>
+						@Html.DisplayFor(model => item.ProdFim)
+					</dd>
+
+					<dt>
+						@Html.DisplayNameFor(model => model.TotalProduzido)
+					</dt>
+
+					<dd>
+						@Html.DisplayFor(model => item.TotalProduzido)
+					</dd>
+
+					<dt>
+						Observações
+					</dt>
+
+					<dd>
+						@Html.DisplayFor(model => item.Obs)
+					</dd>
+					<dt>
+						@Html.DisplayNameFor(model => model.NivelamentoBalanca)
+					</dt>
+
+					<dd>
+						@Html.DisplayFor(model => item.NivelamentoBalanca)
+					</dd>
+				</dl>
+				<br />
+				<div class="row">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Tipo de Kit</th>
+								<th>Cor</th>
+								<th>Parafuso</th>
+								<th>Quantidade Produzida</th>
+								<th>Cliente</th>
+							</tr>
+						</thead>
+						<tbody id="esp">
+							@foreach (var x in item.Especificacoes)
+							{
+								<tr>
+									<td>@x.TipoKit</td>
+									<td>@x.CorPeca.NomeCorPeca</td>
+									<td>
+										@Html.DisplayFor(model => x.Parafuso)
+									</td>
+									<td>@x.QuantProduzido</td>
+									<td>@x.Cliente.NomeCliente</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<div class="row">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Hora Inicio</th>
+								<th>Hora Retorno</th>
+								<th>Motivo</th>
+								<th>Observações</th>
+							</tr>
+						</thead>
+						<tbody id="pausa">
+							@foreach (var y in item.ParadasKit)
+							{
+								<tr>
+									<td>@y.HoraParada</td>
+									<td>@y.HoraRetorno</td>
+									<td>@y.Motivo</td>
+									<td>@y.Observacoes</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+				@Html.DisplayFor(model => item.Status) Validação do Supervisor
+			</div>
+		</div>
+	</div>
+}

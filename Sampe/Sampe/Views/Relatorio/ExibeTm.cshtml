@@ -1,0 +1,137 @@
+﻿@model IEnumerable<Sampe.FormularioTrocaMolde>
+
+@{
+    ViewBag.Title = "PDF Troca de Molde";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+
+
+<div class="container">
+    <table class="table-bordered">
+        <tr>
+            <th>
+                <div class="col-md-4 ">
+                    <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4 text-center">
+                    <h2>Formulário de Troca de Molde</h2>
+                    <br />
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4">
+                    <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+    <br />
+    @foreach (var item in Model)
+    {
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Supervisor)
+                </th>
+                <th>
+                    Executante
+                </th>
+                <th>
+                    Máquina
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Supervisor)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Usuario.NomeUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Maquina.NomeMaquina)
+                </td>
+            </tr>
+        </table>
+        <h3>Molde Retirado</h3>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    Molde Retirado
+                </th>
+                <th>
+                    Data 
+                </th>
+                <th>
+                   Retirar Início
+                </th>
+                <th>
+                    Retirar Fim
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @item.Moldes[0].NomeMolde (@item.Moldes[0].Cavidade)
+
+                </td>
+                <td>
+                    @item.DtRetirada.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.RetirarInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.RetirarFim)
+                </td>
+            </tr>
+        </table>
+        <h3>Molde Colocado</h3>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    Molde Colocado
+                </th>
+                <th>
+                    Data
+                </th>
+                <th>
+                    Colocar Início
+                </th>
+                <th>
+                    Colocar Fim
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @item.Moldes[1].NomeMolde (@item.Moldes[1].Cavidade)
+                </td>
+                <td>
+                   @item.DtColocar.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.ColocarInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.ColocarFim)
+                </td>
+            </tr>
+        </table>
+
+
+        <h3>
+            Atividades
+        </h3>
+        <div class="container">
+            @foreach (var x in item.FormularioTMAtividades)
+            {
+                <p>@Html.DisplayFor(modelItem => x.StatusTM) @x.AtividadeTM.NomeAtvTm</p><br />
+            }
+        </div>
+        <p>@Html.DisplayFor(model => item.Status) Validação do Supervisor</p>
+    }
+</div>
+
+

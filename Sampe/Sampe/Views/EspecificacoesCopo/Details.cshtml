@@ -1,0 +1,50 @@
+﻿@model Sampe.Models.EspecificacaoCopo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EspecificacaoCopo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cor.NomeCor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cor.NomeCor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdemProducaoCopo.MateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdemProducaoCopo.MateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UniProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UniProd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoteMaster)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoteMaster)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EspecificacaoCopoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

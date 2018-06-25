@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Sampe.FormularioTrocaMolde>
+@{
+    ViewBag.Title = "Formulários a Serem preenchidos";
+}
+<div class="container">
+    <div class="col-lg-12 col-sm-12 col-md-8">
+        <h2>Formulários a Serem preenchidos</h2>
+        <h4>Troca de Molde</h4>
+        <hr />
+        <table class="table  table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Máquina
+                    </th>
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Supervisor)
+                    </th>
+                    <th>
+                        Executante
+                    </th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Maquina.NomeMaquina)
+                        </td>
+                        <td>
+                            @item.DtRetirada.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Supervisor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Usuario.NomeUsuario)
+                        </td>
+                        <td>
+                            @if (item.Status == true)
+                            {
+                                <p>Concluído</p>
+                            }
+                            else
+                            {
+                                <p>Não Concluído</p>
+                            }
+                        </td>
+                        <td >
+                            @{ if (item.Status == true)
+                                {
+                                    <a href="/FormularioTrocaMoldes/Edit/@item.FormularioTrocaMoldeId" class="btn btn-default btn-sm " disabled><span class="glyphicon glyphicon-pencil"></span></a>
+                                }
+                                else
+                                {
+                                    <a href="/FormularioTrocaMoldes/Edit/@item.FormularioTrocaMoldeId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                                }
+                            }
+                            <a id="delete" href="/FormularioTrocaMoldes/Delete/@item.FormularioTrocaMoldeId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="/Relatorio/ExibeTm?gerarPdf=true&id=@item.FormularioTrocaMoldeId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-print"></span></a>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

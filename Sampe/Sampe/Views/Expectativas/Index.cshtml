@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Sampe.Models.Expectativa>
+@{
+    ViewBag.Title = "Expectativas";
+}
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+        <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>        
+        <li class="active">Expectativas</li>
+    </ol>
+    <h2>Expectativas</h2>
+    <a class=" " href="/Expectativas/Create">Nova Expectativa</a>
+    <br /><br />
+    <div class="col-xs-12 col-sm-12 col-md-12 ">
+        <div class="row">
+            <table class="table table-bordered table-responsive">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Produto)
+                    </th>
+                    <th>
+                        Cavidade do Molde
+                    </th>
+                    <th>
+                        Peso da Peça Aproximado
+                    </th>
+                    <th>
+                        Peso da Peça Completa
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Ciclo)
+                    </th>
+                    <th>
+                        Produção Esperada
+                    </th>
+                    <th>
+                        Produção Início
+                    </th>
+                    <th>
+                        Produção Fim
+                    </th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Produto)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CavidadeMolde)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PesoPecaAproximado)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PesoPecaCompleta)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Ciclo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProducaoEsperada)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProdInicio)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProdFim)
+                        </td>
+                        <td>
+                            <a href="/Expectativas/Edit/@item.ExpectativaId" class="btn btn-default btn-sm text-center"><span class="glyphicon glyphicon-pencil"></span></a>
+                            <a href="/Expectativas/Delete/@item.ExpectativaId" class="btn btn-default btn-sm text-center"><span class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

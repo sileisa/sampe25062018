@@ -1,0 +1,102 @@
+﻿@model PagedList.IPagedList<Sampe.Models.OrdemProducaoKit>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+	ViewBag.Title = "Ordens de Produção";
+}
+
+
+<div class="container">
+	<h2>Ordens de Produção</h2>
+	<h4>KIT</h4>
+	<hr />
+	<br />
+	<div class="container col-md-12">
+		<div class="form-group text-center">
+			<div class=" col-md-10">
+				<a class="btn btn-default" href="/OrdemProducaoKits/Create">Nova Ordem de Produção</a>
+			</div>
+		</div>
+	</div>
+	<br />
+	<br />
+	Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+	<br />
+	<br />
+	<table class="table table-bordered table-responsive">
+		<tr>
+			<th>
+				Data
+			</th>
+			<th>
+				Código
+			</th>
+
+			<th>
+				Produção Início
+			</th>
+			<th>
+				Produção Fim
+			</th>
+			<th>
+				Total Produzidos
+			</th>
+			<th>
+				Operador
+			</th>
+			<th>Status</th>
+			<th></th>
+		</tr>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@item.Data.ToString("dd/MM/yyyy")
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.CodigoIdentificadorKit)
+				</td>
+
+				<td>
+					@Html.DisplayFor(modelItem => item.ProdIncio)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ProdFim)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.TotalProduzido)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Usuario.NomeUsuario)
+				</td>
+				<td>
+					@if (item.Status == true)
+					{
+						<p>Concluído</p>
+					}
+					else
+					{
+						<p>Não Concluído</p>
+					}
+				</td>
+				<td>
+					@{ if (item.Status == true)
+						{
+							<a href="/OrdemProducaoKits/Edit/@item.CodigoIdentificadorKit" class="btn btn-default btn-sm " disabled><span class="glyphicon glyphicon-pencil"></span></a>
+						}
+						else
+						{
+							<a href="/OrdemProducaoKits/Edit/@item.CodigoIdentificadorKit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+						}
+					}
+					<a id="delete" href="/OrdemProducaoKits/Delete/@item.CodigoIdentificadorKit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+					<a target="_blank" href="/Relatorio/ExibeOpKit?gerarPdf=true&id=@item.CodigoIdentificadorKit" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-print"></span></a>
+				</td>
+			</tr>
+		}
+	</table>
+	<br />
+	Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+
+	@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>

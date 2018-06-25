@@ -1,0 +1,58 @@
+﻿@model Sampe.Models.Parada
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Parada</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdemProducaoPeca.MateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdemProducaoPeca.MateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraParada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraParada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraRetorno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraRetorno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacoes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParadaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

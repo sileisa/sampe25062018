@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Copo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Produção por período</h2>
+    <a href="/OrdemProducaoCopos/Index"><h4>Copos</h4></a>
+    <hr />
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <label>Data inicial</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-date="O campo DtColocar deve ser uma data." data-val-required="Preencha este campo" id="dt1" name="dt1" type="date" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="dt1" data-valmsg-replace="true"></span>
+                <p style="color:red;">@ViewBag.Error1</p>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <label>Data Final</label>
+                <input class="form-control text-box single-line" data-val="true" data-val-date="O campo DtColocar deve ser uma data." data-val-required="Preencha este campo" id="dt2" name="dt2" type="date" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="dt2" data-valmsg-replace="true"></span>
+                <p style="color:red;">@ViewBag.Error2</p>
+            </div>
+        </div>
+        <br />
+        <div class="container col-md-12">
+            <div class="form-group text-center">
+                <div class="col-md-10 ">
+                    <input type="submit" value="Gerar Relatório" class="btn btn-default" />
+                    <p style="color:red;">@ViewBag.Error3</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Sampe.AtividadeTM>
+@{
+    ViewBag.Title = "Index";
+}
+<script>
+    $(document).ready(function () {
+        $("#enviar").click(function (e) {
+            e.preventDefault();
+            toastr.success("Atividade Cadastrada");
+
+            setTimeout(function () {
+                $("#novaAtv").submit();
+            }, 2000)
+        });
+    });
+</script>
+<ol class="breadcrumb">
+    <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+    <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+    <li class="active">Atividades Troca de Molde</li>
+</ol>
+<h2>Atividades de Troca de Molde</h2>
+<br />
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "novaAtv" }))
+{
+    @Html.AntiForgeryToken()
+    AtividadeTM atividadeTM = new AtividadeTM();
+    <div class="container ">
+        <div class="form-group">
+            
+            <label class="control-label col-md-2">Nova Atividade</label>
+            <div class="col-md-8">
+                @Html.EditorFor(AtividadeTM => atividadeTM.NomeAtvTm, new { htmlAttributes = new { @class = "form-control" } })
+                <p style="color:red;">@ViewBag.Error</p>
+                @Html.ValidationMessageFor(AtividadeTM => atividadeTM.NomeAtvTm, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-2">
+                <input type="submit" value="Cadastrar" id="enviar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+<br /><br />
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Atividade
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeAtvTm)
+            </td>
+            <td>
+                <a href="/AtividadeTMs/Edit/@item.AtividadeTMId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                <a href="/AtividadeTMs/Delete/@item.AtividadeTMId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+            </td>
+        </tr>
+    }
+</table>

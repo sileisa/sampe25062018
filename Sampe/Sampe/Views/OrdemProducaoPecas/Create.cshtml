@@ -1,0 +1,258 @@
+﻿@model Sampe.Models.OrdemProducaoPeca
+@{
+	ViewBag.Title = "Create";
+	var user = ViewBag.User;
+}
+<script>
+    $(document).ready(function () {
+
+        $("#adc").click(function () {
+			$("#pausa").append('<tr id="linhaPausa"><td>@Html.EditorFor(model => model.Parada.HoraParada, new { htmlAttributes = new { type = "time", @class = "form-control" } }) </td><td> @Html.EditorFor(model => model.Parada.HoraRetorno, new { htmlAttributes = new { type = "time", @class = "form-control" } }) </td><td> <select class="form-control" id="Motivo" name="Motivo">< option value= "" > Selecione o Motivo</option >			<option value="Reposição de Peças">Manutenção</option>			<option value="Selagem">Troca de Molde</option><option value="Descanso">Descanso</option><option value="Outros (Obs)">Outros (Obs)</option></select > </td><td> @Html.EditorFor(model => model.Parada.Observacoes, new { htmlAttributes = new { @class = "form-control" } })  </td><td><a class="btn btn-default btn-sm" id="remove"><span class="glyphicon glyphicon-remove"></span></a></td></tr>');
+        });
+
+		$("#pausa").on('click ', '#remove', function () {
+			$("#linhaPausa").remove();
+		});
+
+		$("#MateriaPrima").change(function (event) {
+			// desabilita o campo
+			if ($(this).val() == "Refugo") {
+				$("#Fornecedor").prop("readonly", true);
+				$("#MasterLote").prop("readonly", true);
+				$("#MPLote").prop("readonly", true);
+				$("#MPLote").val("Refugo");
+			}
+			else {
+				$("#Fornecedor").prop("readonly", false);
+				$("#MasterLote").prop("readonly", false);
+				$("#MPLote").prop("readonly", false);
+				$("#MPLote").val("");
+			}
+		});
+    });
+</script>
+<ol class="breadcrumb">
+	<li><a href="http://localhost:49630/Home/Index">Home</a></li>
+	<li><a href="http://localhost:49630/OrdemProducaoPecas/Index">Ordens de Produção de Peças</a></li>
+	<li class="active">Nova</li>
+</ol>
+<div class="container">
+	<div class="col-lg-12 col-sm-12 col-md-8">
+		<h2>Nova Ordem de Produção</h2>
+		@using (Html.BeginForm())
+		{
+			@Html.AntiForgeryToken()
+
+			<div class="form-horizontal">
+				<h4>PEÇA</h4>
+				<hr />
+				@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+				<div class="row">
+					<div class="col-lg-4">
+						<label>Matéria-Prima</label>
+						<select class="form-control" id="MateriaPrima" name="MateriaPrima">
+							<option value="">Selecione a Materia Prima</option>
+							<option value="Virgem">Virgem</option>
+							<option value="Refugo">Refugo</option>
+						</select>
+					</div>
+					<div class="col-lg-4">
+						<label>Poduto</label>
+						@Html.DropDownList("ExpectativaId", null, "Selecione o Produto", htmlAttributes: new { @class = "form-control" })
+						@Html.ValidationMessageFor(model => model.ExpectativaId, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						<label>Cor</label>
+						@Html.DropDownList("CorPecaId", null, "Selecione a Cor", htmlAttributes: new { @class = "form-control" })
+						@Html.ValidationMessageFor(model => model.CorPecaId, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-4">
+						@Html.LabelFor(model => model.Data, htmlAttributes: new { @class = "control-label col-md-2" })
+						@Html.EditorFor(model => model.Data, new { htmlAttributes = new { Type = "date", @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.Data, "", new { Type = "date", @class = "text-danger" })
+					</div>
+					<div class="col-md-4">
+						<label>Produção Início</label>
+						@Html.EditorFor(model => model.ProdIncio, new { htmlAttributes = new { Type = "Time", @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.ProdIncio, "", new { Type = "Time", @class = "text-danger" })
+					</div>
+					<div class="col-md-4">
+						<label>Produção Fim</label>
+						@Html.EditorFor(model => model.ProdFim, new { htmlAttributes = new { Type = "Time", @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.ProdFim, "", new { Type = "Time", @class = "text-danger" })
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-lg-6">
+						<label>Master (Lote)</label>
+						@Html.EditorFor(model => model.MasterLote, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.MasterLote, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-6">
+						<label>Unidades Produzidas</label>
+						@Html.EditorFor(model => model.UnidadesProduzidas, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.UnidadesProduzidas, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-lg-4">
+						<label>Máquina</label>
+						@Html.DropDownList("MaquinaId", null,"Selecione a Máquina", htmlAttributes: new { @class = "form-control" })
+						@Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						<label>Matéria-Prima (Lote)</label>
+						@Html.EditorFor(model => model.MPLote, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.MPLote, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						@Html.LabelFor(model => model.Fornecedor, htmlAttributes: new { @class = "control-label col-md-2" })
+						@Html.EditorFor(model => model.Fornecedor, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.Fornecedor, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-lg-4">
+						<label>Temperatura Água</label>
+						@Html.EditorFor(model => model.TempAgua, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.TempAgua, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						<label>Nível Óleo</label>
+						@Html.EditorFor(model => model.NivelOleo, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.NivelOleo, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						<label>Galho (g)</label>
+						@Html.EditorFor(model => model.Galho, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.Galho, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-lg-4">
+						<label>Consumo Matéria-Prima</label>
+						@Html.EditorFor(model => model.MPConsumo, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.MPConsumo, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						<label>Refugo (Kg)</label>
+						@Html.EditorFor(model => model.RefugoKg, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.RefugoKg, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-4">
+						<label>Off-Spec</label>
+						@Html.EditorFor(model => model.OffSpec, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.OffSpec, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-lg-6">
+						<label>Contador Inical</label>
+						@Html.EditorFor(model => model.ContadorInicial, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.ContadorInicial, "", new { @class = "text-danger" })
+					</div>
+					<div class="col-lg-6">
+						<label>Contador Final</label>
+						@Html.EditorFor(model => model.ContadorFinal, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.ContadorFinal, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<br /><br />
+				<div class="row">
+					<h4>Pausa</h4>
+					<hr />
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Hora Inicio</th>
+								<th>Hora Retorno</th>
+								<th>Motivo</th>
+								<th>Observações</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="pausa"></tbody>
+					</table>
+					<a class="btn btn-default btn-sm" id="adc"><span class="glyphicon glyphicon-plus"></span></a>
+				</div>
+				<br /><br />
+				<div class="row">
+					<h4>Controle de Qualidade</h4>
+					<hr />
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Hora</th>
+								<th>Ciclo</th>
+								<th>Peso da Peça</th>
+								<th>Inspeção</th>
+								<th>Assinatura</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" name="Hora" class="form-control" value="7:00 - 8:00" readonly="readonly" /></td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidade.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidade.Dimensao) Dimensão</td>
+								<td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+							</tr>
+							<tr>
+								<td><input type="text" name="Hora" class="form-control" value="8:00 - 9:00" readonly="readonly" /></td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidade.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidade.Dimensao) Dimensão</td>
+								<td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+							</tr>
+							<tr>
+								<td><input type="text" name="Hora" class="form-control" value="9:00 - 10:00" readonly="readonly" /></td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+								<td>@Html.EditorFor(model => model.ControleDeQualidade.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidade.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidade.Dimensao) Dimensão</td>
+								<td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br /><br />
+				<div class="row col-lg-12 col-sm-12">
+					@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
+					{
+						<div class="checkbox" id="check">
+							@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+							<p>Validação do Supervisor</p>
+						</div>
+
+					}
+					else
+					{
+						<label>Validação do Supervisor</label>
+						@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+
+					}
+					@Html.HiddenFor(model => model.Status)
+				</div>
+				<br /><br />
+				<div class="row">
+					<div class="col-md-offset-2 col-md-10">
+						<input type="submit" value="Salvar" class="btn btn-default" />
+						<a class="btn btn-default" href="/OrdemProducaoPecas/Index">Voltar</a>
+					</div>
+				</div>
+			</div>
+		}
+
+		@section Scripts {
+			@Scripts.Render("~/bundles/jqueryval")
+
+		}
+	</div>
+</div>

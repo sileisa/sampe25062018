@@ -1,0 +1,26 @@
+﻿@model Sampe.AtividadeTM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AtividadeTM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeAtvTm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeAtvTm)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AtividadeTMId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

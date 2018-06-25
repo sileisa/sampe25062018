@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoKit>
+@{
+    ViewBag.Title = "OpKitData";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+<div class="container">
+    <table class="table-bordered">
+        <tr>
+            <th>
+                <div class="col-md-4 ">
+                    <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4 text-center">
+                    <h2>Ordens de Produção </h2>
+                    <h4>KIT</h4>
+                    <h4>@ViewBag.dt1.ToString("dd/MM/yyyy") a @ViewBag.dt2.ToString("dd/MM/yyyy")</h4>
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4">
+                    <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                Código
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                Produção Início
+            </th>
+            <th>
+                Produção Fim
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalProduzido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Operdor)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoIdentificadorKit)
+                </td>
+                <td>
+                    @item.Data.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdIncio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdFim)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalProduzido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Operdor)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

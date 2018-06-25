@@ -1,0 +1,38 @@
+﻿@model Sampe.Cor
+@{
+    ViewBag.Title = "Editar";
+}
+<div class="container ">
+    <div class="col-xs-10 col-sm-10 col-md-6">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <ol class="breadcrumb">
+                    <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+                    <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+                    <li><a href="http://localhost:49630/CorPecas/Index">Cores</a></li>
+                    <li class="active">Editar</li>
+                </ol>
+
+                <h4>Cor</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.CorId)
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NomeCor, "Cor", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NomeCor, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.NomeCor, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Salvar" class="btn btn-success" />
+                        <a class="btn btn-default" href="/Cores/Index">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

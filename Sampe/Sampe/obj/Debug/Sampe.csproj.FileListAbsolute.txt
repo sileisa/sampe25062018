@@ -1,0 +1,1077 @@
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Sampe.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\Claudia\source\repos\SAMPE\Sampe\bin\MySql.Data.dll
+C:\Users\Claudia\source\repos\SAMPE\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.Migrations.Create.resources
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\Users\Claudia\source\repos\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe110520181553.resources
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe120520180219.resources
+C:\A SILEISA\SENAI\PFC\Nova pasta\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.MySql12052018.resources
+C:\A SILEISA\SENAI\PFC\SAMPE ATUALIZADO 12052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe300520180921.resources
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe010620181658.resources
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe010620181724.resources
+C:\A SILEISA\SENAI\PFC\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations._010620182350.resources
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Sampe.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\MySql.Data.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\PagedList.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Rotativa.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\PagedList.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.csproj.CopyComplete
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.Migrations.Mysql040620181157.resources
+C:\Users\sileisa\Documents\Sileisa\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.cache
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Mysql050620181515.resources
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe060620181007.resources
+E:\SAMPE MODULO I e II 15052018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe060620181022.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.create.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.teste.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations._bool.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.bool2.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.refugo.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.status.resources
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Mysql07062018.resources
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe07062018.resources
+C:\A SILEISA\SENAI\PFC\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe070620181148.resources
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.teste.resources
+C:\Users\Claudia\Desktop\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe070620182255.resources
+C:\A SILEISA\SENAI\PFC\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.crate.resources
+C:\Users\Claudia\Desktop\Nova pasta\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Rotativa.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.create.resources
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\08062018\Sampe07062018-master\Sampe07-06-2018\Sampe-Atualizado-master\Sampe\Sampe\obj\Debug\Sampe.Migrations.teste.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Rotativa.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.create.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.quant.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.expKit.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe.resources
+C:\Users\Claudia\Desktop\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe2.resources
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\ApplicationInsights.config
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll.config
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.pdb
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Rotativa.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\WebGrease.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.create.resources
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.quant.resources
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.expKit.resources
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe.resources
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe2.resources
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.dll
+E:\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Rotativa.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.create.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.quant.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.expKit.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe2.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe1.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe150620181135.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe180620182304.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe180620182331.resources
+C:\A SILEISA\SENAI\PFC\14062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe1806201823311.resources
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\ApplicationInsights.config
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll.config
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.pdb
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Rotativa.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\WebGrease.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.teste.resources
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations._double.resources
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe.resources
+C:\Users\Claudia\Desktop\19062018\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.testedata.resources
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\ApplicationInsights.config
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll.config
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.Web.Infrastructure.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\MySql.Data.Entity.EF6.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Rotativa.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\WebGrease.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\EntityFramework.SqlServer.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\PagedList.Mvc.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Helpers.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Mvc.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Optimization.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.Razor.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Deployment.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\System.Web.WebPages.Razor.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Antlr3.Runtime.pdb
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Newtonsoft.Json.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.ApplicationInsights.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.DependencyCollector.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.WindowsServer.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\Microsoft.AI.Web.xml
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Helpers.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Mvc.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Optimization.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csprojResolveAssemblyReference.cache
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.CoreCompileInputs.cache
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.dll
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.pdb
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe220620181410.resources
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.csproj.GenerateResource.Cache
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.Sampe2206201814101.resources
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe230620181802.resources
+C:\A SILEISA\SENAI\PFC\22062018\Sampe_Marcanti-master\Sampe-Atualizado-master-11062018\Sampe\Sampe\obj\Debug\Sampe.Migrations.sampe2306201818021.resources

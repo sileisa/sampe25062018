@@ -1,0 +1,82 @@
+﻿@model Sampe.Models.OrdemProducaoKit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Ordem de Produção Kit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdIncio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdIncio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalProduzido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalProduzido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelamentoBalanca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelamentoBalanca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Obs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Obs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPnoMes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPnoMes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Operdor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operdor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoIdentificadorKit }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
