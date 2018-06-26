@@ -78,6 +78,8 @@ namespace Sampe.Controllers
                             Session["UsuarioId"] = item.UsuarioId;
                             /*código abaixo cria uma session para armazenar a hierarquia*/
                             Session["Hierarquia"] = item.Hierarquia;
+                            /*código abaixo cria uma session para armazenar a senha*/
+                            Session["Senha"] = item.Senha;
                             /*retorna para a tela inicial do Home*/
                             return RedirectToAction("Index", "Home");
                         }

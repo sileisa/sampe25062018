@@ -57,6 +57,7 @@
                     @Html.DropDownList("MaquinaId", new SelectList(ViewBag.MaquinaId, "MaquinaId", "NomeMaquina"), "Selecione a Máquina", htmlAttributes: new { @class = "form-control" })
                     <span class="field-validation-valid text-danger" data-valmsg-for="MaquinaId" data-valmsg-replace="true"></span>
                     <!--@Html.ValidationMessageFor(model => model.FormularioTrocaMolde.MaquinaId, "", new { @class = "text-danger" })-->
+                    <p style="color:red;">@ViewBag.Maquina</p>
                 </div>
 
                 <div class="col-lg-6">
@@ -70,10 +71,12 @@
                 <div class="col-lg-6">
                     <label>Molde a ser Retirado</label><br />
                     @Html.DropDownList("MoldeId", null, htmlAttributes: new { @class = "form-control" })
+                    <p style="color:red;">@ViewBag.Molde</p>
                 </div>
                 <div class="col-lg-6">
                     <label>Molde a ser Colocado</label><br />
                     @Html.DropDownList("MoldeId", null, htmlAttributes: new { @class = "form-control" })
+                    <p style="color:red;">@ViewBag.Molde</p>
                 </div>
 
             </div>
@@ -84,12 +87,16 @@
                     @Html.DropDownList("Supervisor", new SelectList(ViewBag.Supervisor, "NomeUsuario", "NomeUsuario"), "Selecione o supervisor", htmlAttributes: new { @class = "form-control" })
                     <span class="field-validation-valid text-danger" data-valmsg-for="Supervisor" data-valmsg-replace="true"></span>
                     <!--@Html.ValidationMessageFor(model => model.FormularioTrocaMolde.UsuarioId, "", new { @class = "text-danger" })-->
+                    <p style="color:red;">@ViewBag.Supervisor</p>
+
                 </div>
                 <div class="col-lg-6">
                     <label>Executor</label><br />
-                    @Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), "Selecione o executor", htmlAttributes: new { @class = "form-control" })
+
+                    @Html.DropDownList("UsuarioId", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), "Selecione o executor", htmlAttributes: new { @class = "form-control" })
                     <span class="field-validation-valid text-danger" data-valmsg-for="Executor" data-valmsg-replace="true"></span>
                     @Html.ValidationMessageFor(model => model.FormularioTrocaMolde.UsuarioId, "", new { @class = "text-danger" })
+                    <p style="color:red;">@ViewBag.Executor</p>
                 </div>
             </div>
             <br /><br />
@@ -112,6 +119,7 @@
             </div>
             <br />
             <div class="form-group">
+
                 <input type="submit" value="Cadastrar" class="btn btn-default" />
             </div>
         </div>

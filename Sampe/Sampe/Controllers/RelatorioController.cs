@@ -364,7 +364,7 @@ namespace Sampe.Controllers
             var cont = buscaOS.Count();
             if (cont == 0)
             {
-                ViewBag.Error3 = "Não há formulários concuídos neste período.";
+                ViewBag.Error3 = "Não há formulários concluídos neste período.";
 
             }
             else

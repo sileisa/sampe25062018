@@ -46,16 +46,19 @@ namespace Sampe.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AlterarSenha([Bind(Include = "UsuarioId,NomeUsuario,SobrenomeUsuario,Login,Senha,Hierarquia,CargoId")] Usuario usuario)
+        public ActionResult AlterarSenha([Bind(Include = "UsuarioId,Senha")] Usuario usuario)
         {
-            if (ModelState.IsValid)
-            {
-                db.Entry(usuario).State = EntityState.Modified;
+            var us = db.Usuarios.Find(usuario.UsuarioId);          
+            db.Entry(us).Reference(u => u.Cargo).Load();
+            us.Senha = usuario.Senha;
+            //if (ModelState.IsValid)
+            //{
+                db.Entry(us).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
-            }
+            //}
 
-            return View(usuario);
+           // return View(usuario);
         }
 
 

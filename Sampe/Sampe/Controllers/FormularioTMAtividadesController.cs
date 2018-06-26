@@ -56,13 +56,14 @@ namespace Sampe.Controllers
         public ActionResult Create()
         {
             ViewBag.MaquinaId = db.Maquinas.ToList();
+           
             ViewBag.MoldeId = db.Moldes.Select(p => new SelectListItem
             {
                 Text = p.NomeMolde + " (" + p.Cavidade + ")",
                 Value = p.MoldeId.ToString()
             });
             //ViewBag.MoldeId = db.Moldes.ToList() ; 
-            ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor");
+            ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor").ToList();
             ViewBag.Supervisor = db.Usuarios.Where(u => u.Hierarquia == "Acesso Supervisor");
             ViewBag.AtividadeTMId = new SelectList(db.AtividadeTMs, "AtividadeTMId", "NomeAtvTm");
             ViewBag.FormularioTrocaMoldeId = new SelectList(db.FormularioTrocaMoldes, "FormularioTrocaMoldeId", "DtRetirada");
@@ -74,46 +75,77 @@ namespace Sampe.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FormularioTMAtividadeId,FormularioTrocaMoldeId,AtividadeTMId,StatusTM,FormularioTrocaMolde")] FormularioTMAtividade formularioTMAtividade, ICollection<int> MoldeId, [Bind(Include = "MaquinaId")] Maquina m1, int Executor, string Supervisor)
+        public ActionResult Create([Bind(Include = "FormularioTMAtividadeId,FormularioTrocaMoldeId,AtividadeTMId,StatusTM,FormularioTrocaMolde")] FormularioTMAtividade formularioTMAtividade, ICollection<int> MoldeId, [Bind(Include = "MaquinaId")] Maquina m1, [Bind(Include = "UsuarioId")] Usuario ex,  string Supervisor)
         {
 
             //if (ModelState.IsValid)
             //{
-            var lstTags = Request.Form["chkTags"];
-            if (!string.IsNullOrEmpty(lstTags))
-            {
-                FormularioTrocaMolde form = new FormularioTrocaMolde();
-                form = formularioTMAtividade.FormularioTrocaMolde;
-                formularioTMAtividade.StatusTM = false;
-
-                //formularioTMAtividade.FormularioTrocaMolde.MoldeId = m2.MoldeId;
-                List<FormularioMolde> molde = new List<FormularioMolde>();
-                foreach (var x in MoldeId)
-                {
-                    FormularioMolde m = new FormularioMolde();
-                    var md = db.Moldes.Find(x);
-                    m.Molde = md;
-                    molde.Add(m);
-                }
-
-                formularioTMAtividade.FormularioTrocaMolde.FormularioMoldes = molde;
-                formularioTMAtividade.FormularioTrocaMolde.MaquinaId = m1.MaquinaId;
-                formularioTMAtividade.FormularioTrocaMolde.UsuarioId = Executor;
-                formularioTMAtividade.FormularioTrocaMolde.Supervisor = Supervisor;
-                int[] splTags = lstTags.Split(',').Select(Int32.Parse).ToArray();
-                foreach (var idform in splTags)
-                {
-                    formularioTMAtividade.AtividadeTMId = idform;
-                    db.FormularioTMAtividade.Add(formularioTMAtividade);
-                    db.SaveChanges();
-                }
-                return RedirectToAction("Index", "FormularioTrocaMoldes");
+            //var ex=Request.Form["Executor"]
+            if (m1.MaquinaId == 0  ) {
+                ViewBag.Maquina = "Preencha este campo!";
             }
+            else if (MoldeId.Count < 2)
+            {
+                ViewBag.Molde = "Preencha este campo!";
+            }
+            else if (ex.UsuarioId == 0)
+            {
+                ViewBag.Executor = "Preencha este campo!";
+            }
+            else if (Supervisor == null)
+            {
+                ViewBag.Supervisor = "Preencha este campo!";
+            }
+            else 
+            {
+                var lstTags = Request.Form["chkTags"];
+                if (!string.IsNullOrEmpty(lstTags))
+                {
+                    FormularioTrocaMolde form = new FormularioTrocaMolde();
+                    form = formularioTMAtividade.FormularioTrocaMolde;
+                    formularioTMAtividade.StatusTM = false;
 
+                    //formularioTMAtividade.FormularioTrocaMolde.MoldeId = m2.MoldeId;
+                    List<FormularioMolde> molde = new List<FormularioMolde>();
+                    foreach (var x in MoldeId)
+                    {
+                        FormularioMolde m = new FormularioMolde();
+                        var md = db.Moldes.Find(x);
+                        m.Molde = md;
+                        molde.Add(m);
+                    }
+
+                    formularioTMAtividade.FormularioTrocaMolde.FormularioMoldes = molde;
+                    formularioTMAtividade.FormularioTrocaMolde.MaquinaId = m1.MaquinaId;
+                    formularioTMAtividade.FormularioTrocaMolde.UsuarioId = ex.UsuarioId;
+                    formularioTMAtividade.FormularioTrocaMolde.Supervisor = Supervisor;
+                    int[] splTags = lstTags.Split(',').Select(Int32.Parse).ToArray();
+
+                    foreach (var idform in splTags)
+                    {
+                        formularioTMAtividade.AtividadeTMId = idform;
+                        db.FormularioTMAtividade.Add(formularioTMAtividade);
+                        db.SaveChanges();
+                    }
+                    return RedirectToAction("Index", "FormularioTrocaMoldes");
+                }
+            }
             //}
+            ViewBag.MaquinaId = db.Maquinas.ToList();
             //ViewBag.MaquinaId = new SelectList(db.Maquinas, "MaquinaId", "NomeMaquina", formularioTMAtividade.FormularioTrocaMolde.MaquinaId);
             //ViewBag.MoldeId = new SelectList(db.Moldes, "MoldeId", "NomeMolde", formularioTMAtividade.FormularioTrocaMolde.MoldeId);
-            //ViewBag.UsuarioId = new SelectList(db.Usuarios, "UsuarioId", "NomeUsuario", formularioTMAtividade.FormularioTrocaMolde.UsuarioId);
+            //ViewBag.UsuarioId = new SelectList(db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor"), "UsuarioId", "NomeUsuario", formularioTMAtividade.FormularioTrocaMolde.UsuarioId);
+            
+
+            ViewBag.MoldeId = db.Moldes.Select(p => new SelectListItem
+            {
+                Text = p.NomeMolde + " (" + p.Cavidade + ")",
+                Value = p.MoldeId.ToString()
+            });
+            ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor").ToList();
+            ViewBag.Supervisor = db.Usuarios.Where(u => u.Hierarquia == "Acesso Supervisor");
+            ViewBag.AtividadeTMId = new SelectList(db.AtividadeTMs, "AtividadeTMId", "NomeAtvTm");
+            ViewBag.FormularioTrocaMoldeId = new SelectList(db.FormularioTrocaMoldes, "FormularioTrocaMoldeId", "DtRetirada");
             return View(formularioTMAtividade);
         }
 
