@@ -48,12 +48,12 @@ namespace Sampe.Controllers
             ViewBag.ClienteId = new SelectList(db.Clientes, "ClienteId", "NomeCliente");
             ViewBag.MarcantiId = new SelectList(db.Marcantis, "MarcantiId", "NomeEmpresa");
             ViewBag.Copos = db.EspecificacaoCopoes.ToList();
-			ViewBag.Copo = db.EspecificacaoCopoes.Where(o => o.OrdemProducaoCopoId != null).Select(p => new SelectListItem
-			{
-				Text = p.OrdemProducaoCopo.CodigoIdentificador + ", Cor: " + p.Cor.NomeCor + ", Quantidade: " + p.UniProd + ", Lote Master: " + p.LoteMaster,
-				Value = p.EspecificacaoCopoId.ToString()
-			});
-			return View();
+            ViewBag.Copo = db.EspecificacaoCopoes.Select(p => new SelectListItem
+            {
+                Text = p.OrdemProducaoCopo.CodigoIdentificador+ ", Cor: "+p.Cor.NomeCor + ", Quantidade: " + p.UniProd + ", Lote Master: "+ p.LoteMaster,
+                Value = p.EspecificacaoCopoId.ToString()
+            });
+            return View();
         }
 
         // POST: ExpedicaoCopos/Create
@@ -64,6 +64,7 @@ namespace Sampe.Controllers
         public ActionResult Create([Bind(Include = "ExpedicaoId,ValorTotal,Vencimento,ClienteId,MarcantiId")] ExpedicaoCopo expedicaoCopo)
         {
             var a = Request.Form["Copo"];
+            var b = Request.Form["Venda.ValorUnitario"];
 			var c = Request.Form["Venda.Quantidade"];
 			expedicaoCopo.MarcantiId = 1;
             if (ModelState.IsValid)
@@ -71,8 +72,7 @@ namespace Sampe.Controllers
                 if(a!= null)
                 {
                     var copo = a.Split(',').Select(Int32.Parse).ToList();
-					List<string> b = new List<string>(Request.Form.GetValues("Venda.ValorUnitario"));
-					var val = b.Select(Double.Parse).ToList();
+                    var val = b.Split(',').Select(Double.Parse).ToArray();
 					var quant = c.Split(',').Select(Int32.Parse).ToList();
 					List<Venda> vendas = new List<Venda>();
                     for (var x=0; x<copo.Count();x++)

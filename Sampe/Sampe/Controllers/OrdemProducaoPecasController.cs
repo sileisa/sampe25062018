@@ -63,27 +63,14 @@ namespace Sampe.Controllers
 			"MPLote,MPConsumo,ProdIncio,ProdFim,MaquinaId,Produto,CorPecaId,MasterLote,Fornecedor,TempAgua," +
 			"NivelOleo,Galho,OffSpec,RefugoKg,UnidadesProduzidas,ContadorInicial,ContadorFinal")] OrdemProducaoPeca ordemProducaoPeca, bool Status)
 		{
-			/*
-			if (ordemProducaoPeca.CorPecaId == 0)
-			{
-				ViewBag.Error4 = "Preencha este Campo";
-			}
+           
+            if (ordemProducaoPeca.MateriaPrima == null)
+            {
+                ViewBag.MateriaPrima = "Preencha este campo!";
+            }
+            
+            else { 
 			
-			if (ordemProducaoPeca.MaquinaId ==0)
-			{
-				ViewBag.Error2 = "Preencha este Campo";
-			}
-			if (ordemProducaoPeca.MateriaPrima == null)
-			{
-				ViewBag.Error3 = "Preencha este Campo";
-			}
-
-
-			if (ordemProducaoPeca.ExpectativaId == 0)
-			{
-				ViewBag.Error1 = "Informe o Produto";
-			}
-			else {*/
 			var a = Request.Form["Parada.HoraParada"];
 			var b = Request.Form["Parada.HoraRetorno"];
 			var c = Request.Form["Motivo"];
@@ -181,10 +168,13 @@ namespace Sampe.Controllers
 				db.SaveChanges();
 				return RedirectToAction("Index");
 			}
-			//}
-
-			//ViewBag.ExpectativaId = new SelectList(db.Expectativas, "ExpectativaId", "Produto", ordemProducaoPeca.ExpectativaId);
-			return View(ordemProducaoPeca);
+            }
+            //}
+            ViewBag.MaquinaId = new SelectList(db.Maquinas.ToList(), "MaquinaId", "NomeMaquina");
+            ViewBag.Assinatura = new SelectList(db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor"), "UsuarioId", "NomeUsuario");
+            ViewBag.CorPecaId = new SelectList(db.CorPecas, "CorPecaId", "NomeCorPeca", ordemProducaoPeca.CorPecaId);
+            ViewBag.ExpectativaId = new SelectList(db.Expectativas, "ExpectativaId", "Produto", ordemProducaoPeca.ExpectativaId);
+            return View(ordemProducaoPeca);
 		}
 
 		// GET: OrdemProducaoPecas/Edit/5

@@ -423,7 +423,7 @@ namespace Sampe.Controllers
             var cont = buscaTM.Count();
             if (cont == 0)
             {
-                ViewBag.Error3 = "Não há formulários concuídos neste período.";
+                ViewBag.Error3 = "Não há formulários concluídos neste período.";
 
             }
             else
@@ -478,7 +478,7 @@ namespace Sampe.Controllers
 
             if (cont == 0)
             {
-                ViewBag.Error = "Não há formulários concuídos nesta máquina.";
+                ViewBag.Error = "Não há formulários concluídos nesta máquina.";
 
             }
             else
@@ -535,7 +535,7 @@ namespace Sampe.Controllers
 
             if (cont == 0)
             {
-                ViewBag.Error = "Não há formulários concuídos nesta máquina.";
+                ViewBag.Error = "Não há formulários concluídos nesta máquina.";
 
             }
             else
@@ -597,7 +597,7 @@ namespace Sampe.Controllers
             var cont = buscaOpPeca.Count();
             if (cont == 0)
             {
-                ViewBag.Error3 = "Não há ordens de produção concuídas neste período.";
+                ViewBag.Error3 = "Não há ordens de produção concluídas neste período.";
 
             }
             else
@@ -657,7 +657,7 @@ namespace Sampe.Controllers
             var cont = buscaOpKit.Count();
             if (cont == 0)
             {
-                ViewBag.Error3 = "Não há ordens de produção concuídas neste período.";
+                ViewBag.Error3 = "Não há ordens de produção concluídas neste período.";
 
             }
             else
@@ -718,7 +718,7 @@ namespace Sampe.Controllers
             var cont = buscaOpCopo.Count();
             if (cont == 0)
             {
-                ViewBag.Error3 = "Não há ordens de produção concuídas neste período.";
+                ViewBag.Error3 = "Não há ordens de produção concluídas neste período.";
 
             }
             else
@@ -780,7 +780,7 @@ namespace Sampe.Controllers
             var cont = buscaOpRefugo.Count();
             if (cont == 0)
             {
-                ViewBag.Error3 = "Não há ordens de produção concuídas neste período.";
+                ViewBag.Error3 = "Não há ordens de produção concluídas neste período.";
 
             }
             else

@@ -114,7 +114,7 @@ namespace Sampe.Controllers
 			var busca2 = db.OrdemProducaoCopoes.Where(o => o.ExpectativaId == id).ToList();		
 			if ((busca.Count() > 0) || (busca2.Count() > 0))
 			{
-				ViewBag.Error = "Não é possível deletar esta Premissa, pois está sendo utilizada em outras partes do sistema.";
+				ViewBag.Error = "Não é possível deletar esta Máquina, pois está sendo utilizada em outras partes do sistema.";
 				return View();
 			}
 			else

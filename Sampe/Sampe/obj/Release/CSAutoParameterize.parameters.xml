@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="SampeContext-Web.config Connection String" description="SampeContext A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Server=localhost;UserId=root;Password=;Database=sampe" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\A\ SILEISA\\SENAI\\PFC\\SampeMarcanti-master\\sampe25062018-master\\Sampe\\Sampe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SampeContext']/@connectionString" />
-  </parameter>
-</parameters>

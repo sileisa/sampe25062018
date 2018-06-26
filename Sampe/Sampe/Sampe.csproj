@@ -203,21 +203,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806221711438_Sampe220620181410.cs" />
-    <Compile Include="Migrations\201806221711438_Sampe220620181410.Designer.cs">
-      <DependentUpon>201806221711438_Sampe220620181410.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806221726149_Sampe2206201814101.cs" />
-    <Compile Include="Migrations\201806221726149_Sampe2206201814101.Designer.cs">
-      <DependentUpon>201806221726149_Sampe2206201814101.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806232105113_sampe230620181802.cs" />
-    <Compile Include="Migrations\201806232105113_sampe230620181802.Designer.cs">
-      <DependentUpon>201806232105113_sampe230620181802.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806232152226_sampe2306201818021.cs" />
-    <Compile Include="Migrations\201806232152226_sampe2306201818021.Designer.cs">
-      <DependentUpon>201806232152226_sampe2306201818021.cs</DependentUpon>
+    <Compile Include="Migrations\201806260026557_seila.cs" />
+    <Compile Include="Migrations\201806260026557_seila.Designer.cs">
+      <DependentUpon>201806260026557_seila.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AtividadeOS.cs" />
@@ -377,7 +365,7 @@
     <Content Include="img\ic_timelapse_black_24dp\ios\ic_timelapse.imageset\Contents.json" />
     <Content Include="img\ic_timeline_black_24dp\ios\ic_timeline.imageset\Contents.json" />
     <Content Include="App_Browsers\qt.browser" />
-    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\cldr.js" />
     <Content Include="Scripts\cldr\event.js" />
@@ -472,7 +460,6 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
-    <Content Include="Views\Usuarios\AlterarSenha.cshtml" />
     <Content Include="Views\Clientes\Create.cshtml" />
     <Content Include="Views\Clientes\Delete.cshtml" />
     <Content Include="Views\Clientes\Details.cshtml" />
@@ -618,6 +605,7 @@
     <Content Include="Views\Relatorio\ExibeOpKit.cshtml" />
     <Content Include="Views\Relatorio\ExibeOpPeca.cshtml" />
     <Content Include="Views\Relatorio\ExibeOpRefugo.cshtml" />
+    <Content Include="Views\Usuarios\AlterarSenha.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -636,17 +624,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806221711438_Sampe220620181410.resx">
-      <DependentUpon>201806221711438_Sampe220620181410.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806221726149_Sampe2206201814101.resx">
-      <DependentUpon>201806221726149_Sampe2206201814101.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806232105113_sampe230620181802.resx">
-      <DependentUpon>201806232105113_sampe230620181802.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806232152226_sampe2306201818021.resx">
-      <DependentUpon>201806232152226_sampe2306201818021.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806260026557_seila.resx">
+      <DependentUpon>201806260026557_seila.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

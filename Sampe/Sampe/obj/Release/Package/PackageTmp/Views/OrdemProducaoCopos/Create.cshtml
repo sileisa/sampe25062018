@@ -1,4 +1,5 @@
 ﻿@model Sampe.Models.OrdemProducaoCopo
+
 @{
 	ViewBag.Title = "Create";
 	var cores = ViewBag.Cores;
@@ -47,25 +48,29 @@
 @using (Html.BeginForm())
 {
 	@Html.AntiForgeryToken()
-
+	
 	<div class="form-horizontal">
 		<h4>COPO</h4>
 		<hr />
 		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
 		<div class="row">
-			<div class="col-lg-4">
-				<label>Matéria-Prima</label>
-				<select class="form-control" id="MateriaPrima" name="MateriaPrima">
-					<option value="">Selecione a Materia Prima</option>
-					<option value="Virgem">Virgem</option>
-					<option value="Refugo">Refugo</option>
-				</select>
-			</div>
-			<div class="col-lg-4">
-				<label>Produto</label>
-				@Html.DropDownList("ExpectativaId", null, "Selecione o Produto", htmlAttributes: new { @class = "form-control" })
-				@Html.ValidationMessageFor(model => model.ExpectativaId, "", new { @class = "text-danger" })
-			</div>
+            <div class="col-lg-4">
+                <label>Matéria-Prima</label>
+                <select class="form-control" id="MateriaPrima" name="MateriaPrima">
+                    <option value="">Selecione a Matéria Prima</option>
+                    <option value="Virgem">Virgem</option>
+                    <option value="Refugo">Refugo</option>
+                </select>
+                <p style="color:red;">@ViewBag.MateriaPrima</p>
+
+            </div>
+            <div class="col-lg-4">
+                <label>Produto</label>
+                @Html.DropDownList("ExpectativaId", null, "Selecione o Produto", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ExpectativaId, "", new { @class = "text-danger" })
+                <p style="color:red;">@ViewBag.Expectativa</p>
+            </div>
 			<div class="col-lg-4">
 				@Html.LabelFor(model => model.Data, htmlAttributes: new { @class = "control-label col-md-2" })
 				@Html.EditorFor(model => model.Data, new { htmlAttributes = new { Type = "date", @class = "form-control" } })
@@ -86,12 +91,14 @@
 			</div>
 		</div>
 		<br />
+
 		<div class="row">
-			<div class="col-lg-4">
-				<label>Máquina</label>
-				@Html.DropDownList("MaquinaId", new SelectList(ViewBag.MaquinaId, "MaquinaId", "NomeMaquina"), "Selecione a Maquina", htmlAttributes: new { @class = "form-control" })
-				@Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
-			</div>
+            <div class="col-lg-4">
+                <label>Máquina</label>
+                @Html.DropDownList("MaquinaId", new SelectList(ViewBag.MaquinaId, "MaquinaId", "NomeMaquina"), "Selecione a Maquina", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
+               
+            </div>
 			<div class="col-lg-4">
 				<label>Matéria-Prima (Lote)</label>
 				@Html.EditorFor(model => model.MPLote, new { htmlAttributes = new { @class = "form-control" } })
@@ -135,6 +142,7 @@
 			</div>
 		</div>
 		<br /><br />
+
 		<div class="row">
 			<h4>Cores</h4>
 			<hr />
@@ -173,7 +181,9 @@
 					</tr>
 				</thead>
 				<tbody id="pausa">
-					<tr id="linha2"></tr>
+					<tr id="linha2">
+						
+					</tr>
 				</tbody>
 			</table>
 			<a class="btn btn-default btn-sm" id="adc"><span class="glyphicon glyphicon-plus"></span></a>
@@ -216,7 +226,7 @@
 							</div>
 							<div class="col-lg-6 col-sm-12">
 								@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })
-							</div>
+							</div>						 
 						</td>
 						<td>
 							@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão
@@ -228,7 +238,7 @@
 		</div>
 		<br /><br />
 		<div class="row col-lg-12 col-sm-12">
-			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
+			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
 			{
 				<div class="checkbox" id="check">
 					@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
@@ -253,6 +263,7 @@
 		</div>
 	</div>
 }
+
 <div>
 	@Html.ActionLink("Back to List", "Index")
 </div>

@@ -45,7 +45,7 @@ namespace Sampe.Controllers
 		{
 			ViewBag.ClienteId = new SelectList(db.Clientes, "ClienteId", "NomeCliente");
 			ViewBag.MarcantiId = new SelectList(db.Marcantis, "MarcantiId", "NomeEmpresa");
-			ViewBag.Kits = db.Especificacaos.Where(o => o.CodigoIdentificadorKit != null).Select(p => new SelectListItem
+			ViewBag.Kits = db.Especificacaos.Select(p => new SelectListItem
 			{
 				Text = p.OrdemProducaoKit.CodigoIdentificadorKit + ", Tipo: " + p.TipoKit + ", Quantidade: " + p.QuantProduzido,
 				Value = p.EspecificacaoId.ToString(),

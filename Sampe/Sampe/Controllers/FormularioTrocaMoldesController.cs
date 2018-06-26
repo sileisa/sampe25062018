@@ -22,21 +22,21 @@ namespace Sampe.Controllers
         // GET: FormularioTrocaMoldes
         public ActionResult Index(int? page)
         {
-			var formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
+            var formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
 			int pageSize = 15;
 			int pageNumber = (page ?? 1);
 			if (Session["Hierarquia"].ToString() == "Acesso Produção")
-			{
-				formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
-				//return View(formularioTrocaMoldes.ToList().Where(f => f.Usuario.NomeUsuario == Session["NomeUsuario"].ToString()));
+            {
+                formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
+                //return View(formularioTrocaMoldes.ToList().Where(f => f.Usuario.NomeUsuario == Session["NomeUsuario"].ToString()));
 				return View(formularioTrocaMoldes.ToList().Where(f => f.Usuario.NomeUsuario == Session["NomeUsuario"].ToString()).ToPagedList(pageNumber, pageSize));
 			}
-			else
-			{
-				//return View(formularioTrocaMoldes.ToList());
+            else
+            {
+                //return View(formularioTrocaMoldes.ToList());
 				return View(formularioTrocaMoldes.ToPagedList(pageNumber, pageSize));
 			}
-		}
+        }
 
       
         // GET: FormularioTrocaMoldes/Details/5

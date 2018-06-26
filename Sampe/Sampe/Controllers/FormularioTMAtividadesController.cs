@@ -56,14 +56,13 @@ namespace Sampe.Controllers
         public ActionResult Create()
         {
             ViewBag.MaquinaId = db.Maquinas.ToList();
-           
             ViewBag.MoldeId = db.Moldes.Select(p => new SelectListItem
             {
                 Text = p.NomeMolde + " (" + p.Cavidade + ")",
                 Value = p.MoldeId.ToString()
             });
             //ViewBag.MoldeId = db.Moldes.ToList() ; 
-            ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor").ToList();
+            ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor");
             ViewBag.Supervisor = db.Usuarios.Where(u => u.Hierarquia == "Acesso Supervisor");
             ViewBag.AtividadeTMId = new SelectList(db.AtividadeTMs, "AtividadeTMId", "NomeAtvTm");
             ViewBag.FormularioTrocaMoldeId = new SelectList(db.FormularioTrocaMoldes, "FormularioTrocaMoldeId", "DtRetirada");
@@ -75,13 +74,14 @@ namespace Sampe.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FormularioTMAtividadeId,FormularioTrocaMoldeId,AtividadeTMId,StatusTM,FormularioTrocaMolde")] FormularioTMAtividade formularioTMAtividade, ICollection<int> MoldeId, [Bind(Include = "MaquinaId")] Maquina m1, [Bind(Include = "UsuarioId")] Usuario ex,  string Supervisor)
+        public ActionResult Create([Bind(Include = "FormularioTMAtividadeId,FormularioTrocaMoldeId,AtividadeTMId,StatusTM,FormularioTrocaMolde")] FormularioTMAtividade formularioTMAtividade, ICollection<int> MoldeId, [Bind(Include = "MaquinaId")] Maquina m1, [Bind(Include = "UsuarioId")] Usuario ex, string Supervisor)
         {
 
             //if (ModelState.IsValid)
             //{
             //var ex=Request.Form["Executor"]
-            if (m1.MaquinaId == 0  ) {
+            if (m1.MaquinaId == 0)
+            {
                 ViewBag.Maquina = "Preencha este campo!";
             }
             else if (MoldeId.Count < 2)
@@ -90,13 +90,13 @@ namespace Sampe.Controllers
             }
             else if (ex.UsuarioId == 0)
             {
-                ViewBag.Executor = "Preencha este campo!";
+                ViewBag.Exe = "Preencha este campo!";
             }
-            else if (Supervisor == null)
+            else if (Supervisor == "")
             {
-                ViewBag.Supervisor = "Preencha este campo!";
+                ViewBag.Sup = "Preencha este campo!";
             }
-            else 
+            else
             {
                 var lstTags = Request.Form["chkTags"];
                 if (!string.IsNullOrEmpty(lstTags))
@@ -135,7 +135,7 @@ namespace Sampe.Controllers
             //ViewBag.MaquinaId = new SelectList(db.Maquinas, "MaquinaId", "NomeMaquina", formularioTMAtividade.FormularioTrocaMolde.MaquinaId);
             //ViewBag.MoldeId = new SelectList(db.Moldes, "MoldeId", "NomeMolde", formularioTMAtividade.FormularioTrocaMolde.MoldeId);
             //ViewBag.UsuarioId = new SelectList(db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor"), "UsuarioId", "NomeUsuario", formularioTMAtividade.FormularioTrocaMolde.UsuarioId);
-            
+
 
             ViewBag.MoldeId = db.Moldes.Select(p => new SelectListItem
             {

@@ -20,7 +20,9 @@
 	<br />
 	<br />
 	<br />
-	<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+	<div class="row text-right">
+		<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+	</div>
 	<br />
 	<br />
 	<table class="table table-bordered table-responsive">

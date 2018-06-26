@@ -64,11 +64,13 @@ namespace Sampe.Controllers
 		// obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Create([Bind(Include = "CodigoIdentificadorKit,Data,ProdIncio,ProdFim,TotalProduzido,NivelamentoBalanca,Obs,Especificacoes,Operdor,ClienteId")] OrdemProducaoKit ordemProducaoKit, String Capa, String Chapeu, String Anel, bool Status)
+		public ActionResult Create([Bind(Include = "CodigoIdentificadorKit,Data,ProdIncio,ProdFim,TotalProduzido,NivelamentoBalanca,Especificacoes,Operdor,ClienteId")] OrdemProducaoKit ordemProducaoKit, String Capa, String Chapeu, String Anel, bool Status)
 		{
-
+                      
+        
 			var a = Request.Form["TipoKit"];
 			var b = Request.Form["CorKit"];
+            
 			var c = Request.Form["Especificacao.QuantProduzido"];
 			var d = Request.Form["ClienteId"];
 			
@@ -76,8 +78,13 @@ namespace Sampe.Controllers
 			var f = Request.Form["ParadaKit.HoraRetorno"];
 			var g = Request.Form["Motivo"];
 			var h = Request.Form["ParadaKit.Observacoes"];
-
-			if (ModelState.IsValid)
+            if (b == "")
+            {
+                ViewBag.C = "Preencha este campo!";
+            }
+            else
+            {
+               if (ModelState.IsValid)
 			{
 
 				List<KitPeca> kits = new List<KitPeca>();
@@ -128,16 +135,16 @@ namespace Sampe.Controllers
 					parafuso1 = ordemProducaoKit.RemoveExtraFalseFromCheckbox(parafuso1);
 					bool[] parafuso = parafuso1.Select(Boolean.Parse).ToArray();
 					List<Especificacao> esp = new List<Especificacao>();
-					for (int x = 0; x < tipo.Count(); x++)
+					for ( int i = 0; i < tipo.Count(); i++)
 					{
 						Especificacao e1 = new Especificacao();
-						e1.TipoKit = tipo[x];
-						e1.CorPecaId = cor[x];
-						e1.Parafuso = parafuso[x];
-						e1.QuantProduzido = quant[x];
-						e1.ClienteId = cliente[x];
+						e1.TipoKit = tipo[i];
+						e1.CorPecaId = cor[i];
+						e1.Parafuso = parafuso[i];
+						e1.QuantProduzido = quant[i];
+						e1.ClienteId = cliente[i];
 						e1.CodigoIdentificadorKit = ordemProducaoKit.CodigoIdentificadorKit;
-						ordemProducaoKit.calculaProdTotal(quant[x]);
+						ordemProducaoKit.calculaProdTotal(quant[i]);
 						esp.Add(e1);
 					}
 					ordemProducaoKit.Especificacoes = esp;
@@ -150,13 +157,13 @@ namespace Sampe.Controllers
 					var mot = g.Split(',');
 					var obs = h.Split(',');
 					List<ParadaKit> parakit = new List<ParadaKit>();
-					for (int y = 0; y < hrP.Count(); y++)
+					for (int j = 0; j < hrP.Count(); j++)
 					{
 						ParadaKit p = new ParadaKit();
-						p.HoraParada = hrP[y];
-						p.HoraRetorno = hrR[y];
-						p.Motivo = mot[y];
-						p.Observacoes = obs[y];
+						p.HoraParada = hrP[j];
+						p.HoraRetorno = hrR[j];
+						p.Motivo = mot[j];
+						p.Observacoes = obs[j];
 						p.CodigoIdentificadorKit = ordemProducaoKit.CodigoIdentificadorKit;
 						parakit.Add(p);
 					}
@@ -167,9 +174,19 @@ namespace Sampe.Controllers
 				db.SaveChanges();
 				return RedirectToAction("Index");
 			}
-
-			//ViewBag.ClienteId = new SelectList(db.Clientes, "ClienteId", "NomeCliente", ordemProducaoKit.ClienteId);
-			return View(ordemProducaoKit);
+            }
+            ViewBag.Operdor = new SelectList(db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor"), "UsuarioId", "NomeUsuario");
+            var x = db.OrdemProducaoPecas.Where(u => u.Expectativa.Produto.Contains("ANEL")).ToList();
+            var y = db.OrdemProducaoPecas.Where(u => u.Expectativa.Produto.Contains("CHAPÉU")).ToList();
+            var z = db.OrdemProducaoPecas.Where(u => u.Expectativa.Produto.Contains("CAPA")).ToList();
+            ViewBag.Produto = db.OrdemProducaoPecas.ToList();
+            ViewBag.Anel = new SelectList(x, "CodigoIdentificador", "CodigoIdentificador");
+            ViewBag.Chapeu = new SelectList(y, "CodigoIdentificador", "CodigoIdentificador"); ;
+            ViewBag.Capa = new SelectList(z, "CodigoIdentificador", "CodigoIdentificador"); ;
+            ViewBag.ClienteId = new SelectList(db.Clientes, "ClienteId", "NomeCliente");
+            ViewBag.Clientes = db.Clientes.ToList();
+            ViewBag.CorPecaId = db.CorPecas.ToList();
+            return View(ordemProducaoKit);
 		}
 
 		// GET: OrdemProducaoKits/Edit/5

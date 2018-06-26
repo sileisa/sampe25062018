@@ -48,24 +48,27 @@
 				<hr />
 				@Html.ValidationSummary(true, "", new { @class = "text-danger" })
 				<div class="row">
-					<div class="col-lg-4">
-						<label>Matéria-Prima</label>
-						<select class="form-control" id="MateriaPrima" name="MateriaPrima">
-							<option value="">Selecione a Materia Prima</option>
-							<option value="Virgem">Virgem</option>
-							<option value="Refugo">Refugo</option>
-						</select>
-					</div>
-					<div class="col-lg-4">
-						<label>Poduto</label>
-						@Html.DropDownList("ExpectativaId", null, "Selecione o Produto", htmlAttributes: new { @class = "form-control" })
-						@Html.ValidationMessageFor(model => model.ExpectativaId, "", new { @class = "text-danger" })
-					</div>
-					<div class="col-lg-4">
-						<label>Cor</label>
-						@Html.DropDownList("CorPecaId", null, "Selecione a Cor", htmlAttributes: new { @class = "form-control" })
-						@Html.ValidationMessageFor(model => model.CorPecaId, "", new { @class = "text-danger" })
-					</div>
+                    <div class="col-lg-4">
+                        <label>Matéria-Prima</label>
+                        <select class="form-control" id="MateriaPrima" name="MateriaPrima">
+                            <option value="">Selecione a Materia Prima</option>
+                            <option value="Virgem">Virgem</option>
+                            <option value="Refugo">Refugo</option>
+                        </select>
+                        <p style="color:red;">@ViewBag.MateriaPrima</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <label>Poduto</label>
+                        @Html.DropDownList("ExpectativaId", null, "Selecione o Produto", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.ExpectativaId, "", new { @class = "text-danger" })
+                        
+                    </div>
+                    <div class="col-lg-4">
+                        <label>Cor</label>
+                        @Html.DropDownList("CorPecaId", null, "Selecione a Cor", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CorPecaId, "", new { @class = "text-danger" })
+                        
+                    </div>
 				</div>
 				<br />
 				<div class="row">
@@ -223,23 +226,23 @@
 					</table>
 				</div>
 				<br /><br />
-					  <div class="row col-lg-12 col-sm-12">
-					  	@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
-	{
-					  <div class="checkbox" id="check">
-					  	@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
-					  <p>Validação do Supervisor</p>
-					  </div>
+				<div class="row col-lg-12 col-sm-12">
+					@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
+					{
+						<div class="checkbox" id="check">
+							@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+							<p>Validação do Supervisor</p>
+						</div>
 
-}
-else
-{
-					  <label>Validação do Supervisor</label>
-					  @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+					}
+					else
+					{
+						<label>Validação do Supervisor</label>
+						@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
 
-}
-					  @Html.HiddenFor(model => model.Status)
-					  </div>
+					}
+					@Html.HiddenFor(model => model.Status)
+				</div>
 				<br /><br />
 				<div class="row">
 					<div class="col-md-offset-2 col-md-10">

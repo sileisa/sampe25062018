@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\A SILEISA\SENAI\PFC\teste</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="App_Browsers/qt.browser">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Helpers.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Mvc.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Optimization.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Razor.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.resources.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.Process.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Thread.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Rotativa.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/Sampe.dll">
+      <publishTime>06/26/2018 09:56:37</publishTime>
+    </File>
+    <File Include="bin/Sampe.pdb">
+      <publishTime>06/26/2018 09:56:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/cadastro.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/consultar.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/expedicao.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp.zip">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/android/drawable-hdpi/ic_account_circle_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/android/drawable-mdpi/ic_account_circle_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/android/drawable-xhdpi/ic_account_circle_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/android/drawable-xxhdpi/ic_account_circle_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/android/drawable-xxxhdpi/ic_account_circle_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/ios/ic_account_circle.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/ios/ic_account_circle.imageset/ic_account_circle.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/ios/ic_account_circle.imageset/ic_account_circle_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/ios/ic_account_circle.imageset/ic_account_circle_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/web/ic_account_circle_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_account_circle_black_24dp/web/ic_account_circle_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/android/drawable-hdpi/ic_add_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/android/drawable-mdpi/ic_add_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/android/drawable-xhdpi/ic_add_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/android/drawable-xxhdpi/ic_add_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/android/drawable-xxxhdpi/ic_add_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/ios/ic_add.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/ios/ic_add.imageset/ic_add.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/ios/ic_add.imageset/ic_add_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/ios/ic_add.imageset/ic_add_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/web/ic_add_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_add_black_24dp/web/ic_add_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/android/drawable-hdpi/ic_build_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/android/drawable-mdpi/ic_build_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/android/drawable-xhdpi/ic_build_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/android/drawable-xxhdpi/ic_build_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/android/drawable-xxxhdpi/ic_build_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/ios/ic_build.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/ios/ic_build.imageset/ic_build.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/ios/ic_build.imageset/ic_build_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/ios/ic_build.imageset/ic_build_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/web/ic_build_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_build_black_24dp/web/ic_build_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/android/drawable-hdpi/ic_check_box_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/android/drawable-mdpi/ic_check_box_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/android/drawable-xhdpi/ic_check_box_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/android/drawable-xxhdpi/ic_check_box_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/android/drawable-xxxhdpi/ic_check_box_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/ios/ic_check_box.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/ios/ic_check_box.imageset/ic_check_box.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/ios/ic_check_box.imageset/ic_check_box_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/ios/ic_check_box.imageset/ic_check_box_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/web/ic_check_box_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_check_box_black_24dp/web/ic_check_box_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/android/drawable-hdpi/ic_search_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/android/drawable-mdpi/ic_search_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/android/drawable-xhdpi/ic_search_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/android/drawable-xxhdpi/ic_search_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/android/drawable-xxxhdpi/ic_search_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/ios/ic_search.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/ios/ic_search.imageset/ic_search.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/ios/ic_search.imageset/ic_search_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/ios/ic_search.imageset/ic_search_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/web/ic_search_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_search_black_24dp/web/ic_search_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/android/drawable-hdpi/ic_supervisor_account_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/android/drawable-mdpi/ic_supervisor_account_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/android/drawable-xhdpi/ic_supervisor_account_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/android/drawable-xxhdpi/ic_supervisor_account_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/android/drawable-xxxhdpi/ic_supervisor_account_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/ios/ic_supervisor_account.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/ios/ic_supervisor_account.imageset/ic_supervisor_account.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/ios/ic_supervisor_account.imageset/ic_supervisor_account_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/ios/ic_supervisor_account.imageset/ic_supervisor_account_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/web/ic_supervisor_account_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_supervisor_account_black_24dp/web/ic_supervisor_account_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/android/drawable-hdpi/ic_timelapse_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/android/drawable-mdpi/ic_timelapse_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/android/drawable-xhdpi/ic_timelapse_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/android/drawable-xxhdpi/ic_timelapse_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/android/drawable-xxxhdpi/ic_timelapse_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/ios/ic_timelapse.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/ios/ic_timelapse.imageset/ic_timelapse.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/ios/ic_timelapse.imageset/ic_timelapse_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/ios/ic_timelapse.imageset/ic_timelapse_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/web/ic_timelapse_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timelapse_black_24dp/web/ic_timelapse_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/android/drawable-hdpi/ic_timeline_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/android/drawable-mdpi/ic_timeline_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/android/drawable-xhdpi/ic_timeline_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/android/drawable-xxhdpi/ic_timeline_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/android/drawable-xxxhdpi/ic_timeline_black_24dp.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/ios/ic_timeline.imageset/Contents.json">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/ios/ic_timeline.imageset/ic_timeline.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/ios/ic_timeline.imageset/ic_timeline_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/ios/ic_timeline.imageset/ic_timeline_3x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/web/ic_timeline_black_24dp_1x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/ic_timeline_black_24dp/web/ic_timeline_black_24dp_2x.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/logo.jpg">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/manutencao.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/marcanti.gif">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/perfis.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/pessoa.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/producao.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="img/relatorios.png">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Rotativa/help-wkhtmltoimage.txt">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Rotativa/help-wkhtmltopdf.txt">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Rotativa/wkhtmltoimage.exe">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Rotativa/wkhtmltopdf.exe">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/cldr.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/cldr/event.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/cldr/supplemental.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/cldr/unresolved.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/currency.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/date.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/message.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/number.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/plural.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/relative-time.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/globalize/unit.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/helper.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.globalize.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.globalize.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/methods-pt.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/pt-BR.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/Sampe.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/toastr.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Scripts/toastr.min.js">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeOS/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeOS/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeOS/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeOS/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeOS/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeTMs/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeTMs/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeTMs/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeTMs/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/AtividadeTMs/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cargos/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cargos/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cargos/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cargos/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cargos/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Clientes/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Clientes/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Clientes/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Clientes/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Clientes/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidadeCopos/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidadeCopos/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidadeCopos/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidadeCopos/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidadeCopos/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidades/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidades/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidades/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidades/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ControleDeQualidades/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cores/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cores/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cores/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cores/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Cores/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/CorPecas/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/CorPecas/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/CorPecas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/CorPecas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/CorPecas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Especificacoes/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Especificacoes/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Especificacoes/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Especificacoes/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Especificacoes/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesCopo/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesCopo/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesCopo/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesCopo/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesCopo/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesRefugo/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesRefugo/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesRefugo/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesRefugo/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/EspecificacoesRefugo/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Expectativas/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Expectativas/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Expectativas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Expectativas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Expectativas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoCopos/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoCopos/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoCopos/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoCopos/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoCopos/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoKits/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoKits/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoKits/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoKits/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ExpedicaoKits/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOrdemServicoes/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOrdemServicoes/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOrdemServicoes/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOrdemServicoes/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOrdemServicoes/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOSAtividades/Create.cshtml">
+      <publishTime>06/25/2018 19:56:32</publishTime>
+    </File>
+    <File Include="Views/FormularioOSAtividades/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOSAtividades/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOSAtividades/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioOSAtividades/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTMAtividades/Create.cshtml">
+      <publishTime>06/25/2018 19:37:37</publishTime>
+    </File>
+    <File Include="Views/FormularioTMAtividades/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTMAtividades/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTMAtividades/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTMAtividades/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTrocaMoldes/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTrocaMoldes/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTrocaMoldes/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTrocaMoldes/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/FormularioTrocaMoldes/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Home/Cadastros.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/KitPecas/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/KitPecas/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/KitPecas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/KitPecas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/KitPecas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Login/Login.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Maquinas/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Maquinas/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Maquinas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Maquinas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Maquinas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Marcanti/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Marcanti/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Marcanti/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Marcanti/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Marcanti/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Moldes/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Moldes/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Moldes/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Moldes/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Moldes/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoCopos/Create.cshtml">
+      <publishTime>06/25/2018 20:43:09</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoCopos/Delete.cshtml">
+      <publishTime>06/25/2018 21:32:57</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoCopos/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoCopos/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoCopos/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoKits/Create.cshtml">
+      <publishTime>06/25/2018 21:13:32</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoKits/Delete.cshtml">
+      <publishTime>06/25/2018 21:32:48</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoKits/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoKits/Edit.cshtml">
+      <publishTime>06/25/2018 21:30:32</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoKits/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoPecas/Create.cshtml">
+      <publishTime>06/25/2018 22:11:55</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoPecas/Delete.cshtml">
+      <publishTime>06/25/2018 21:33:59</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoPecas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoPecas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoPecas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoRefugos/Create.cshtml">
+      <publishTime>06/25/2018 22:29:51</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoRefugos/Delete.cshtml">
+      <publishTime>06/25/2018 21:34:13</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoRefugos/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoRefugos/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/OrdemProducaoRefugos/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaKits/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaKits/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaKits/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaKits/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaKits/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaRefugos/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaRefugos/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaRefugos/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaRefugos/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadaRefugos/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Paradas/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Paradas/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Paradas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Paradas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Paradas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadasCopo/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadasCopo/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadasCopo/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadasCopo/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/ParadasCopo/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaCliente.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaOpCopo.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaOpKit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaOpPeca.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaOpRefugo.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaOS.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaOSporMaquina.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaTM.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/BuscaTMporMaquina.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeExped.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeExpedKit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeKit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeOpCopo.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeOpKit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeOpPeca.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeOpRefugo.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeOs.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/ExibeTm.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/LayoutRelatorio.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/OpCopoData.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/OpKitData.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/OpPecaData.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/OpRefugoData.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/OsData.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/OsMaquina.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/TmData.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Relatorio/TmMaquina.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Shared/LayoutExpedicao.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Shared/LayoutFormulario.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Usuarios/AlterarSenha.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Usuarios/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Usuarios/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Usuarios/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Usuarios/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Usuarios/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Vendas/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Vendas/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Vendas/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Vendas/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Vendas/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/VendasKit/Create.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/VendasKit/Delete.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/VendasKit/Details.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/VendasKit/Edit.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/VendasKit/Index.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/25/2018 14:17:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/26/2018 09:56:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

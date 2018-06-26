@@ -26,7 +26,7 @@ namespace Sampe
 
         [Required(ErrorMessage = "Preencha este campo")]
         [Column(Order = 5)]
-        public String Senha { get; set; } 
+        public String Senha { get; set; }
 
         [Column(Order = 6)]
         public String Hierarquia { get; set; }

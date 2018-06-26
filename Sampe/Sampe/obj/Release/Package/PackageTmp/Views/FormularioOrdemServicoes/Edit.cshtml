@@ -155,18 +155,18 @@
 			</div>
 			<div class="col-lg-3">
 				@Html.LabelFor(model => model.IntervaloInicio, "Hora Início", htmlAttributes: new { @class = "col-md-10" })
-				@Html.EditorFor(model => model.IntervaloInicio, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+				@Html.EditorFor(model => model.IntervaloInicio, new { htmlAttributes = new { type = "time", @class = "form-control", @readonly="true" } })
 				@Html.ValidationMessageFor(model => model.IntervaloInicio, "", new { @class = "text-danger" })
 			</div>
 			<div class="col-lg-3">
 				@Html.LabelFor(model => model.IntervaloFim, "Hora Fim", htmlAttributes: new { @class = " col-md-8" })
-				@Html.EditorFor(model => model.IntervaloFim, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+				@Html.EditorFor(model => model.IntervaloFim, new { htmlAttributes = new { type = "time", @class = "form-control", @readonly = "true" } })
 				@Html.ValidationMessageFor(model => model.IntervaloFim, "", new { @class = "text-danger" })
 			</div>
 			<div class="row col-lg-3">
 				@Html.LabelFor(model => model.ObsIntervalo, "Observação", htmlAttributes: new { @class = "control-label col-md-2" })
 				<!--<textarea class="form-control" rows="3" id="ObsIntervalo" name="ObsIntervalo"></textarea>-->
-				@Html.EditorFor(model => model.ObsIntervalo, new { htmlAttributes = new { type = "textarea", @class = "form-control" } })
+				@Html.EditorFor(model => model.ObsIntervalo, new { htmlAttributes = new { type = "textarea", @class = "form-control", @readonly = "true" } })
 				@Html.ValidationMessageFor(model => model.ObsIntervalo, "", new { @class = "text-danger" })
 			</div>
 		</div>

@@ -19,7 +19,9 @@
 	</div>
 	<br />
 	<br />
-	<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+	<div class="row text-right">
+		<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+	</div>
 	<br />
 	<br />
 	<table class="table table-bordered table-responsive">
@@ -89,7 +91,8 @@ else
 		}
 	</table>
 	<br />
-	Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
-
-	@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+	<div class="row text-right">
+		Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+		@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+	</div>
 </div>
