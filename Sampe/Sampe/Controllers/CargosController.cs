@@ -159,9 +159,18 @@ namespace Sampe.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Cargo cargo = db.Cargoes.Find(id);
+			var busca = db.Usuarios.Where(o => o.CargoId == id);
+			if (busca.Count() > 0)
+			{
+				ViewBag.Error = "Não é possível deletar este Cargo, pois está sendo utilizado em outras partes do sistema.";
+			}
+			else
+			{ 
             db.Cargoes.Remove(cargo);
             db.SaveChanges();
             return RedirectToAction("Index");
+			}
+			return View();
         }
 
         protected override void Dispose(bool disposing)

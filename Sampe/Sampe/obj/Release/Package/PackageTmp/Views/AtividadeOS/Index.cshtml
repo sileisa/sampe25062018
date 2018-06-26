@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Sampe.AtividadeOS>
+
+@{
+    ViewBag.Title = "Atividades";
+}
+<script>
+    $(document).ready(function () {
+        $("#enviar").click(function (e) {
+            e.preventDefault();
+            toastr.success("Atividade Cadastrada");
+
+            setTimeout(function () {
+                $("#novaAtv").submit();
+            }, 2000)
+        });
+    });
+</script>
+<ol class="breadcrumb">
+    <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+    <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+    <li class="active">Atividades Ordem de Serviço</li>
+</ol>
+<h2>Atividades de Ordem de Serviço </h2>
+<br />
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "novaAtv" })){
+    @Html.AntiForgeryToken()
+    AtividadeOS atividadeOS = new AtividadeOS();
+
+    <div class="container ">
+        <div class="form-group">
+            
+            <label class="control-label col-md-2">Nova Atividade</label>
+            <div class="col-md-8">
+                @Html.EditorFor(AtividadeOS => atividadeOS.NomeAtvOs, new { htmlAttributes = new { @class = "form-control" } })
+                <p style="color:red;">@ViewBag.Error</p>
+                @Html.ValidationMessageFor(AtividadeOS => atividadeOS.NomeAtvOs, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-2">
+                <input type="submit" id="enviar" value="Cadastrar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+<br /><br />
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Atividade
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeAtvOs)
+            </td>
+            <td>
+                <a href="/AtividadeOS/Edit/@item.AtividadeOSId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                <a href="/AtividadeOS/Delete/@item.AtividadeOSId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+            </td>
+        </tr>
+    }
+
+</table>

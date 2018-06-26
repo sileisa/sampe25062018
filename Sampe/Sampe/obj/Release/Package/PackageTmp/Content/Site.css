@@ -1,0 +1,184 @@
+﻿
+html,
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#html {
+    display: table;
+    margin: auto;
+}
+
+#fundo {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #2E4859;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+input,
+select,
+textarea, label, td {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*#menu-lateral {
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #2E4859;
+    background-color: #2E4859;
+    height: auto;
+}*/
+#marca {
+    width: 2802.63px;
+    height: 1822.36px;
+}
+
+#conteudo {
+    padding-top: 30px;
+}
+
+#relatorio {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn {
+    color: white;
+    background-color: #2E4859;
+}
+
+a, h1, h2, h3, h4, h5, h6, th {
+    font-family: 'Quicksand', sans-serif;
+}
+
+th, td {
+    font-size: 16px;
+}
+
+/*.LinkMenu {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.navbar {
+    background-color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}*/
+
+#fundo {
+    background-color: #2E4859;
+    color: #2E4859;
+}
+
+.thumbnail {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.ms-lista {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    height: 200px;
+    padding: 0;
+    overflow-y: auto;
+    color: #000000;
+}
+
+
+/*menu lateral*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2E4859;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #2E4859;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+#sair {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+#mais {
+    color: #2E4859;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 2;
+    color: #ffffff;
+    cursor: default;
+    background-color: #2E4859 !important;
+    border-color: #000000;
+}

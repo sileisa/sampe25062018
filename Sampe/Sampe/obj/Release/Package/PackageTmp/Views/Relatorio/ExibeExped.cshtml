@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Sampe.Models.ExpedicaoCopo>
+@{
+    ViewBag.Title = "Expedição";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+<br />
+<table class="table-bordered">
+    <tr>
+        <th>
+            <div class="col-md-4 ">
+                <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+            </div>
+        </th>
+        <th>
+            <div class="col-md-4 text-center">
+                <h2>Expedição de Copo</h2>
+                <br />
+            </div>
+        </th>
+        <th>
+            <div class="col-md-4">
+                <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+            </div>
+        </th>
+    </tr>
+</table>
+<br />
+<div>
+    @foreach (var item in Model)
+    {
+ 
+        <div class="container" style="border-radius:1px">
+            <div class="row">
+                <h2>@Html.DisplayFor(model => item.Marcanti.NomeEmpresa)</h2>
+            </div>
+            <div class="row">
+                @Html.DisplayFor(model => item.Marcanti.Rua) - @Html.DisplayFor(model => item.Marcanti.Numero) - @Html.DisplayFor(model => item.Marcanti.Bairro) - @Html.DisplayFor(model => item.Marcanti.Cidade) - @Html.DisplayFor(model => item.Marcanti.Uf) - @Html.DisplayFor(model => item.Marcanti.Cep)
+            </div>
+            <div class="row">
+              
+                    CNPJ: @Html.DisplayFor(model => item.Marcanti.Cnpj)                
+
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <div class="row">
+                <h3>@Html.DisplayFor(model => item.Cliente.NomeCliente)</h3>
+            </div>
+            <div class="row">
+                @Html.DisplayFor(model => item.Cliente.Rua) - @Html.DisplayFor(model => item.Cliente.Numero) - @Html.DisplayFor(model => item.Cliente.Bairro) - @Html.DisplayFor(model => item.Cliente.Cidade) - @Html.DisplayFor(model => item.Cliente.Uf) - @Html.DisplayFor(model => item.Cliente.Cep)
+            </div>
+            <div class="row">                
+                    CNPJ: @Html.DisplayFor(model => item.Cliente.Cnpj)
+              </div>
+        </div>
+        <hr />
+        <table class="table table-bordered">
+            <tr>
+                <th>Quantidade</th>
+                <th>Item Unitário</th>
+                <th>Valor Unitário</th>
+                <th>Subtotal</th>
+            </tr>
+            @foreach (var x in item.Vendas)
+            {
+                <tr>
+                    <td>@x.Quantidade</td>
+                    <td>@x.EspecificacaoCopo.Cor.NomeCor</td>
+                    <td>@x.ValorUnitario</td>
+                    <td>R$ @x.Subtotal</td>
+                </tr>
+            }
+        </table>
+        <br />
+        <div class="container">
+            <label>Condições de Pagamento</label>
+            <div class="col-lg-6">
+                <label>Vencimento:</label>
+                @item.Vencimento.ToString("dd/MM/yyyy")
+            </div>
+            <div class="col-lg-6">
+                <label>Valor Total:</label>
+                R$ @Html.DisplayFor(model => item.ValorTotal)
+            </div>
+        </div>
+
+    }
+</div>

@@ -1,0 +1,194 @@
+﻿@model Sampe.Models.OrdemProducaoPeca
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrdemProducaoPeca</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoIdentificador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoIdentificador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Expectativa)
+        </dt>
+ 
+        <dd>
+            @Html.DisplayFor(model => model.Expectativa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MPLote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MPLote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MPConsumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MPConsumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdIncio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdIncio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Maquina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Maquina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdutoCor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdutoCor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MasterLote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MasterLote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fornecedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fornecedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempAgua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempAgua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelOleo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelOleo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Galho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Galho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OffSpec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OffSpec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RefugoKg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RefugoKg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnidadesProduzidas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnidadesProduzidas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContadorInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContadorInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContadorFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContadorFinal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoIdentificador }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,176 @@
+﻿@model Sampe.FormularioTrocaMolde
+@{
+    ViewBag.Title = "Troca de Molde";
+}
+<script>
+    $(":disabled", $('#frmMain')).removeAttr("disabled");
+</script>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="form-horizontal">
+            <ol class="breadcrumb">
+                <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+                <li><a href="http://localhost:49630/FormularioTrocaMoldes/Index">Formulários Troca de Molde</a></li>
+                <li class="active">Preencher</li>
+            </ol>
+            <div class="row">
+                <h2>Preencher Formulário de Troca de Molde</h2>
+                <hr />
+            </div>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.FormularioTrocaMoldeId)
+
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.LabelFor(model => model.Supervisor, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.Supervisor, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.Supervisor, "", new { @class = "text-danger" })
+                </div>
+                @if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
+                {
+                    <div class="col-lg-4">
+                        <label>Executor</label><br />
+
+                        @Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), "Selecione o executor", htmlAttributes: new { @class = "form-control" })
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Executor" data-valmsg-replace="true"></span>
+                        <input type="hidden" id="Executor" name="Executor" value="@Session["UsuarioId"].ToString()" />
+                    </div>
+                }
+                else if (@Session["Hierarquia"].ToString() == "Acesso Produção")
+                {
+                    <div class="col-lg-4">
+                        <label>Executor</label><br />
+                        @Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), @Session["NomeUsuario"].ToString(), htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+                        <!-- <input id="Executor" name="Executor" type="text" value="@Model.Usuario.NomeUsuario" class="form-control" disabled />-->
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Executor" data-valmsg-replace="true"></span>
+                        <input type="hidden" id="Executor" name="Executor" value="@Session["UsuarioId"].ToString()" />
+                    </div>
+                }
+                else
+                {
+                    <div class="col-lg-4">
+                        <label>Executor</label><br />
+                        @Html.DropDownList("Executor", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), Model.Usuario.NomeUsuario, htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Executor" data-valmsg-replace="true"></span>
+                        <input type="hidden" id="Executor" name="Executor" value="@Model.UsuarioId" />
+                    </div>
+                }
+                <div class="col-lg-4">
+                    @Html.LabelFor(model => model.MaquinaId, "Máquina", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.DropDownList("MaquinaId", null, htmlAttributes: new { @class = "form-control", disabled = "disabled" })
+                    @Html.HiddenFor(model => model.MaquinaId)
+                    @Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <h4>Molde Retirado</h4>
+                <hr />
+                <div class="col-lg-3">
+                    <label>Molde Retirado</label>
+                    <p>@Model.Moldes[0].NomeMolde (@Model.Moldes[0].Cavidade)</p>
+                </div>
+                <div class="col-lg-3">
+                    @Html.LabelFor(model => model.DtRetirada, "Data", htmlAttributes: new { @class = "control-label" })
+                    <p>@Model.DtRetirada.ToString("dd/MM/yyyy")</p>
+                    @Html.HiddenFor(model => model.DtRetirada)
+                    @Html.ValidationMessageFor(model => model.DtRetirada, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-3">
+                    @Html.LabelFor(model => model.RetirarInicio, "Hora Início", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.RetirarInicio, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.RetirarInicio, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-3">
+                    @Html.LabelFor(model => model.RetirarFim, "Hora Fim", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.RetirarFim, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.RetirarFim, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <h4>Molde Colocado</h4>
+                <hr />
+                <div class="col-lg-3">
+                    <label>Molde Colocado</label>
+                    <p>@Model.Moldes[1].NomeMolde (@Model.Moldes[1].Cavidade)</p>
+                </div>
+                <div class="col-lg-3">
+                    <label>Data a ser Colocado</label>
+                    <input class="form-control text-box single-line" data-val="true" data-val-date="O campo DtColocar deve ser uma data." data-val-required="O campo DtColocar é obrigatório." id="DtColocar" name="DtColocar" type="date" value="" />
+                    @Html.ValidationMessageFor(model => model.DtColocar, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-3">
+                    @Html.LabelFor(model => model.ColocarInicio, "Hora Início", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.ColocarInicio, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ColocarInicio, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-lg-3">
+                    @Html.LabelFor(model => model.ColocarFim, "Hora Fim", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.ColocarFim, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ColocarFim, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="container" id="capaefectos">
+                    <div class="col-lg-12 col-sm-12">
+                        @foreach (var a in Model.FormularioTMAtividades)
+                        {
+                            <div class="checkbox" id="check">
+                                @if (a.StatusTM == true)
+                                {
+                                    <input type="checkbox" value="@a.FormularioTMAtividadeId" name="id" checked disabled>
+                                    <label>@a.AtividadeTM.NomeAtvTm</label>
+                                }
+                                else
+                                {
+                                    <input type="checkbox" value="@a.FormularioTMAtividadeId" name="id">
+                                    <label>@a.AtividadeTM.NomeAtvTm</label>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row col-lg-12 col-sm-12">
+                @if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
+                {
+                    <div class="checkbox" id="check">
+                        @if (Model.Status == false)
+                        {
+                            @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+                            <p>Validação do Supervisor</p>
+
+                        }
+                        else
+                        {
+                            @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", @readonly = true } })
+                            <p>Validação do Supervisor</p>
+                        }
+                    </div>
+                    @Html.HiddenFor(model => model.Status)
+                }
+                else
+                {
+                    <label>Validação do Supervisor</label>
+                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+
+                }
+            </div>
+            <br /><br />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Salvar" class="btn btn-default" />
+                    <a class="btn btn-default" href="/FormularioTrocaMoldes/Index">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

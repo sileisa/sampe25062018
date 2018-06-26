@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Sampe.Models.Especificacao>
+
+@{
+    ViewBag.Title = "ExibeKit";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+
+<table class="table-bordered">
+	<tr>
+		<th>
+			<div class="col-md-6 ">
+				<img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+			</div>
+		</th>
+		<th>
+			<div class="col-md-6 text-center ">
+				<h2>Expedições de Kit do Cliente: @ViewBag.cliente</h2>
+				<br />
+			</div>
+		</th>
+		<th>
+			<div class="col-md-4">
+				<img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+			</div>
+		</th>
+	</tr>
+</table>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Tipo de Kit</th>
+			<th>Cor</th>
+			<th>Parafuso</th>
+			<th>Quantidade Produzida</th>
+		</tr>
+	</thead>
+	<tbody id="esp">
+		@foreach (var x in Model)
+		{
+			<tr>
+				<td>@x.TipoKit</td>
+				<td>@x.CorKit</td>
+				<td>
+					@Html.DisplayFor(model => x.Parafuso)
+				</td>
+				<td>@x.QuantProduzido</td>
+			</tr>
+		}
+	</tbody>
+</table>

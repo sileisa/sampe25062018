@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "BuscaCliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BuscaCliente</h2>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	<div class="row">
+		<div class="col-lg-6 col-sm-12">
+			<label>Cliente</label>
+			@Html.DropDownList("ClienteId", null, htmlAttributes: new { @class = "form-control" })
+		</div>
+	</div>
+	<br />
+	<div class="container col-md-12">
+		<div class="form-group text-center">
+			<div class="col-md-10 ">
+				<input type="submit" value="Gerar Relatório" class="btn btn-default" />
+				<p style="color:red;">@ViewBag.Error</p>
+			</div>
+		</div>
+	</div>
+}

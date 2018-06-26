@@ -158,10 +158,19 @@ namespace Sampe.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Molde molde = db.Moldes.Find(id);
-            db.Moldes.Remove(molde);
-            db.SaveChanges();
+			var busca = db.FormularioMolde.Where(o => o.MoldeId == id);
+
+			if (busca.Count() > 0)
+			{
+				ViewBag.Error = "Não é possível deletar este Molde, pois está sendo utilizado em outras partes do sistema.";
+			}
+			else { 
+			db.Moldes.Remove(molde);
+			db.SaveChanges();
             return RedirectToAction("Index");
-        }
+			}
+			return View();
+		}
 
         protected override void Dispose(bool disposing)
         {

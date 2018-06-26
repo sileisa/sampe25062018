@@ -1,0 +1,60 @@
+﻿@model Sampe.Models.ExpedicaoCopo
+
+@{
+	ViewBag.Title = "Details";
+	Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+
+<h2>Relatório</h2>
+
+<div>
+	<h4>Expedição Copo</h4>
+	<hr />
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.Cliente.NomeCliente)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Cliente.NomeCliente)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Marcanti.NomeEmpresa)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Marcanti.NomeEmpresa)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Vencimento)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Vencimento)
+		</dd>
+		<dt>Copos</dt>
+		@foreach (var item in Model.Vendas)
+	{
+		<dd>@Html.LabelFor(x => item.ValorUnitario)</dd>
+		<dd>@item.ValorUnitario</dd>
+		<dd>@Html.LabelFor(x => item.EspecificacaoCopo.Cor.NomeCor)</dd>
+		<dd>@item.EspecificacaoCopo.Cor.NomeCor</dd>
+		<dd>@Html.LabelFor(x => item.EspecificacaoCopo.UniProd)</dd>
+		<dd>@item.EspecificacaoCopo.UniProd</dd>
+		<dd>@Html.LabelFor(x => item.EspecificacaoCopo.LoteMaster)</dd>
+		<dd>@item.EspecificacaoCopo.LoteMaster</dd>
+}
+	</dl>
+	<dt>
+		@Html.DisplayNameFor(model => model.ValorTotal)
+	</dt>
+
+	<dd>
+		@Html.DisplayFor(model => model.ValorTotal)
+	</dd>
+</div>
+<p>
+	@Html.ActionLink("Edit", "Edit", new { id = Model.ExpedicaoId }) |
+	@Html.ActionLink("Back to List", "Index")
+</p>

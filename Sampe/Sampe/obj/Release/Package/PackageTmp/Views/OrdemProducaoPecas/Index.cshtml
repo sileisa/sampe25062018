@@ -1,0 +1,124 @@
+﻿@model PagedList.IPagedList<Sampe.Models.OrdemProducaoPeca>
+@using PagedList.Mvc;
+@{
+	ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+	<h2>Ordens de Produção</h2>
+	<h4>PEÇA</h4>
+	<hr />
+	<br />
+	<div class="container col-md-12">
+		<div class="form-group text-center">
+			<div class=" col-md-10">
+				<a class="btn btn-default" href="/OrdemProducaoPecas/Create">Nova Ordem de Produção</a>
+			</div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+	<br />
+	<br />
+	<table class="table table-bordered table-responsive ">
+		<tr>
+			<th>
+				Data
+			</th>
+			<th>
+				Código
+			</th>
+			<th>
+				Produto
+			</th>
+			<th>
+				Cor
+			</th>
+			<th>
+				Unidades Produzidas
+			</th>
+			<th>
+				Matéria-Prima
+			</th>
+			<th>
+				Máquina
+			</th>
+
+			<th>
+				Produção Inicio
+			</th>
+			<th>
+				Produção Fim
+			</th>
+			<th>Status</th>
+			<th></th>
+		</tr>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@item.Data.ToString("dd/MM/yyyy")
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.CodigoIdentificador)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Expectativa.Produto)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.CorPeca.NomeCorPeca)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.UnidadesProduzidas)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.MateriaPrima)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Maquina.NomeMaquina)
+				</td>
+
+				<td>
+					@Html.DisplayFor(modelItem => item.ProdIncio)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ProdFim)
+				</td>
+				<td>
+					@if (item.Status == true)
+					{
+						<p>Concluído</p>
+					}
+					else
+					{
+						<p>Não Concluído</p>
+					}
+				</td>
+				<td>
+					@{ if (item.Status == true)
+						{
+							<a href="/OrdemProducaoPecas/Edit/@item.CodigoIdentificador" class="btn btn-default btn-sm " disabled><span class="glyphicon glyphicon-pencil"></span></a>
+						}
+						else
+						{
+							<a href="/OrdemProducaoPecas/Edit/@item.CodigoIdentificador" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+						}
+					}
+					<a id="delete" href="/OrdemProducaoPecas/Delete/@item.CodigoIdentificador" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+					<a target="_blank" href="/Relatorio/ExibeOpPeca?gerarPdf=true&id=@item.CodigoIdentificador" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-print"></span></a>
+				</td>
+			</tr>
+		}
+	</table>
+	<br />
+	<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+	@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>
+<style>
+	.pagination-container.active {
+		color: #4cff00;
+		background-color: #4cff00;
+	}
+</style>

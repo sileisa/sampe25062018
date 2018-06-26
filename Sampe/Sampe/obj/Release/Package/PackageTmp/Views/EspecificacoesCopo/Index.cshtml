@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Sampe.Models.EspecificacaoCopo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cor.NomeCor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrdemProducaoCopo.MateriaPrima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UniProd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoteMaster)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cor.NomeCor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrdemProducaoCopo.MateriaPrima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UniProd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoteMaster)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EspecificacaoCopoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EspecificacaoCopoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EspecificacaoCopoId })
+        </td>
+    </tr>
+}
+
+</table>

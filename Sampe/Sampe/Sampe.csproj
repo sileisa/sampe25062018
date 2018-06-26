@@ -377,6 +377,7 @@
     <Content Include="img\ic_timelapse_black_24dp\ios\ic_timelapse.imageset\Contents.json" />
     <Content Include="img\ic_timeline_black_24dp\ios\ic_timeline.imageset\Contents.json" />
     <Content Include="App_Browsers\qt.browser" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\cldr.js" />
     <Content Include="Scripts\cldr\event.js" />

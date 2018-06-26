@@ -1,0 +1,26 @@
+﻿@model Sampe.Maquina
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Maquina</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeMaquina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeMaquina)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaquinaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

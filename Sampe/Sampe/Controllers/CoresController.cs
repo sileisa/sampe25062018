@@ -121,7 +121,8 @@ namespace Sampe.Controllers
         // GET: Cores/Delete/5
         public ActionResult Delete(int? id)
         {
-            if (id == null)
+			
+			if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -139,9 +140,19 @@ namespace Sampe.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Cor cor = db.Cors.Find(id);
-            db.Cors.Remove(cor);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+			var busca = db.EspecificacaoCopoes.Where(o => o.CorId == id);
+			if (busca.Count() > 0)
+			{
+				ViewBag.Error = "Não é possível deletar esta Cor, pois está sendo utilizada em outras partes do sistema.";
+			}
+
+			else
+			{
+				db.Cors.Remove(cor);
+				db.SaveChanges();
+				return RedirectToAction("Index");
+			}
+			return View();
         }
 
         protected override void Dispose(bool disposing)

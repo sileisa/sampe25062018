@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Sampe.Models.OrdemProducaoRefugo>
+
+@{
+    ViewBag.Title = "Relatório";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+
+<div class="container">
+    <table class="table-bordered">
+        <tr>
+            <th>
+                <div class="col-md-4 ">
+                    <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4 text-center">
+                    <h2>Ordens de Produção </h2>
+                    <h4>Refugo</h4>
+                    <h4>@ViewBag.dt1.ToString("dd/MM/yyyy") a @ViewBag.dt2.ToString("dd/MM/yyyy")</h4>
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4">
+                    <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario.NomeUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdIncio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProdFim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Obs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario.NomeUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Produto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdIncio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdFim)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Obs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+</div>

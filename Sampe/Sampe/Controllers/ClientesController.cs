@@ -30,7 +30,7 @@ namespace Sampe.Controllers
             for (var i = 0; i <= cont; i++)
             {                
                 if (cont > 0) { 
-                if (cliente.NomeCliente == clientes[i].NomeCliente && cliente.Cnpj == clientes[i].Cnpj)
+                if (cliente.Cnpj == clientes[i].Cnpj)
                 {
 
                     ViewBag.Error = "Cliente já existente";
@@ -148,10 +148,20 @@ namespace Sampe.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Cliente cliente = db.Clientes.Find(id);
-            db.Clientes.Remove(cliente);
+			var busca = db.Especificacaos.Where(o => o.ClienteId == id).ToList();
+			var busca2 = db.ExpedicaoCopoes.Where(o => o.ClienteId == id).ToList();
+			var busca3 = db.ExpedicaoKits.Where(o => o.ClienteId == id).ToList();		
+			if ((busca.Count() > 0) || (busca2.Count() > 0) || (busca3.Count() > 0))
+			{
+				ViewBag.Error = "Não é possível deletar este Cliente, pois está sendo utilizado em outras partes do sistema.";
+			}
+			else { 
+			db.Clientes.Remove(cliente);
             db.SaveChanges();
             return RedirectToAction("Index");
-        }
+			}
+			return View();
+		}
 
         protected override void Dispose(bool disposing)
         {

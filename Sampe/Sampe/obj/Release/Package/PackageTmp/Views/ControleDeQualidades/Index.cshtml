@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Sampe.Models.ControleDeQualidade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrdemProducaoPeca.MateriaPrima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ciclo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoDaPeca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dimensao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Assinatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Liberado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrdemProducaoPeca.MateriaPrima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ciclo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoDaPeca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dimensao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Assinatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Liberado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ControleDeQualidadeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ControleDeQualidadeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ControleDeQualidadeId })
+        </td>
+    </tr>
+}
+
+</table>

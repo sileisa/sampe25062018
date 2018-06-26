@@ -1,0 +1,132 @@
+﻿@model Sampe.FormularioTrocaMolde
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FormularioTrocaMolde</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Maquina.NomeMaquina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Maquina.NomeMaquina)
+        </dd>
+
+
+        <dt>
+            Moldes:
+        </dt>
+
+        <dd>
+            <table class="table-bordered">
+                <tr>
+                    <th>Molde Retirado</th>
+                    <th>Molde Colocado</th>
+                </tr>
+                <tr>
+                    @foreach (var x in Model.Moldes)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => x.NomeMolde) (@Html.DisplayFor(modelItem=>x.Cavidade))
+                        </td>
+                    }
+                </tr>
+            </table>
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.NomeUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NomeUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DtRetirada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DtRetirada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DtColocar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DtColocar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ColocarInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ColocarInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ColocarFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ColocarFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RetirarInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RetirarInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RetirarFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RetirarFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supervisor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FormularioTMAtividades)
+        </dt>
+
+        <dd>
+            <table class="row">
+                @foreach (var x in Model.FormularioTMAtividades)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => x.StatusTM)
+                        </td>
+                        <td>
+                            @x.AtividadeTM.NomeAtvTm
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FormularioTrocaMoldeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

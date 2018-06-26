@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Sampe.FormularioTrocaMolde>
+@{
+    ViewBag.Title = "Relatório";
+    Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
+}
+<div class="container">
+    <table class="table-bordered">
+        <tr>
+            <th>
+                <div class="col-md-6 ">
+                    <img class="img-responsive " src="~/img/marcanti.gif" style="height: 80px;width: 250px;">
+                </div>
+            </th>
+            <th>
+                <div class="col-md-6 text-center ">
+                    <h2>Formulários Concluídos </h2>
+                    <h4>Troca de Molde</h4>
+                    <h4>@ViewBag.dt1.ToString("dd/MM/yyyy") a @ViewBag.dt2.ToString("dd/MM/yyyy")</h4>
+                </div>
+            </th>
+            <th>
+                <div class="col-md-4">
+                    <img class="img-responsive " src="~/img/marca.png" style="margin:0 auto; width:180px; height:100px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+
+    <table class="table table-bordered table-responsive">
+        <tr>
+            <th>
+                Máquina
+            </th>
+            <th>
+                Data de Retirada
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Supervisor)
+            </th>
+            <th>
+                Executante
+            </th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Maquina.NomeMaquina)
+                </td>
+                <td>
+                    @item.DtRetirada.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Supervisor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario.NomeUsuario)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

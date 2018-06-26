@@ -1,0 +1,125 @@
+﻿@model Sampe.FormularioTrocaMolde
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="container ">
+    <div class="col-lg-9 col-sm-12 col-md-8">
+        <h2>Create</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="container">
+                <div class="form-horizontal">
+                    <h4>FormularioTrocaMolde</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Molde</label><br />
+                                @Html.DropDownList("MoldeId", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.MoldeId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Maquina</label><br />
+                                @Html.DropDownList("MaquinaId", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.MaquinaId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Data Retirada</label><br />
+                                @Html.EditorFor(model => model.DtRetirada, new { htmlAttributes = new { type="date", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DtRetirada, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Inicio Colocada</label><br />
+                                @Html.EditorFor(model => model.ColocarInicio, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.ColocarInicio, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Fim Colocar</label><br />
+                                @Html.EditorFor(model => model.ColocarFim, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.ColocarFim, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Data Colocada</label><br />
+                                @Html.EditorFor(model => model.DtColocar, new { htmlAttributes = new { type = "date", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DtColocar, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Retirar Inicio</label><br />
+                                @Html.EditorFor(model => model.RetirarInicio, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.RetirarInicio, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Retirar Fim</label><br />
+                                @Html.EditorFor(model => model.RetirarFim, new { htmlAttributes = new { type = "time", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.RetirarFim, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>Supervisor</label><br />
+                                @Html.EditorFor(model => model.Supervisor, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Supervisor, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>Executante</label><br />
+                                @Html.DropDownList("UsuarioId", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.UsuarioId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-default" />
+                        </div>
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="button" value="Atividades" class="btn btn-default"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+            <div>
+                @Html.ActionLink("Back to List", "Index")|
+                @Html.ActionLink("Cadastrar atividades","Atividades")
+            </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

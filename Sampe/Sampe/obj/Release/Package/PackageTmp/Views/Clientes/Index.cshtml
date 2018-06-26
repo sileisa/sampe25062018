@@ -1,0 +1,197 @@
+﻿@model IEnumerable<Sampe.Cliente>
+@{
+    ViewBag.Title = "Clientes";
+}
+<!-- Adicionando JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<!-- Adicionando Javascript -->
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        function limpa_formulário_cep() {
+            // Limpa valores do formulário de cep.
+            $("#Rua").val("");
+            $("#Bairro").val("");
+            $("#Cidade").val("");
+            $("#Uf").val("");
+
+        }
+
+        //Quando o campo cep perde o foco.
+        $("#Cep").blur(function () {
+
+            //Nova variável "cep" somente com dígitos.
+            var cep = $(this).val().replace(/\D/g, '');
+
+            //Verifica se campo cep possui valor informado.
+            if (cep != "") {
+
+                //Expressão regular para validar o CEP.
+                var validacep = /^[0-9]{8}$/;
+
+                //Valida o formato do CEP.
+                if (validacep.test(cep)) {
+
+                    //Preenche os campos com "..." enquanto consulta webservice.
+                    $("#Rua").val("...");
+                    $("#Bairro").val("...");
+                    $("#Cidade").val("...");
+                    $("#Uf").val("...");
+
+
+                    //Consulta o webservice viacep.com.br/
+                    $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+
+                        if (!("erro" in dados)) {
+                            //Atualiza os campos com os valores da consulta.
+                            $("#Rua").val(dados.logradouro);
+                            $("#Bairro").val(dados.bairro);
+                            $("#Cidade").val(dados.localidade);
+                            $("#Uf").val(dados.uf);
+
+                        } //end if.
+                        else {
+                            //CEP pesquisado não foi encontrado.
+                            limpa_formulário_cep();
+                            alert("CEP não encontrado.");
+                        }
+                    });
+                } //end if.
+                else {
+                    //cep é inválido.
+                    limpa_formulário_cep();
+                    alert("Formato de CEP inválido.");
+                }
+            } //end if.
+            else {
+                //cep sem valor, limpa formulário.
+                limpa_formulário_cep();
+            }
+        });
+    });
+
+</script>
+<ol class="breadcrumb">
+    <li><a href="http://localhost:49630/Home/Index">Home</a></li>
+    <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
+    <li class="active">Clientes</li>
+</ol>
+<h2>Clientes</h2>
+<div class="container ">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <table class="table  table-bordered table-responsive">
+            <tr>
+                <th>
+                    Cliente
+                </th>
+                <th>
+                    CNPJ
+                </th>
+                <th>
+                    Endereço
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NomeCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cnpj)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rua) - @Html.DisplayFor(modelItem => item.Numero) - @Html.DisplayFor(modelItem => item.Bairro) -@Html.DisplayFor(modelItem => item.Cidade) - @Html.DisplayFor(modelItem => item.Uf) - @Html.DisplayFor(modelItem => item.Cep)
+                    </td>
+                    <td>
+                        <a href="/Clientes/Edit/@item.ClienteId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="/Clientes/Delete/@item.ClienteId" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container ">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <h4>Novo Cliente</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="NomeCliente">Cliente</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="NomeCliente" name="NomeCliente" type="text" value="">
+                        <p style="color:red;">@ViewBag.Error</p>
+                        <span class="text-danger field-validation-valid" data-valmsg-for="NomeCliente" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Cnpj">CNPJ</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Cnpj" name="Cnpj" type="text" value="">
+                        <span class="text-danger field-validation-valid" data-valmsg-for="Cnpj" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Cep">CEP</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Cep" name="Cep" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Rua">Rua</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Rua" name="Rua" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Numero">Número</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Numero" name="Numero" type="text" value="">
+
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Bairro">Bairro</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Bairro" name="Bairro" type="text" value="">
+
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Cidade">Cidade</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Cidade" name="Cidade" type="text" value="">
+
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class="control-label col-xs-12 col-sm-12 col-md-4" for="Uf">Estado</label>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <input class="form-control text-box single-line valid" data-val="true" data-val-required="Preencha este campo" id="Uf" name="Uf" type="text" value="">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <br />
+                        <input type="submit" value="Novo Cliente" class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</div>

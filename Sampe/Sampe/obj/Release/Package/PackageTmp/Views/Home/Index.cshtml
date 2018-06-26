@@ -1,0 +1,12 @@
+﻿@{
+	ViewBag.Title = "Página Inicial";
+}
+<div class="container form-group text-center">
+    <img class="img-responsive " style="margin:0 auto; width:534px; height:350px;" src="~/img/marca.png">
+    <h3>Bem Vindo (a),   @Session["NomeUsuario"].ToString()  @Session["SobrenomeUsuario"].ToString()</h3>
+    @if (Session["Senha"].Equals("123456"))
+    {
+        <p>Aconselhamos a troca da senha padrão, <a href="/Usuarios/AlterarSenha/ @Session["UsuarioId"].ToString()">clique aqui </a> para alterar a senha.</p>
+    }    
+    <p> <a href="~/arquivos/Manual.pdf" download> Baixe aqui </a>o manual de uso do sistema.</p>
+</div>

@@ -1,0 +1,128 @@
+﻿@model Sampe.FormularioTMAtividade
+@{
+    ViewBag.Title = "Create";
+}
+<script>
+    $(document).ready(function () {
+        $("#AtividadeTMId").click(function () {
+            //Váriavel para checar se já existe na lista
+            var chkRptTag = false;
+
+            $('#lstTag li').each(function () {
+                haveSomeLi = true;
+                var current = $(this).text();
+                if (current == $("#AtividadeTMId option:selected").text()) {
+                    chkRptTag = true;
+                }
+            });
+
+            if (!chkRptTag) {
+                $("#lstTag").append("<li class='list-group-item'>" + $("#AtividadeTMId option:selected").text() + "<input type='checkbox' name='chkTags' id='chkTags' class='chkTags' checked='checked' value='" + $("#AtividadeTMId option:selected").val() + "'></li>");
+            } else {
+                alert("Atividade Já inserida");
+            }
+        });
+
+
+        $('#lstTag').on('click', "li", function () {
+            $(this).remove();
+            //alert();
+            return false;
+        });
+
+    });
+</script>
+<style>
+
+    .chkTags {
+        display: none;
+    }
+
+    #lstTag li {
+        cursor: pointer;
+    }
+</style>
+<div class="container">
+    <div class="col-lg-12 col-sm-12 col-md-8">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h2>Formulário de Troca de Molde</h2>
+            <hr />
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Máquina</label><br />
+                    @Html.DropDownList("MaquinaId", new SelectList(ViewBag.MaquinaId, "MaquinaId", "NomeMaquina"), "Selecione a Máquina", htmlAttributes: new { @class = "form-control" })
+                    <span class="field-validation-valid text-danger" data-valmsg-for="MaquinaId" data-valmsg-replace="true"></span>
+                    <!--@Html.ValidationMessageFor(model => model.FormularioTrocaMolde.MaquinaId, "", new { @class = "text-danger" })-->
+                    <p style="color:red;">@ViewBag.Maquina</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <label>Data</label><br />
+                    @Html.EditorFor(model => model.FormularioTrocaMolde.DtRetirada, new { htmlAttributes = new { type = "date", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FormularioTrocaMolde.DtRetirada, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Molde a ser Retirado</label><br />
+                    @Html.DropDownList("MoldeId", null, htmlAttributes: new { @class = "form-control" })
+                    <p style="color:red;">@ViewBag.Molde</p>
+                </div>
+                <div class="col-lg-6">
+                    <label>Molde a ser Colocado</label><br />
+                    @Html.DropDownList("MoldeId", null, htmlAttributes: new { @class = "form-control" })
+                    <p style="color:red;">@ViewBag.Molde</p>
+                </div>
+
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Supervisor</label><br />
+                    @Html.DropDownList("Supervisor", new SelectList(ViewBag.Supervisor, "NomeUsuario", "NomeUsuario"), "Selecione o supervisor", htmlAttributes: new { @class = "form-control" })
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Supervisor" data-valmsg-replace="true"></span>
+                    <!--@Html.ValidationMessageFor(model => model.FormularioTrocaMolde.UsuarioId, "", new { @class = "text-danger" })-->
+                    <p style="color:red;">@ViewBag.Supervisor</p>
+
+                </div>
+                <div class="col-lg-6">
+                    <label>Executor</label><br />
+
+                    @Html.DropDownList("UsuarioId", new SelectList(ViewBag.UsuarioId, "UsuarioId", "NomeUsuario"), "Selecione o executor", htmlAttributes: new { @class = "form-control" })
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Executor" data-valmsg-replace="true"></span>
+                    @Html.ValidationMessageFor(model => model.FormularioTrocaMolde.UsuarioId, "", new { @class = "text-danger" })
+                    <p style="color:red;">@ViewBag.Executor</p>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <label>Atividades Cadastradas</label>
+                    <div class="form-group ms">
+                        @Html.DropDownList("AtividadeTMId", (MultiSelectList)ViewBag.AtividadeTMId, new { multiple = "multiple", @class = "form-control", @style = "height: 200px;" })
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <label>Atividades que Serão Realizadas</label>
+                    <div class="ms-lista">
+                        <ul id="lstTag" class="list-group list-group-flush listaAtv"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @Html.ActionLink("Nova Atividade", "Index", "AtividadeTMs")
+            </div>
+            <br />
+            <div class="form-group">
+
+                <input type="submit" value="Cadastrar" class="btn btn-default" />
+            </div>
+        </div>
+        }
+    </div>
+</div>

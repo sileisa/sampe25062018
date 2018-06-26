@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Sampe.Models.ControleDeQualidadeCopo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrdemProducaoCopo.MateriaPrima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario.NomeUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ciclo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraInicial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraFinal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoDaPeca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoDaPeca2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dimensao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Assinatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Liberado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrdemProducaoCopo.MateriaPrima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario.NomeUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ciclo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraInicial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraFinal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoDaPeca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoDaPeca2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dimensao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Assinatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Liberado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ControleDeQualidadeCopoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ControleDeQualidadeCopoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ControleDeQualidadeCopoId })
+        </td>
+    </tr>
+}
+
+</table>

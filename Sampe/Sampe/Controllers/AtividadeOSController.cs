@@ -140,10 +140,18 @@ namespace Sampe.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             AtividadeOS atividadeOS = db.AtividadeOS.Find(id);
-            db.AtividadeOS.Remove(atividadeOS);
+			var busca = db.FormularioOSAtividade.Where(o => o.AtividadeOSId == id);
+			if (busca.Count() > 0)
+			{
+				ViewBag.Error = "Não é possível deletar esta Atividade, pois está sendo utilizada em outras partes do sistema.";
+			}
+			else { 
+			db.AtividadeOS.Remove(atividadeOS);
             db.SaveChanges();
             return RedirectToAction("Index");
-        }
+			}
+			return View();
+		}
 
         protected override void Dispose(bool disposing)
         {

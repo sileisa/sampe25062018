@@ -1,0 +1,114 @@
+﻿@model Sampe.Models.ControleDeQualidadeCopo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Controle de Qualidade Copo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdemProducaoCopo.MateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdemProducaoCopo.MateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.NomeUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NomeUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciclo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciclo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraFinal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoDaPeca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoDaPeca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoDaPeca2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoDaPeca2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dimensao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dimensao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assinatura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assinatura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Liberado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Liberado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ControleDeQualidadeCopoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

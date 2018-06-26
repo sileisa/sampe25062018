@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 using Rotativa;
 using Rotativa.Options;
 using Sampe;
@@ -19,21 +20,23 @@ namespace Sampe.Controllers
         private SampeContext db = new SampeContext();
 
         // GET: FormularioTrocaMoldes
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            var formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
-
-            if (Session["Hierarquia"].ToString() == "Acesso Produção")
-            {
-                formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
-
-                return View(formularioTrocaMoldes.ToList().Where(f => f.Usuario.NomeUsuario == Session["NomeUsuario"].ToString()));
-            }
-            else
-            {
-                return View(formularioTrocaMoldes.ToList());
-            }
-        }
+			var formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
+			int pageSize = 15;
+			int pageNumber = (page ?? 1);
+			if (Session["Hierarquia"].ToString() == "Acesso Produção")
+			{
+				formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
+				//return View(formularioTrocaMoldes.ToList().Where(f => f.Usuario.NomeUsuario == Session["NomeUsuario"].ToString()));
+				return View(formularioTrocaMoldes.ToList().Where(f => f.Usuario.NomeUsuario == Session["NomeUsuario"].ToString()).ToPagedList(pageNumber, pageSize));
+			}
+			else
+			{
+				//return View(formularioTrocaMoldes.ToList());
+				return View(formularioTrocaMoldes.ToPagedList(pageNumber, pageSize));
+			}
+		}
 
       
         // GET: FormularioTrocaMoldes/Details/5

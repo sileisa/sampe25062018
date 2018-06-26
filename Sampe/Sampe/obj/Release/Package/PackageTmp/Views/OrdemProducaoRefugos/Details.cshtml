@@ -1,0 +1,66 @@
+﻿@model Sampe.Models.OrdemProducaoRefugo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrdemProducaoRefugo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.NomeUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NomeUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdIncio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdIncio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Obs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Obs)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrdemProducaoRefugoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

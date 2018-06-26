@@ -1,0 +1,64 @@
+﻿@model Sampe.Models.Especificacao
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Especificacao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdemProducaoKit.ProdIncio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdemProducaoKit.ProdIncio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoKit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoKit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorKit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorKit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parafuso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parafuso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantProduzido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantProduzido)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,51 @@
+﻿@model Sampe.Models.VendaKit
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VendaKit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Especificacao.TipoKit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Especificacao.TipoKit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpedicaoKit.ExpedicaoKitId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpedicaoKit.ExpedicaoKitId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorUnitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorUnitario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subtotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subtotal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VendaKitId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

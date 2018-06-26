@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Sampe.Models.Especificacao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrdemProducaoKit.ProdIncio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoKit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CorKit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parafuso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuantProduzido)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrdemProducaoKit.ProdIncio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoKit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CorKit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parafuso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantProduzido)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EspecificacaoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EspecificacaoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EspecificacaoId })
+        </td>
+    </tr>
+}
+
+</table>
