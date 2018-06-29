@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 using Sampe.Models;
 
 namespace Sampe.Controllers
@@ -15,11 +16,12 @@ namespace Sampe.Controllers
         private SampeContext db = new SampeContext();
 
         // GET: ExpedicaoCopos
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            var expedicaoCopoes = db.ExpedicaoCopoes.Include(e => e.Cliente).Include(e => e.Marcanti);
-			
-			return View(expedicaoCopoes.ToList());
+            var expedicaoCopoes = db.ExpedicaoCopoes.Include(e => e.Cliente).Include(e => e.Marcanti).OrderByDescending(e=>e.Vencimento);
+			int pageSize = 15;
+			int pageNumber = (page ?? 1);
+			return View(expedicaoCopoes.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: ExpedicaoCopos/Details/5
@@ -41,7 +43,7 @@ namespace Sampe.Controllers
             }
             return View(expedicaoCopo);
         }
-
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
         // GET: ExpedicaoCopos/Create
         public ActionResult Create()
         {
@@ -64,7 +66,7 @@ namespace Sampe.Controllers
         public ActionResult Create([Bind(Include = "ExpedicaoId,ValorTotal,Vencimento,ClienteId,MarcantiId")] ExpedicaoCopo expedicaoCopo)
         {
             var a = Request.Form["Copo"];
-            var b = Request.Form["Venda.ValorUnitario"];
+           
 			var c = Request.Form["Venda.Quantidade"];
 			expedicaoCopo.MarcantiId = 1;
             if (ModelState.IsValid)
@@ -72,7 +74,8 @@ namespace Sampe.Controllers
                 if(a!= null)
                 {
                     var copo = a.Split(',').Select(Int32.Parse).ToList();
-                    var val = b.Split(',').Select(Double.Parse).ToArray();
+					List<string> b = new List<string>(Request.Form.GetValues("Venda.ValorUnitario"));
+					var val = b.Select(Double.Parse).ToList();
 					var quant = c.Split(',').Select(Int32.Parse).ToList();
 					List<Venda> vendas = new List<Venda>();
                     for (var x=0; x<copo.Count();x++)
@@ -99,6 +102,7 @@ namespace Sampe.Controllers
             return View(expedicaoCopo);
         }
 
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
         // GET: ExpedicaoCopos/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -133,7 +137,7 @@ namespace Sampe.Controllers
             ViewBag.MarcantiId = new SelectList(db.Marcantis, "MarcantiId", "NomeEmpresa", expedicaoCopo.MarcantiId);
             return View(expedicaoCopo);
         }
-
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
         // GET: ExpedicaoCopos/Delete/5
         public ActionResult Delete(int? id)
         {

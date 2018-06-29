@@ -22,7 +22,7 @@ namespace Sampe.Controllers
         // GET: FormularioTrocaMoldes
         public ActionResult Index(int? page)
         {
-            var formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.DtRetirada);
+            var formularioTrocaMoldes = db.FormularioTrocaMoldes.Include(f => f.Maquina).Include(f => f.Usuario).OrderByDescending(f => f.DtRetirada);
 			int pageSize = 15;
 			int pageNumber = (page ?? 1);
 			if (Session["Hierarquia"].ToString() == "Acesso Produção")

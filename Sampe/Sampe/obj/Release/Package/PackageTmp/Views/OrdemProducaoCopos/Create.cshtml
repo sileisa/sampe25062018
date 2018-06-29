@@ -40,8 +40,8 @@
 	});
 </script>
 <ol class="breadcrumb">
-	<li><a href="http://localhost:49630/Home/Index">Home</a></li>
-	<li><a href="http://localhost:49630/OrdemProducaoCopos/Index">Ordens de Produção de Copos</a></li>
+	<li><a href="/Home/Index">Home</a></li>
+	<li><a href="/OrdemProducaoCopos/Index">Ordens de Produção de Copos</a></li>
 	<li class="active">Nova</li>
 </ol>
 <h2>Nova Ordem de Produção</h2>
@@ -192,68 +192,119 @@
 		<div class="row">
 			<h4>Controle de Qualidade</h4>
 			<hr />
-			<table class="table table-bordered">
-				<thead>
-					<tr>
-						<th>Hora</th>
-						<th>Ciclo</th>
-						<th>Peso da Peça</th>
-						<th>Inspeção</th>
-						<th>Assinatura</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="text" name="Hora" class="form-control" value="7:00 - 8:00" readonly="readonly" /></td>
-						<td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
-						<td>
-							<div class="col-lg-6 col-sm-12">
-								@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })
-							</div>
-							<div class="col-lg-6 col-sm-12">
-								@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })
-							</div>
-						</td>
-						<td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
-						<td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
-					</tr>
-					<tr>
-						<td><input type="text" name="Hora" class="form-control" value="8:00 - 9:00" readonly="readonly" /></td>
-						<td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
-						<td>
-							<div class="col-lg-6 col-sm-12">
-								@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })
-							</div>
-							<div class="col-lg-6 col-sm-12">
-								@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })
-							</div>						 
-						</td>
-						<td>
-							@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão
-						</td>
-						<td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
-					</tr>
-				</tbody>
-			</table>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Ciclo</th>
+                        <th>Peso da Peça</th>
+                        <th>Peso da Peça</th>
+                        <th>Inspeção</th>
+                        <th>Assinatura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="7:00 - 8:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="8:00 - 9:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="9:00 - 10:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="10:00 - 11:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="11:00 - 12:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="12:00 - 13:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="13:00 - 14:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="14:00 - 15:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="15:00 - 16:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Hora" class="form-control" value="16:00 - 17:00" readonly="readonly" /></td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Ciclo, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.PesoDaPeca2, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        <td>@Html.EditorFor(model => model.ControleDeQualidadeCopo.Peso) Peso @Html.EditorFor(model => model.ControleDeQualidadeCopo.Cor) Cor @Html.EditorFor(model => model.ControleDeQualidadeCopo.Dimensao) Dimensão</td>
+                        <td>@Html.DropDownList("Assinatura", null, htmlAttributes: new { @class = "form-control" })</td>
+                    </tr>
+                </tbody>
+            </table>
 		</div>
 		<br /><br />
-		<div class="row col-lg-12 col-sm-12">
-			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
-			{
-				<div class="checkbox" id="check">
-					@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
-					<p>Validação do Supervisor</p>
-				</div>
+			  <div class="row col-lg-12 col-sm-12">
+			  	@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
+	{
+			  <div class="checkbox" id="check">
+			  	@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+			  <p>Validação do Supervisor</p>
+			  </div>
 
-			}
-			else
-			{
-				<label>Validação do Supervisor</label>
-				@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+}
+else
+{
+			  <label>Validação do Supervisor</label>
+			  @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
 
-			}
-			@Html.HiddenFor(model => model.Status)
-		</div>
+}
+			  @Html.HiddenFor(model => model.Status)
+			  </div>
 		<br /><br />
 		<div class="form-group">
 			<div class="col-md-offset-2 col-md-10">
@@ -263,7 +314,3 @@
 		</div>
 	</div>
 }
-
-<div>
-	@Html.ActionLink("Back to List", "Index")
-</div>

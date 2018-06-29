@@ -19,7 +19,7 @@ namespace Sampe.Controllers
 		// GET: Maquinas
 		public ActionResult Index()
 		{
-			return View(db.Maquinas.ToList());
+			return View(db.Maquinas.ToList().OrderBy(u => u.NomeMaquina));
 		}
 
 		[HttpPost]

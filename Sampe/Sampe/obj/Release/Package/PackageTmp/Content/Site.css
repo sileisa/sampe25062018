@@ -38,14 +38,6 @@ textarea, label, td {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-/*#menu-lateral {
-    margin-top: 0px;
-    padding-top: 0px;
-    color: #2E4859;
-    background-color: #2E4859;
-    height: auto;
-}*/
 #marca {
     width: 2802.63px;
     height: 1822.36px;
@@ -72,19 +64,6 @@ th, td {
     font-size: 16px;
 }
 
-/*.LinkMenu {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-
-
-.navbar {
-    background-color: white;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}*/
 
 #fundo {
     background-color: #2E4859;

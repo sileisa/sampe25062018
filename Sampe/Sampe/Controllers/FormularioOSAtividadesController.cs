@@ -44,8 +44,9 @@ namespace Sampe.Controllers
             ViewBag.MaquinaId = db.Maquinas.ToList();
             ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor");
             ViewBag.Supervisor = db.Usuarios.Where(u => u.Hierarquia == "Acesso Supervisor");
-            ViewBag.AtividadeOSId = new MultiSelectList(db.AtividadeOS, "AtividadeOSId", "NomeAtvOs");
-            ViewBag.FormularioOrdemServicoId = new SelectList(db.FormularioOrdemServicoes, "FormularioOrdemServicoId", "TipoManutencao");
+			//ViewBag.AtividadeOSId = new MultiSelectList(db.AtividadeOS, "AtividadeOSId", "NomeAtvOs");
+			ViewBag.AtividadeOSId = db.AtividadeOS;
+			ViewBag.FormularioOrdemServicoId = new SelectList(db.FormularioOrdemServicoes, "FormularioOrdemServicoId", "TipoManutencao");
             return View();
         }
 

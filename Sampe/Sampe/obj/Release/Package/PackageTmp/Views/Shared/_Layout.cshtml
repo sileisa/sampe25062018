@@ -1,196 +1,187 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Fontes-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<!--logo na guia -->
-	<link rel="shortcut icon" href="~/img/logo.png">
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-		}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!--logo na guia -->
+    <link rel="shortcut icon" href="~/img/logo.png">
+    <script>
 
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-		}
-	</script>
-	<title>@ViewBag.Title </title>
-	@Styles.Render("~/Content/css")
-	@Scripts.Render("~/bundles/modernizr")
-	@Scripts.Render("~/bundles/jquery")
+                    function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
 
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+    </script>
+    <title>@ViewBag.Title </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
 </head>
 <body>
-	<!--NAVBAR FIXA-->
-	<div class="navbar navbar-fixed-top navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse collapse">				
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/Home/Index"><span class="glyphicon glyphicon-home"></span></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							@Session["NomeUsuario"].ToString()  @Session["SobrenomeUsuario"].ToString()
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="http://localhost:49630/Usuarios/AlterarSenha/ @Session["UsuarioId"].ToString()">Alterar Senha</a></li>
-							<li><a href="http://localhost:49630/Usuarios/Details/ @Session["UsuarioId"].ToString()">Meu Perfil</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="http://localhost:49630/Login/Login"><span class="glyphicon glyphicon-log-out"></span>  Sair</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 
-	<!--MENU LATERAL-->
-	<div id="mySidenav" class="sidenav">
-
-		<ul class="nav nav-pills nav-stacked ">
-			<li><a href="javascript:void(0)" class="btn-xs closebtn glyphicon glyphicon-remove" data-toggle="panel-collapse collapse" onclick="closeNav()"></a></li>
-			<br />
-			<br />
-			<br />
-			<br />
-			<li id="dropdown">
-				<a class="LinkMenu" data-toggle="collapse" href="#dropdown_a">
-					<span class="glyphicon glyphicon-wrench"></span> Manutenção
-				</a>
-				<!-- Dropdown level 1 -->
-				<div id="dropdown_a" class="panel-collapse collapse">
-					<div class="panel-body">
-						<ul class="nav">
-							<li id="dropdown">
-								<a class="LinkMenu" data-toggle="collapse" href="#TM">
-									Troca de Molde
-								</a>
-								<!-- Dropdown level 1 -->
-								<div id="TM" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul class="nav">
-											<li><a class="LinkMenu" href="/FormularioTMAtividades/Create/">Novo Formulário</a></li>
-											<li><a class="LinkMenu" href="/FormularioTrocaMoldes/Index/">Formulários</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li id="dropdown">
-								<a class="LinkMenu" data-toggle="collapse" href="#OS">
-									Ordem de Serviço
-								</a>
-								<!-- Dropdown level 1 -->
-								<div id="OS" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul class="nav">
-											<li><a class="LinkMenu" href="/FormularioOSAtividades/Create/">Novo Formulário</a></li>
-											<li><a class="LinkMenu" href="/FormularioOrdemServicoes/Index/">Formulários</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li id="dropdown1">
-				<a class="LinkMenu" data-toggle="collapse" href="#dropdown_b">
-					<span class="glyphicon glyphicon-dashboard"></span> Produção
-				</a>
-				<!-- Dropdown level 1 -->
-				<div id="dropdown_b" class="panel-collapse collapse">
-					<div class="panel-body">
+    <!--NAVBAR FIXA-->
+    <div class="navbar navbar-fixed-top navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/Home/Index"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            @Session["NomeUsuario"].ToString()  @Session["SobrenomeUsuario"].ToString()
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Usuarios/AlterarSenha/ @Session["UsuarioId"].ToString()">Alterar Senha</a></li>
+                            <li><a href="/Usuarios/Details/ @Session["UsuarioId"].ToString()">Meu Perfil</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/Login/Login"><span class="glyphicon glyphicon-log-out"></span>  Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--MENU LATERAL-->
+    <div id="mySidenav" class="sidenav">
+        <ul class="nav nav-pills nav-stacked ">
+            <li><a href="javascript:void(0)" class="btn-xs closebtn glyphicon glyphicon-remove" data-toggle="panel-collapse collapse" onclick="closeNav()"></a></li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <li id="dropdown">
+                <a class="LinkMenu" data-toggle="collapse" href="#dropdown_a">
+                    <span class="glyphicon glyphicon-wrench"></span> Manutenção
+                </a>
+                <!-- Dropdown level 1 -->
+                <div id="dropdown_a" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li id="dropdown">
+                                <a class="LinkMenu" data-toggle="collapse" href="#TM">
+                                    Troca de Molde
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="TM" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav">
+                                            <li><a class="LinkMenu" href="/FormularioTMAtividades/Create/">Novo Formulário</a></li>
+                                            <li><a class="LinkMenu" href="/FormularioTrocaMoldes/Index/">Formulários</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="dropdown">
+                                <a class="LinkMenu" data-toggle="collapse" href="#OS">
+                                    Ordem de Serviço
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="OS" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav">
+                                            <li><a class="LinkMenu" href="/FormularioOSAtividades/Create/">Novo Formulário</a></li>
+                                            <li><a class="LinkMenu" href="/FormularioOrdemServicoes/Index/">Formulários</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li id="dropdown1">
+                <a class="LinkMenu" data-toggle="collapse" href="#dropdown_b">
+                    <span class="glyphicon glyphicon-dashboard"></span> Produção
+                </a>
+                <!-- Dropdown level 1 -->
+                <div id="dropdown_b" class="panel-collapse collapse">
+                    <div class="panel-body">
                         <ul class="nav">
                             <li><a class="LinkMenu" href="/OrdemProducaoCopos/Index">Copo</a></li>
                             <li><a class="LinkMenu" href="/OrdemProducaoKits/Index"> Kit</a></li>
                             <li><a class="LinkMenu" href="/OrdemProducaoPecas/Index"> Peça</a></li>
                             <li><a class="LinkMenu" href="/OrdemProducaoRefugos/Index">Refugo</a></li>
-
                         </ul>
-					</div>
-				</div>
-			</li>
-			<li id="dropdown">
-				<a class="LinkMenu" data-toggle="collapse" href="#dropdown_c">
-					<span class="glyphicon glyphicon-ok"></span> Expedição
-				</a>
-				<div id="dropdown_c" class="panel-collapse collapse">
-					<div class="panel-body">
-						<ul class="nav">
-							<li><a class="LinkMenu" href="/ExpedicaoCopos/Index">Copo</a></li>
-							<li><a class="LinkMenu" href="/ExpedicaoKits/Index">Kit</a></li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<!--<li role="presentation"><a class="LinkMenu" href="#"> <span class="glyphicon glyphicon-search"></span> Consultar Formulários</a></li>-->
-
-			<li id="dropdown">
-				<a class="LinkMenu" data-toggle="collapse" href="#dropdown_d">
-					<span class="glyphicon glyphicon-stats"></span> Relatórios
-				</a>
-				<!-- Dropdown level 1 -->
-				<div id="dropdown_d" class="panel-collapse collapse">
-					<div class="panel-body">
-						<ul class="nav">
-							<li id="dropdown">
-								<a class="LinkMenu" data-toggle="collapse" href="#dropdown_e">Troca de Molde</a>
-
-								<!-- Dropdown level 1 -->
-								<div id="dropdown_e" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul class="nav">
-											<li><a class="LinkMenu" href="/Relatorio/BuscaTM">Por Data</a></li>
-											<li><a class="LinkMenu" href="/Relatorio/BuscaTMporMaquina">Por Máquina</a></li>
-
-										</ul>
-									</div>
-								</div>
-							</li>
-
-							<li id="dropdown">
-								<a class="LinkMenu" data-toggle="collapse" href="#dropdown_f">Ordem de Serviço</a>
-
-								<!-- Dropdown level 1 -->
-								<div id="dropdown_f" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul class="nav">
-											<li><a class="LinkMenu" href="/Relatorio/BuscaOS">Por Data</a></li>
-											<li><a class="LinkMenu" href="/Relatorio/BuscaOSporMaquina">Por Máquina</a></li>
-
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li><a class="LinkMenu" href="/Relatorio/BuscaOpKit">Kit</a></li>
-							<li><a class="LinkMenu" href="/Relatorio/BuscaOpPeca">Peça</a></li>
-							<li><a class="LinkMenu" href="/Relatorio/BuscaOpRefugo">Refugo</a></li>
-							<li><a class="LinkMenu" href="/Relatorio/BuscaOpCopo">Copo</a></li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li>
-				<a class="LinkMenu" href="/Home/Cadastros"><span class="glyphicon glyphicon-edit"></span> Cadastrar</a>
-			</li>
-		</ul>
-	</div>
+                    </div>
+                </div>
+            </li>
+            <li id="dropdown">
+                <a class="LinkMenu" data-toggle="collapse" href="#dropdown_c">
+                    <span class="glyphicon glyphicon-ok"></span> Expedição
+                </a>
+                <div id="dropdown_c" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li><a class="LinkMenu" href="/ExpedicaoCopos/Index">Copo</a></li>
+                            <li><a class="LinkMenu" href="/ExpedicaoKits/Index">Kit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--<li role="presentation"><a class="LinkMenu" href="#"> <span class="glyphicon glyphicon-search"></span> Consultar Formulários</a></li>-->
+            <li id="dropdown">
+                <a class="LinkMenu" data-toggle="collapse" href="#dropdown_d">
+                    <span class="glyphicon glyphicon-stats"></span> Relatórios
+                </a>
+                <!-- Dropdown level 1 -->
+                <div id="dropdown_d" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li id="dropdown">
+                                <a class="LinkMenu" data-toggle="collapse" href="#dropdown_e">Troca de Molde</a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown_e" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav">
+                                            <li><a class="LinkMenu" href="/Relatorio/BuscaTM">Por Data</a></li>
+                                            <li><a class="LinkMenu" href="/Relatorio/BuscaTMporMaquina">Por Máquina</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="dropdown">
+                                <a class="LinkMenu" data-toggle="collapse" href="#dropdown_f">Ordem de Serviço</a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown_f" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav">
+                                            <li><a class="LinkMenu" href="/Relatorio/BuscaOS">Por Data</a></li>
+                                            <li><a class="LinkMenu" href="/Relatorio/BuscaOSporMaquina">Por Máquina</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="LinkMenu" href="/Relatorio/BuscaOpKit">Kit</a></li>
+                            <li><a class="LinkMenu" href="/Relatorio/BuscaOpPeca">Peça</a></li>
+                            <li><a class="LinkMenu" href="/Relatorio/BuscaOpRefugo">Refugo</a></li>
+                            <li><a class="LinkMenu" href="/Relatorio/BuscaOpCopo">Copo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="LinkMenu" href="/Home/Cadastros"><span class="glyphicon glyphicon-edit"></span> Cadastrar</a>
+            </li>
+        </ul>
+    </div>
     <div class="container body-content">
         <div class="row col-md-1">
             <a onclick="openNav()" id="mais"><span style="font-size:30px;cursor:pointer" class="glyphicon glyphicon-plus"> </span></a>
         </div>
-        
         <div class=" col-xs-11 col-sm-11 col-md-11" id="conteudo">
             @RenderBody()
             <hr />
@@ -199,12 +190,11 @@
             </footer>
         </div>
     </div>
-	
-	@Scripts.Render("~/bundles/bootstrap")
-	@Scripts.Render("~/bundles/jqueryval")
-	@Scripts.Render("~/bundles/pt-br")
-	@Scripts.Render("~/bundles/jqueryval")
-	@Scripts.Render("~/bundles/globalize")
-	@RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/pt-br")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/globalize")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

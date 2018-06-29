@@ -17,7 +17,7 @@ namespace Sampe.Controllers
         // GET: Cores
         public ActionResult Index()
         {
-            return View(db.Cors.ToList());
+            return View(db.Cors.ToList().OrderBy(u => u.NomeCor));
         }
 
         [HttpPost]

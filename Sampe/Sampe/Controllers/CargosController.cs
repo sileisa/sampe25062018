@@ -19,7 +19,7 @@ namespace Sampe.Controllers
         // GET: Cargos
         public ActionResult Index()
         {
-            return View(db.Cargoes.ToList());
+            return View(db.Cargoes.ToList().OrderBy(u => u.NomeCargo));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -76,6 +76,7 @@ namespace Sampe.Controllers
         // POST: Cargos/Create
         // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "CargoId,NomeCargo,DescricaoCargo")] Cargo cargo)
@@ -108,6 +109,7 @@ namespace Sampe.Controllers
         }
 
         // GET: Cargos/Edit/5
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -139,6 +141,7 @@ namespace Sampe.Controllers
         }
 
         // GET: Cargos/Delete/5
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
         public ActionResult Delete(int? id)
         {
             if (id == null)

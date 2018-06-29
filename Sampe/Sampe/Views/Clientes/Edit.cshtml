@@ -81,12 +81,12 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <ol class="breadcrumb">
-            <li><a href="http://localhost:49630/Home/Index">Home</a></li>
-            <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
-            <li><a href="http://localhost:49630/Clientes/Index">Clientes</a></li>
-            <li class="active">Editar</li>
-        </ol>
+		<ol class="breadcrumb">
+			<li><a href="/Home/Index">Home</a></li>
+			<li><a href="/Home/Cadastros">Cadastros</a></li>
+			<li><a href="/Clientes/Index">Clientes</a></li>
+			<li class="active">Editar</li>
+		</ol>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ClienteId)
         <div class="container ">

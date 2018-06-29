@@ -64,8 +64,9 @@ namespace Sampe.Controllers
             //ViewBag.MoldeId = db.Moldes.ToList() ; 
             ViewBag.UsuarioId = db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor");
             ViewBag.Supervisor = db.Usuarios.Where(u => u.Hierarquia == "Acesso Supervisor");
-            ViewBag.AtividadeTMId = new SelectList(db.AtividadeTMs, "AtividadeTMId", "NomeAtvTm");
-            ViewBag.FormularioTrocaMoldeId = new SelectList(db.FormularioTrocaMoldes, "FormularioTrocaMoldeId", "DtRetirada");
+			//ViewBag.AtividadeTMId = new SelectList(db.AtividadeTMs, "AtividadeTMId", "NomeAtvTm");
+			ViewBag.AtividadeTMId = db.AtividadeTMs.ToList();
+			ViewBag.FormularioTrocaMoldeId = new SelectList(db.FormularioTrocaMoldes, "FormularioTrocaMoldeId", "DtRetirada");
             return View();
         }
 

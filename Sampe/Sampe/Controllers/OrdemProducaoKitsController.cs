@@ -46,9 +46,9 @@ namespace Sampe.Controllers
 		public ActionResult Create()
 		{
 			ViewBag.Operdor = new SelectList( db.Usuarios.Where(u => u.Hierarquia == "Acesso Produção" || u.Hierarquia == "Acesso Supervisor"), "UsuarioId", "NomeUsuario");
-			var x = db.OrdemProducaoPecas.Where(f => f.Expectativa.Produto.Contains("ANEL")).ToList();
-			var y = db.OrdemProducaoPecas.Where(f => f.Expectativa.Produto.Contains("CHAPÉU")).ToList();
-			var z = db.OrdemProducaoPecas.Where(f => f.Expectativa.Produto.Contains("CAPA")).ToList();
+			var x = db.OrdemProducaoPecas.Where(f => f.Expectativa.Produto.Contains("ANEL")&& f.Status==true).ToList();
+			var y = db.OrdemProducaoPecas.Where(f => f.Expectativa.Produto.Contains("CHAPÉU") && f.Status == true).ToList();
+			var z = db.OrdemProducaoPecas.Where(f => f.Expectativa.Produto.Contains("CAPA") && f.Status == true).ToList();
 			ViewBag.Produto = db.OrdemProducaoPecas.ToList();
 			ViewBag.Anel = new SelectList(x, "CodigoIdentificador", "CodigoIdentificador");
 			ViewBag.Chapeu = new SelectList(y, "CodigoIdentificador", "CodigoIdentificador"); ;

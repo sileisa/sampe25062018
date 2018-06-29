@@ -19,7 +19,7 @@ namespace Sampe.Controllers
         // GET: Moldes
         public ActionResult Index()
         {
-            return View(db.Moldes.ToList());
+            return View(db.Moldes.ToList().OrderBy(u => u.NomeMolde));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]

@@ -20,7 +20,7 @@ namespace Sampe.Controllers
         // GET: FormularioOrdemServicoes
         public ActionResult Index(int? page)
         {
-            var formularioOrdemServicoes = db.FormularioOrdemServicoes.Include(f => f.Maquina).Include(f => f.Usuario).OrderBy(f => f.Dt);
+            var formularioOrdemServicoes = db.FormularioOrdemServicoes.Include(f => f.Maquina).Include(f => f.Usuario).OrderByDescending(f => f.Dt);
 			int pageSize = 15;
 			int pageNumber = (page ?? 1);			
 			if (Session["Hierarquia"].ToString() == "Acesso Produção")

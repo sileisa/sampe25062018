@@ -40,8 +40,8 @@
 	});
 </script>
 <ol class="breadcrumb">
-	<li><a href="http://localhost:49630/Home/Index">Home</a></li>
-	<li><a href="http://localhost:49630/OrdemProducaoCopos/Index">Ordens de Produção de Copos</a></li>
+	<li><a href="/Home/Index">Home</a></li>
+	<li><a href="/OrdemProducaoCopos/Index">Ordens de Produção de Copos</a></li>
 	<li class="active">Nova</li>
 </ol>
 <h2>Nova Ordem de Produção</h2>
@@ -288,23 +288,23 @@
             </table>
 		</div>
 		<br /><br />
-		<div class="row col-lg-12 col-sm-12">
-			@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
-			{
-				<div class="checkbox" id="check">
-					@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
-					<p>Validação do Supervisor</p>
-				</div>
+			  <div class="row col-lg-12 col-sm-12">
+			  	@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
+	{
+			  <div class="checkbox" id="check">
+			  	@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+			  <p>Validação do Supervisor</p>
+			  </div>
 
-			}
-			else
-			{
-				<label>Validação do Supervisor</label>
-				@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+}
+else
+{
+			  <label>Validação do Supervisor</label>
+			  @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
 
-			}
-			@Html.HiddenFor(model => model.Status)
-		</div>
+}
+			  @Html.HiddenFor(model => model.Status)
+			  </div>
 		<br /><br />
 		<div class="form-group">
 			<div class="col-md-offset-2 col-md-10">

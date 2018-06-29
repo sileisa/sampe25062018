@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 using Sampe.Models;
 
 namespace Sampe.Controllers
@@ -15,10 +16,12 @@ namespace Sampe.Controllers
 		private SampeContext db = new SampeContext();
 
 		// GET: ExpedicaoKits
-		public ActionResult Index()
+		public ActionResult Index(int? page)
 		{
-			var expedicaoKits = db.ExpedicaoKits.Include(e => e.Cliente).Include(e => e.Marcanti);
-			return View(expedicaoKits.ToList());
+			var expedicaoKits = db.ExpedicaoKits.Include(e => e.Cliente).Include(e => e.Marcanti).OrderByDescending(e=>e.Vencimento);
+			int pageSize = 15;
+			int pageNumber = (page ?? 1);
+			return View(expedicaoKits.ToPagedList(pageNumber, pageSize));
 		}
 
 		// GET: ExpedicaoKits/Details/5
@@ -40,8 +43,9 @@ namespace Sampe.Controllers
 			return View(expedicaoKit);
 		}
 
-		// GET: ExpedicaoKits/Create
-		public ActionResult Create()
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
+        // GET: ExpedicaoKits/Create
+        public ActionResult Create()
 		{
 			ViewBag.ClienteId = new SelectList(db.Clientes, "ClienteId", "NomeCliente");
 			ViewBag.MarcantiId = new SelectList(db.Marcantis, "MarcantiId", "NomeEmpresa");
@@ -101,8 +105,9 @@ namespace Sampe.Controllers
 			return View(expedicaoKit);*/
 		}
 
-		// GET: ExpedicaoKits/Edit/5
-		public ActionResult Edit(int? id)
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
+        // GET: ExpedicaoKits/Edit/5
+        public ActionResult Edit(int? id)
 		{
 			if (id == null)
 			{
@@ -136,8 +141,9 @@ namespace Sampe.Controllers
 			return View(expedicaoKit);
 		}
 
-		// GET: ExpedicaoKits/Delete/5
-		public ActionResult Delete(int? id)
+        [Authorize(Roles = "Acesso Total, Acesso Administrador")]
+        // GET: ExpedicaoKits/Delete/5
+        public ActionResult Delete(int? id)
 		{
 			if (id == null)
 			{

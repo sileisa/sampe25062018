@@ -17,7 +17,7 @@ namespace Sampe.Controllers
         // GET: Clientes
         public ActionResult Index()
         {
-            return View(db.Clientes.ToList());
+            return View(db.Clientes.ToList().OrderBy(u => u.NomeCliente));
         }
 
         [HttpPost]

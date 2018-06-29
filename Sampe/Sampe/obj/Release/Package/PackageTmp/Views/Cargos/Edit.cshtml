@@ -10,12 +10,12 @@
             @Html.AntiForgeryToken()
 
         <div class="form-horizontal">
-            <ol class="breadcrumb">
-                <li><a href="http://localhost:49630/Home/Index">Home</a></li>
-                <li><a href="http://localhost:49630/Home/Cadastros">Cadastros</a></li>
-                <li><a href="http://localhost:49630/Cargos/Index">Cargos</a></li>
-                <li class="active">Editar</li>
-            </ol>
+			<ol class="breadcrumb">
+				<li><a href="/Home/Index">Home</a></li>
+				<li><a href="/Home/Cadastros">Cadastros</a></li>
+				<li><a href="/Cargos/Index">Cargos</a></li>
+				<li class="active">Editar</li>
+			</ol>
             <h4>Editar Cargo</h4>
             <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })

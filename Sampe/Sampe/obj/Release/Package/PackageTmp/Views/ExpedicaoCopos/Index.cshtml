@@ -1,13 +1,12 @@
-﻿@model IEnumerable<Sampe.Models.ExpedicaoCopo>
-
+﻿@model PagedList.IPagedList<Sampe.Models.ExpedicaoCopo>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
-    ViewBag.Title = "Expedições";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Expedições";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <h2>Expedições</h2>
 <h4>COPO</h4>
-
 <div class="container col-md-12">
 	<div class="form-group text-center">
 		<div class=" col-md-10">
@@ -16,42 +15,50 @@
 	</div>
 </div>
 <br />
-<table class="table table-bordered table-responsive" >
-    <tr>
-        <th>
-            Cliente
-        </th>
-        <th>
-            Empresa
-        </th>
-        <th>
-            Valor Total
-        </th>
-        <th>
-           Vencimento
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cliente.NomeCliente)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Marcanti.NomeEmpresa)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ValorTotal)
-        </td>
-        <td>
-            @item.Vencimento.ToString("dd/MM/yyyy")
-        </td>
-		<td>
-			<a href="/ExpedicaoCopos/Delete/@item.ExpedicaoId" class="btn btn-info btn-sm"><span class="	glyphicon glyphicon-trash"></span></a>
-			<a target="_blank" href="/Relatorio/ExibeExped?gerarPdf=true&id=@item.ExpedicaoId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-print"></span></a>
-		</td>
-    </tr>
-}
-
+<br />
+<div class="row text-right">
+	<p>Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount</p>
+</div>
+<br />
+<table class="table table-bordered table-responsive">
+	<tr>
+		<th>
+			Cliente
+		</th>
+		<th>
+			Empresa
+		</th>
+		<th>
+			Valor Total
+		</th>
+		<th>
+			Vencimento
+		</th>
+		<th></th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Cliente.NomeCliente)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Marcanti.NomeEmpresa)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ValorTotal)
+			</td>
+			<td>
+				@item.Vencimento.ToString("dd/MM/yyyy")
+			</td>
+			<td>
+				<a href="/ExpedicaoCopos/Delete/@item.ExpedicaoId" class="btn btn-info btn-sm"><span class="	glyphicon glyphicon-trash"></span></a>
+				<a target="_blank" href="/Relatorio/ExibeExped?gerarPdf=true&id=@item.ExpedicaoId" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-print"></span></a>
+			</td>
+		</tr>
+	}
 </table>
+<div class="row text-right">
+	Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+	@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>

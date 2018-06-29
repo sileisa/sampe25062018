@@ -28,8 +28,8 @@
     });
 </script>
 <ol class="breadcrumb">
-	<li><a href="http://localhost:49630/Home/Index">Home</a></li>
-	<li><a href="http://localhost:49630/OrdemProducaoKits/Index">Ordens de Produção de Kits</a></li>
+	<li><a href="/Home/Index">Home</a></li>
+	<li><a href="/OrdemProducaoKits/Index">Ordens de Produção de Kits</a></li>
 	<li class="active">Editar</li>
 </ol>
 <div class="container">
@@ -164,31 +164,31 @@
 					<a class="btn btn-default btn-sm" id="adc"><span class="glyphicon glyphicon-plus"></span></a>
 				</div>
 				<br /><br />
-				<div class="row col-lg-12 col-sm-12">
-					@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor")
-					{
-						<div class="checkbox" id="check">
-							@if (Model.Status == false)
-							{
-								@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
-								<p>Validação do Supervisor</p>
+					  <div class="row col-lg-12 col-sm-12">
+					  	@if (@Session["Hierarquia"].ToString() == "Acesso Supervisor" || @Session["Hierarquia"].ToString() == "Acesso Total")
+	{
+					  <div class="checkbox" id="check">
+					  	@if (Model.Status == false)
+	{
+					  @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox" } })
+					  <p>Validação do Supervisor</p>
 
-							}
-							else
-							{
-								@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", @readonly = true } })
-								<p>Validação do Supervisor</p>
-							}
-						</div>
-						@Html.HiddenFor(model => model.Status)
-					}
-					else
-					{
-						<label>Validação do Supervisor</label>
-						@Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
+}
+else
+{
+					  @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", @readonly = true } })
+					  <p>Validação do Supervisor</p>
+}
+					  </div>
+					  @Html.HiddenFor(model => model.Status)
+}
+else
+{
+					  <label>Validação do Supervisor</label>
+					  @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "checkbox", disabled = "disabled" } })
 
-					}
-				</div>
+}
+					  </div>
 				<br /><br />
 				<div class="form-group">
 					<div class="col-md-offset-2 col-md-10">

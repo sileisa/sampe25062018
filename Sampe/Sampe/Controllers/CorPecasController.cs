@@ -17,7 +17,7 @@ namespace Sampe.Controllers
 		// GET: CorPecas
 		public ActionResult Index()
 		{
-			return View(db.CorPecas.ToList());
+			return View(db.CorPecas.ToList().OrderBy(u => u.NomeCorPeca));
 		}
         [HttpPost]
         [ValidateAntiForgeryToken]

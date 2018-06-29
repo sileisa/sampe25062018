@@ -18,7 +18,7 @@ namespace Sampe.Controllers
 		// GET: AtividadeTMs
 		public ActionResult Index()
 		{
-			return View(db.AtividadeTMs.ToList());
+			return View(db.AtividadeTMs.ToList().OrderBy(u => u.NomeAtvTm));
 		}
 
 		[HttpPost]

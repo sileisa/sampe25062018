@@ -17,7 +17,7 @@ namespace Sampe.Controllers
 		// GET: Expectativas
 		public ActionResult Index()
 		{
-			return View(db.Expectativas.ToList());
+			return View(db.Expectativas.ToList().OrderBy(u => u.Produto));
 		}
 
 		// GET: Expectativas/Details/5
